@@ -13,8 +13,7 @@
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF/readme/</guid>
-      <description>\
-关于此书 link许可证 link《The Little Redis Book》是经由Attribution-NonCommercial 3.0 Unported license许可的，你不需要为此书付钱。
+      <description>关于此书 link许可证 link《The Little Redis Book》是经由Attribution-NonCommercial 3.0 Unported license许可的，你不需要为此书付钱。
 你可以自由地对此书进行复制，分发，修改或者展示等操作。当然，你必须知道且认可这本书的作者是Karl Seguin，译者是赖立维，而且不应该将此书用于商业用途。
 关于这个许可证的详细描述在这里：
 http://creativecommons.org/licenses/by-nc/3.0/legalcode
@@ -42,7 +41,8 @@ wget http://redis.googlecode.com/files/redis-2.4.6.tar.gz tar xzf redis-2.4.6.ta
 如果你仔细看了启动信息，你会看到一个警告，指没能找到redis.conf文件。Redis将会采用内置的默认设置，这对于我们将要做的已经足够了。
 然后，通过双击redis-cli（Windows平台）或者运行./redis-cli（*nix/MacOSX平台），启动Redis的控制台。控制台将会通过默认的端口（6379）来连接本地运行的服务器。
 可以在命令行界面键入info命令来查看一切是不是都运行正常。你会很乐意看到这么一大组关键字-值（key-value）对的显示，这为我们查看服务器的状态提供了大量有效信息。
-如果在上面的启动步骤里遇到什么问题，我建议你到Redis的官方支持组里获取帮助。</description>
+如果在上面的启动步骤里遇到什么问题，我建议你到Redis的官方支持组里获取帮助。
+驱动Redis link很快你就会发现，Redis的API就如一组定义明确的函数那般容易理解。Redis具有让人难以置信的简单性，其操作过程也同样如此。这意味着，无论你是使用命令行程序，或是使用你喜欢的语言来驱动，整体的感觉都不会相差多少。因此，相对于命令行程序，如果你更愿意通过一种编程语言去驱动Redis，你不会感觉到有任何适应的问题。如果真想如此，可以到Redis的客户端推荐页面下载适合的Redis载体。</description>
     </item>
     
   </channel>

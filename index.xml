@@ -34,8 +34,7 @@ Android AWK SED C/C++ CSS/HTML Dart Erlang Fortran Go Groovy Haskell iOS Java Ja
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF/readme/</guid>
-      <description>\
-关于此书 link许可证 link《The Little Redis Book》是经由Attribution-NonCommercial 3.0 Unported license许可的，你不需要为此书付钱。
+      <description>关于此书 link许可证 link《The Little Redis Book》是经由Attribution-NonCommercial 3.0 Unported license许可的，你不需要为此书付钱。
 你可以自由地对此书进行复制，分发，修改或者展示等操作。当然，你必须知道且认可这本书的作者是Karl Seguin，译者是赖立维，而且不应该将此书用于商业用途。
 关于这个许可证的详细描述在这里：
 http://creativecommons.org/licenses/by-nc/3.0/legalcode
@@ -63,7 +62,8 @@ wget http://redis.googlecode.com/files/redis-2.4.6.tar.gz tar xzf redis-2.4.6.ta
 如果你仔细看了启动信息，你会看到一个警告，指没能找到redis.conf文件。Redis将会采用内置的默认设置，这对于我们将要做的已经足够了。
 然后，通过双击redis-cli（Windows平台）或者运行./redis-cli（*nix/MacOSX平台），启动Redis的控制台。控制台将会通过默认的端口（6379）来连接本地运行的服务器。
 可以在命令行界面键入info命令来查看一切是不是都运行正常。你会很乐意看到这么一大组关键字-值（key-value）对的显示，这为我们查看服务器的状态提供了大量有效信息。
-如果在上面的启动步骤里遇到什么问题，我建议你到Redis的官方支持组里获取帮助。</description>
+如果在上面的启动步骤里遇到什么问题，我建议你到Redis的官方支持组里获取帮助。
+驱动Redis link很快你就会发现，Redis的API就如一组定义明确的函数那般容易理解。Redis具有让人难以置信的简单性，其操作过程也同样如此。这意味着，无论你是使用命令行程序，或是使用你喜欢的语言来驱动，整体的感觉都不会相差多少。因此，相对于命令行程序，如果你更愿意通过一种编程语言去驱动Redis，你不会感觉到有任何适应的问题。如果真想如此，可以到Redis的客户端推荐页面下载适合的Redis载体。</description>
     </item>
     
     <item>
@@ -1194,7 +1194,7 @@ void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数
 对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的 Deep Learning 的第9章。我们只引用书中的一张图介绍卷积的计算。
 对于矩阵 Input，我们使用一个比它规模小的多的 Kernel 进行运算。本题我们方法大概是这样：
 设 Input 是A∗B矩阵，Kernel 是C∗D矩阵，对于每个位置 (i, j) ，如果可以取一个和 Kernel 大小一样的不越界矩阵(本题不考虑padding)，我们就把这个矩阵中与 Kernel 中对应元素乘起来并求和，结果放在 Output(i,j) ​中。
-$$ \begin{bmatrix} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j+D)} \ I_{(i+1,j)} &amp;amp; I_{(i+1,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+1,j+D)} \ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \ I_{(i+C,j)} &amp;amp; I_{(i+C,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+C,j+D)} \ \end{bmatrix} $$
+$$ \left[ \begin{array} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j+D)} \ I_{(i+1,j)} &amp;amp; I_{(i+1,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+1,j+D)} \ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \ I_{(i+C,j)} &amp;amp; I_{(i+C,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+C,j+D)} \ \end{array} \right] $$
 计算完所有可算的 i, j ，我们就得到了卷积的输出。
 $$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{(p,q)} $$</description>
     </item>
@@ -1333,10 +1333,10 @@ Size ZeroScoreSpeed(MiB/s) FullScoreSpeed(MiB/s) Score 64 104 1044 40 512 860 43
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</guid>
       <description>背景介绍 link在各类数值模拟计算问题中，求解线性方程是一个非常常见且重要的步骤。比如在流体数值计算（CFD）中，我们常常需要求解一个关于流体压力的泊松类型问题：
 $$ \frac{\delta t}{\rho}\nabla p = \nabla \cdot \vec {u} $$
-其中方程的左边是一个压力场$p$ 的二阶导数，而右边是速度场（矢量）的散度。通常我们想要在已知速度场的情况下，求解其对应的压力场 $p$ ，在特定的网格设定下，我们可以使用有限差分的方法我们可以将上面的微分方程转化为线性方程组。比如，下图演示了一个流体数值模拟中常用的，将压力存储在网格中心，将速度存储在网格界面上的离散形式：
+其中方程的左边是一个压力场 $p$ 的二阶导数，而右边是速度场（矢量）的散度。通常我们想要在已知速度场的情况下，求解其对应的压力场 $p$ ，在特定的网格设定下，我们可以使用有限差分的方法我们可以将上面的微分方程转化为线性方程组。比如，下图演示了一个流体数值模拟中常用的，将压力存储在网格中心，将速度存储在网格界面上的离散形式：
 其对应的离散化方程式是：
 $$ \frac{\delta t}{\rho}\left[\frac{1}{dx}\cdot \left(\frac{p_{i+1,j}-p {i,j}}{dx} - \frac{p{i,j}-p_{i-1,j}}{dx} \right) + \frac{1}{dy} \cdot \left( \frac{p_{i,j+1}-p_{i,j}}{dy} - \frac{p_{i,j}-p_{i, j-1} }{dy} \right) \right] = \frac{u_{i,j}-u_{i-1,j}}{dx} + \frac{v_{i,j}- v_{i,j-1}}{dy} $$
-其中 $i$ 和 $j$ 都是 [1, n] 的整数，我们可以对整个计算区域的所有格子列出类似的方程共 $n×n$个。
+其中 $i$ 和 $j$ 都是 [1, n] 的整数，我们可以对整个计算区域的所有格子列出类似的方程共 $n×n$ 个。
 对上式稍作整理可以发现当格子大小 $dx=dy$ 时，方程左边可以简化成
 $$ \frac{\delta t}{\rho dx^2}(4p_{i,j}-p_{i+1,j}-p_{i-1,j}-p_{i,j-1}- p_{i,j+1}) $$
 其中 $\frac{\delta t}{\rho dx^2}$ 是一个常数系数，为了简化问题我们可以直接将其省略。于是，我们可以将 $p$ 的系数存入一个矩阵 $A$ ，而将 $p$ 保存在一个向量中，上面的表达式就变成了如下的一个矩阵和向量的乘：</description>
