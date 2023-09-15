@@ -51,10 +51,8 @@ void matA(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;valu
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2c/</guid>
       <description>题目 link小明这回的确问了个“物理”些的问题。虽然依旧是一个数学问题。他还是希望你能编写一个程序，帮他解决这个问题。他依旧想把你的程序运行在超算上，并要求你的程序是并行的。
 给定函数 $f(x,y)$ , 正整数 $N$ , 在 $N×N$ 均匀网格上用五点格式求解 Poisson 方程
-$$ \begin{cases} &amp;amp; -\Delta u(x,y)=f(x,y),(x,y)\in \Omega = (0,1)^2 \ &amp;amp; u(x,y)=0,(x,y)\in \partial \Omega \end{cases} $$
-记 $U_{i,j}$​ 为 $u(x_i,y_j​)$ 的近似值, 离散格式为
-$$ \begin{aligned} &amp;amp;4U_{i,j}-U_{i-1,j}-U{i+1,j}-U_{i,j-1}-U{i,j+1}=\frac{1}{N^2}f(x_i,y_i),x_i=\frac{i}{N},y_i=\frac{j}{N}\ &amp;amp; U_{i,j}=0,(i=0)\lor(i=N)\lor(j=0)\lor(j=N) \end{aligned} $$
-用 Gauss-Seidel 迭代求解上述线性方程组。
+$$ \begin{cases} &amp;amp; -\Delta u(x,y)=f(x,y),(x,y)\in \Omega = (0,1)^2 \\ &amp;amp; u(x,y)=0,(x,y)\in \partial \Omega \end{cases} $$ 记 $U_{i,j}$​ 为 $u(x_i,y_j​)$ 的近似值, 离散格式为
+$$ \begin{aligned} &amp;amp;4U_{i,j}-U_{i-1,j}-U{i&amp;#43;1,j}-U_{i,j-1}-U{i,j&amp;#43;1}=\frac{1}{N^2}f(x_i,y_i),x_i=\frac{i}{N},y_i=\frac{j}{N}\\ &amp;amp; U_{i,j}=0,(i=0)\lor(i=N)\lor(j=0)\lor(j=N) \end{aligned} $$ 用 Gauss-Seidel 迭代求解上述线性方程组。
 小明定义了一个量，名叫 EPS（各分量绝对值差最大值）。他希望你的程序能在 EPS 小于 10−15 后输出结果。
 你看着题目苦笑了一下。如你所料，小明总是念念不忘他的 OpenMP。
 输入格式 link文件引用 rhs.h，该头文件定义了：
@@ -84,8 +82,7 @@ void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数
 对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的 Deep Learning 的第9章。我们只引用书中的一张图介绍卷积的计算。
 对于矩阵 Input，我们使用一个比它规模小的多的 Kernel 进行运算。本题我们方法大概是这样：
 设 Input 是A∗B矩阵，Kernel 是C∗D矩阵，对于每个位置 (i, j) ，如果可以取一个和 Kernel 大小一样的不越界矩阵(本题不考虑padding)，我们就把这个矩阵中与 Kernel 中对应元素乘起来并求和，结果放在 Output(i,j) ​中。
-$$ \left[ \begin{array}{cccc} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j+D)} \ I_{(i+1,j)} &amp;amp; I_{(i+1,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+1,j+D)} \ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \ I_{(i+C,j)} &amp;amp; I_{(i+C,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+C,j+D)} \ \end{array} \right] $$
-计算完所有可算的 i, j ，我们就得到了卷积的输出。
+$$ \left[ \begin{array}{cccc} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j&amp;#43;D)} \\\ I_{(i&amp;#43;1,j)} &amp;amp; I_{(i&amp;#43;1,j&amp;#43;2)} &amp;amp; \cdots &amp;amp; I_{(i&amp;#43;1,j&amp;#43;D)} \\\ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \\\ I_{(i&amp;#43;C,j)} &amp;amp; I_{(i&amp;#43;C,j&amp;#43;2)} &amp;amp; \cdots &amp;amp; I_{(i&amp;#43;C,j&amp;#43;D)} \\\ \end{array} \right] $$ 计算完所有可算的 i, j ，我们就得到了卷积的输出。
 $$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{(p,q)} $$</description>
     </item>
     
