@@ -8,15 +8,6 @@
     <language>zh-cn</language>
     <lastBuildDate>Fri, 15 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/tags/beginners/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>COCO → labelImg yolo</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_to_labelimg/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
-      
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_to_labelimg/</guid>
-      <description>One-click conversion of COCO format data to labelImg labeled yolo format data. COCO format directory structure（see dataset/YOLOV5_COCO_format for details）： YOLOV5_COCO_format ├── annotations │ ├── instances_train2017.json │ └── instances_val2017.json ├── train2017 │ ├── 000000000001.jpg │ └── 000000000002.jpg └── val2017 └── 000000000001.jpg Convert coco_to_labelimg --data_dir dataset/YOLOV5_COCO_format --data_dir: the directory where the COCO format dataset is located. Default is dataset/YOLOV5_COCO_format. Converted directory structure (see dataset/COCO_labelImg_format for details): COCO_labelImg_format ├── train │ ├── 000000000001.</description>
-    </item>
-    
-    <item>
       <title>前言</title>
       <link>https://cuterwrite.top/TechDocs/docs/overview/</link>
       <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>

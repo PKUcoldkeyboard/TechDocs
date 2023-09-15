@@ -16,5 +16,17 @@
       <description>这是一个计算机的技术资料库。</description>
     </item>
     
+    <item>
+      <title>计算机相关技术资料整理 </title>
+      <link>https://cuterwrite.top/TechDocs/docs/practical-programing-book/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/practical-programing-book/</guid>
+      <description>这里收录比较实用的计算机相关技术书籍，可以在短期之内入门的简单实用教程、一些技术网站以及一些写的比较好的博文，欢迎Fork，你也可以通过Pull Request参与编辑。
+程序员必读书籍 目录 link 语言相关类
+Android AWK SED C/C++ CSS/HTML Dart Erlang Fortran Go Groovy Haskell iOS Java JavaScript LaTeX LISP Lua Perl PHP Prolog Python R Ruby Scala Scheme Shell Swift WebAssembly 语言无关类
+操作系统 版本控制 分布式系统 编辑器 NoSQL MySQL PostgreSQL 项目相关 设计模式 Web 大数据 编程艺术 函数式编程 运维监控 WEB服务器 语言无关类 link操作系统 link 开源世界旅行手册 鸟哥的Linux私房菜 Linux 系统高级编程 Zephyr OS 中文文档(v1.6.0) The Linux Command Line (中英文版) Linux 设备驱动 (第三版) 深入分析Linux内核源码 UNIX TOOLBOX Docker中文指南 Docker —— 从入门到实践 Docker入门实战 Docker Cheat Sheet FreeRADIUS新手入门 Mac 开发配置手册 FreeBSD 使用手册 Linux 命令行(中文版) Linux 构建指南 Linux工具快速教程 Linux Documentation (中文版) 嵌入式 Linux 知识库 (eLinux.</description>
+    </item>
+    
   </channel>
 </rss>

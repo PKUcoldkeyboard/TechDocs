@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3. GPU上的并行计算 on CS技术文档</title>
+    <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/</link>
+    <description>Recent content in 3. GPU上的并行计算 on CS技术文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 10 Oct 2022 02:21:15 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A. 从头开始造AI</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3a/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3a/</guid>
+      <description>Section 1 Can you train a simple neural network using Pytorch? linkIn this section, you need to complete the code of Pytorch.ipynb. You can see more tutorials and details in the file. We will check the completion and correctness of your code in this section.
+Section 2 Can you differentiate a weed from a crop seedling? linkWith the network training experience, we can solve a lot of interesting problems and let&amp;rsquo;s try one of them in this section.</description>
+    </item>
+    
+    <item>
+      <title>B. 神奇的焦散</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3b/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3b/</guid>
+      <description>任务背景 link焦散是光线经过透明物体后在某些位置汇聚形成的图案，因为其空间频率远高于单纯漫反射下的明暗，在渲染时需要较大的计算量。考虑一个简单的场景，一束方形截面的平行单色光经过若干方向玻璃板照在方形屏幕上。在这个场景中，只需要采样平行光最终到达屏幕的位置，即可得到焦散图案。
+物理模型 link这里我们假设玻璃板会让经过的光线发生不均匀的相位落后，从而向不同方向折射，为了简化计算，忽略玻璃板的厚度。相位落后由多个定义在半径为r的圆形区域内的，最大值为d的旋转对称模板函数相加。 模板函数具有如下形式
+$$ f(t=\frac{\sqrt{x^2 + y ^2}}{r})=d * exp(-\frac{4t^2}{1-t^2}) $$
+样例程序中包含计算模板函数梯度的部分，可以根据自己的需要修改。
+输入与输出 link题目数据量较大，因此将使用读写二进制文件的输入输出方式。处理输入输出的代码已经包含在样例程序中，可以根据自己的需要修改。
+任务目标 link你需要适当修改提供的在cpu上进行计算的样例程序，使其运行在gpu上。如果你直接提交样例程序虽然能够获得正确的结果但会运行相当长的时间。样例程序中会包含一个没用的kernel，用于证明这个程序确实在gpu上运行了。
+务必确保全程使用单精度浮点计算，允许的误差仅考虑到GPU与CPU浮点运算差异，单双精度浮点差别远大于此。
+有用的信息 linkr在0.05到0.10的范围内随机分布
+模板函数中心位置在方形区域内随机分布
+可以使用int atomicAdd(int* address, int val);进行计数。
+编译命令nvcc -O3
+运行在单核，八分之一个A100上
+共两个测试点：
+测试点 ID 玻璃板数量 每个玻璃板上的模板函数数量 采样数量 输出像素 分值 0 2 256 4096*4096 256*256 10 1 32 256 16384*16384 1024*1024 190 附件中提供一份输入文件，可以用于本地调试。
+评分标准 link如果能在目标时间内得到正确的焦散图案可以得到基本分。
+运行时间越短得到的附加分越高。
+样例程序 link #include &amp;lt;malloc.h&amp;gt; #include &amp;lt;string.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; struct lens_t { float x, y, r, d; }; struct pane_t { int panecount; float* panepos; int* lensindex; lens_t* lensdata; }; struct result_t { int raydensity; int sensordensity; int* sensordata; }; __global__ void ker_test(float* x, int n) { int i = blockDim.</description>
+    </item>
+    
+    <item>
+      <title>C. cuFFT并非不可战胜！</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3c/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3c/</guid>
+      <description>背景介绍 link密度泛函理论（Density Functional Theory，简称DFT）在材料计算，医药和分子化学等领域扮演着重要的角色，是微观世界建模的重要工具。在高性能计算技术与机器学习方法飞速发展的今天，理论计算有望更快速地突破科学边界，解决更多的实际问题。密度泛函理论兼具效率与精度，正在释放出巨大的潜力。
+ABACUS作为积淀深厚的国产开源密度泛函计算软件，致力于结合高性能计算和机器学习方法，推动电子结构新算法的发展和普及，为更多科研人员、老师和学生们提供更方便易用的免费开源软件，为更多开发者提供一个框架清晰、方便上手的开发平台，努力将第一性原理方法打造成面向实际应用场景的解决方案。
+在ABACUS等DFT软件计算中有一个很重要的倒易空间到实空间的转换，涉及到快速傅里叶算法也就是FFT。不过这个转化和通常的FFT不同，它带有一定的稀疏性。我们可以将在倒易空间需要变换的数据视为是一个球体，这个球体位于一个三维的正立方体中，球体直径小于等于立方体边长的一半，立方体其他部分置零，然后将整个立方体输入到FFT中进行变换得到实空间数据。但受限于接口问题目前只能应用cuFFT或者FFTW等成熟的库，没法有效利用数据的稀疏性。在实际计算中，FFT的计算占比达30%以上，是一个相当大的计算瓶颈。我们以ABACUS为基础，将相关问题抽象出来，提供了一个物理意义无关的优化问题模型。
+赛题描述 link考虑立方体$D$，定义其边长为$c$，球$R$为$D$中的一个球体，球的半径为$r$，$r\leq c/4$。
+为简化起见，考虑$D$和$R$的中心重合位于原点处。注意：这里边长都是整数，格点位于每个整点处，若长度为$m$，则格点数为$m+1$。若边长为奇数，则原点分布于正中间，若边长为偶数，则自动扩充边长为变长+1。
+FFT输入数据示意图，仅有彩色球体为有效数据，其余部分置为零。
+输入 link 立方体边长$c$ 球体半径$r$ 三维复数数据$A$，$A$的大小为$c^3$，以一维数组形式连续存储。$A$的初始化说明如下： 遍历A中的数据元素P(x,y,z); 如果P到球心距离小于半径r，则P=random_complex; 否则P置零。 输出 link A经过逆傅里叶变化后的输出数组B。 其中，A是频域空间，B是时域空间。
+评测说明 link 初始代码中提供了一份使用cuFFT作为实现的代码，以下简称为Baseline版本。要求选手实现的版本以下简称为Acclerate版本。 Baseline提供了编译说明，可以在Github下载，Baseline相关问题可直接在仓库提交ISSUE讨论。 Acclerate的输出应该和Baseline一致（允许误差：1∗10−5）。 你可以在/data/software/tools/cufft找到评测用的输入数据
+评分标准 link 将在规定的硬件平台上运行选手的程序，分别对于如下大小的c和r进行10次运行，取平均耗时为最终耗时结果： c r 权重 次数 1 33 8 0.15 10 2 33 6 0.15 10 3 65 16 0.15 10 4 65 12 0.15 10 5 129 32 0.1 10 6 129 24 0.1 10 9 257 64 0.05 10 10 257 48 0.</description>
+    </item>
+    
+  </channel>
+</rss>

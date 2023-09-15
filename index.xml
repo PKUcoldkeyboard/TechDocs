@@ -8,24 +8,71 @@
     <language>zh-cn</language>
     <lastBuildDate>Fri, 15 Sep 2023 02:21:15 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>前言</title>
+      <link>https://cuterwrite.top/TechDocs/docs/overview/</link>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/overview/</guid>
+      <description>这是一个计算机的技术资料库。</description>
+    </item>
+    
+    <item>
+      <title>计算机相关技术资料整理 </title>
+      <link>https://cuterwrite.top/TechDocs/docs/practical-programing-book/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/practical-programing-book/</guid>
+      <description>这里收录比较实用的计算机相关技术书籍，可以在短期之内入门的简单实用教程、一些技术网站以及一些写的比较好的博文，欢迎Fork，你也可以通过Pull Request参与编辑。
+程序员必读书籍 目录 link 语言相关类
+Android AWK SED C/C++ CSS/HTML Dart Erlang Fortran Go Groovy Haskell iOS Java JavaScript LaTeX LISP Lua Perl PHP Prolog Python R Ruby Scala Scheme Shell Swift WebAssembly 语言无关类
+操作系统 版本控制 分布式系统 编辑器 NoSQL MySQL PostgreSQL 项目相关 设计模式 Web 大数据 编程艺术 函数式编程 运维监控 WEB服务器 语言无关类 link操作系统 link 开源世界旅行手册 鸟哥的Linux私房菜 Linux 系统高级编程 Zephyr OS 中文文档(v1.6.0) The Linux Command Line (中英文版) Linux 设备驱动 (第三版) 深入分析Linux内核源码 UNIX TOOLBOX Docker中文指南 Docker —— 从入门到实践 Docker入门实战 Docker Cheat Sheet FreeRADIUS新手入门 Mac 开发配置手册 FreeBSD 使用手册 Linux 命令行(中文版) Linux 构建指南 Linux工具快速教程 Linux Documentation (中文版) 嵌入式 Linux 知识库 (eLinux.</description>
+    </item>
+    
+    <item>
+      <title>Redis 指南</title>
+      <link>https://cuterwrite.top/TechDocs/docs/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF/readme/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF/readme/</guid>
+      <description>\
+关于此书 link许可证 link《The Little Redis Book》是经由Attribution-NonCommercial 3.0 Unported license许可的，你不需要为此书付钱。
+你可以自由地对此书进行复制，分发，修改或者展示等操作。当然，你必须知道且认可这本书的作者是Karl Seguin，译者是赖立维，而且不应该将此书用于商业用途。
+关于这个许可证的详细描述在这里：
+http://creativecommons.org/licenses/by-nc/3.0/legalcode
+关于作者 link作者Karl Seguin是一名在多项技术领域浸淫多年的开发者。他是开源软件计划的活跃贡献者，同时也是一名技术作者以及业余演讲者。他写过若干关于Radis的文章以及一些工具。在他的一个面向业余游戏开发者的免费服务里，Redis为其中的评级和统计功能提供了支持：mogade.com。
+Karl之前还写了《The Little MongoDB Book》，这是一本免费且受好评，关于MongoDB的书。
+他的博客是http://openmymind.net，你也可以关注他的Twitter帐号，via @karlseguin。
+关于译者 link译者 赖立维 是一名长在天朝的普通程序员，对许多技术都有浓厚的兴趣，是开源软件的支持者，Emacs的轻度使用者。
+虽然译者已经很认真地对待这次翻译，但是限于水平有限，肯定会有不少错漏，如果发现该书的翻译有什么需要修改，可以通过他的邮箱与他联系。他的邮箱是jasonlai256@gmail.com。
+致谢 link必须特别感谢Perry Neal一直以来的指导，我的眼界、触觉以及激情都来源于你。你为我提供了无价的帮助，感谢你。
+最新版本 link此书的最新有效资源在： http://github.com/karlseguin/the-little-redis-book
+中文版是英文版的一个分支，最新的中文版本在： https://github.com/JasonLai256/the-little-redis-book
+\clearpage
+简介 link最近几年来，关于持久化和数据查询的相关技术，其需求已经增长到了让人惊讶的程度。可以断言，关系型数据库再也不是放之四海皆准。换一句话说，围绕数据的解决方案不可能再只有唯一一种。
+对于我来说，在众多新出现的解决方案和工具里，最让人兴奋的，无疑是Redis。为什么？首先是因为其让人不可思议的容易学习，只需要简短的几个小时学习时间，就能对Redis有个大概的认识。还有，Redis在处理一组特定的问题集的同时能保持相当的通用性。更准确地说就是，Redis不会尝试去解决关于数据的所有事情。在你足够了解Redis后，事情就会变得越来越清晰，什么是可行的，什么是不应该由Redis来处理的。作为一名开发人员，如此的经验当是相当的美妙。
+当你能仅使用Redis去构建一个完整系统时，我想大多数人将会发现，Redis能使得他们的许多数据方案变得更为通用，不论是一个传统的关系型数据库，一个面向文档的系统，或是其它更多的东西。这是一种用来实现某些特定特性的解决方法。就类似于一个索引引擎，你不会在Lucene上构建整个程序，但当你需要足够好的搜索，为什么不使用它呢？这对你和你的用户都有好处。当然，关于Redis和索引引擎之间相似性的讨论到此为止。
+本书的目的是向读者传授掌握Redis所需要的基本知识。我们将会注重于学习Redis的5种数据结构，并研究各种数据建模方法。我们还会接触到一些主要的管理细节和调试技巧。
+入门 link每个人的学习方式都不一样，有的人喜欢亲自实践学习，有的喜欢观看教学视频，还有的喜欢通过阅读来学习。对于Redis，没有什么比亲自实践学习来得效果更好的了。Redis的安装非常简单。而且通过随之安装的一个简单的命令解析程序，就能处理我们想做的一切事情。让我们先花几分钟的时间把Redis安装到我们的机器上。
+Windows平台 linkRedis并没有官方支持Windows平台，但还是可供选择。你不会想在这里配置实际的生产环境，不过在我过往的开发经历里并没有感到有什么限制。
+首先进入https://github.com/dmajkic/redis/downloads，然后下载最新的版本（应该会在列表的最上方）。
+获取zip文件，然后根据你的系统架构，打开64bit或32bit文件夹。
+*nix和MacOSX平台 link对于*nix和MacOSX平台的用户，从源文件来安装是你的最佳选择。通过最新的版本号来选择，有效地址于http://redis.io/download。在编写此书的时候，最新的版本是2.4.6，我们可以运行下面的命令来安装该版本：
+wget http://redis.googlecode.com/files/redis-2.4.6.tar.gz tar xzf redis-2.4.6.tar.gz cd redis-2.4.6 make （当然，Redis同样可以通过套件管理程序来安装。例如，使用Homebrew的MaxOSX用户可以只键入brew install redis即可。）
+如果你是通过源文件来安装，二进制可执行文件会被放置在src目录里。通过运行cd src可跳转到src目录。
+运行和连接Redis link如果一切都工作正常，那Redis的二进制文件应该已经可以曼妙地跳跃于你的指尖之下。Redis只有少量的可执行文件，我们将着重于Redis的服务器和命令行界面（一个类DOS的客户端）。首先，让我们来运行服务器。在Windows平台，双击redis-server，在*nix/MacOSX平台则运行./redis-server.
+如果你仔细看了启动信息，你会看到一个警告，指没能找到redis.conf文件。Redis将会采用内置的默认设置，这对于我们将要做的已经足够了。
+然后，通过双击redis-cli（Windows平台）或者运行./redis-cli（*nix/MacOSX平台），启动Redis的控制台。控制台将会通过默认的端口（6379）来连接本地运行的服务器。
+可以在命令行界面键入info命令来查看一切是不是都运行正常。你会很乐意看到这么一大组关键字-值（key-value）对的显示，这为我们查看服务器的状态提供了大量有效信息。
+如果在上面的启动步骤里遇到什么问题，我建议你到Redis的官方支持组里获取帮助。</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://cuterwrite.top/TechDocs/docs/c-guide/summary/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/c-guide/summary/</guid>
       <description> 笨办法学C 中文版 前言 导言：C的笛卡尔之梦 练习0：准备 练习1：启用编译器 练习2：用Make来代替Python 练习3：格式化输出 练习4：Valgrind 介绍 练习5：一个C程序的结构 练习6：变量类型 练习7：更多变量和一些算术 练习8：大小和数组 练习9：数组和字符串 练习10：字符串数组和循环 练习11：While循环和布尔表达式 练习12：If，Else If，Else 练习13：Switch语句 练习14：编写并使用函数 练习15：指针，可怕的指针 练习16：结构体和指向它们的指针 练习17：堆和栈的内存分配 练习18：函数指针 练习19：一个简单的对象系统 练习20：Zed的强大的调试宏 练习21：高级数据类型和控制结构 练习22：栈、作用域和全局 练习23：认识达夫设备 练习24：输入输出和文件 练习25：变参函数 练习26：编写第一个真正的程序 练习27：创造性和防御性编程 练习28：Makefile 进阶 练习29：库和链接 练习30：自动化测试 练习31：代码调试 练习32：双向链表 练习33：链表算法 练习34：动态数组 练习35：排序和搜索 练习36：更安全的字符串 练习37：哈希表 练习38：哈希算法 练习39：字符串算法 练习40：二叉搜索树 练习41：将 Cachegrind 和 Callgrind 用于性能调优 练习42：栈和队列 练习43：一个简单的统计引擎 练习44：环形缓冲区 练习45：一个简单的TCP/IP客户端 练习46：三叉搜索树 练习47：一个快速的URL路由 后记：“解构 K&amp;amp;R C” 已死 捐赠名单 </description>
-    </item>
-    
-    <item>
-      <title>labelImg → YOLOV5</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_yolov5/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
-      
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_yolov5/</guid>
-      <description>Convert the yolo data format marked by the labelImg library to YOLOV5 format data with one click.
-The labelImg label data directory structure is as follows (see dataset/labelImg_dataset for details):
-labelImg_dataset ├── classes.txt ├── images(13).jpg ├── images(13).txt ├── images(3).jpg ├── images(3).txt ├── images4.jpg ├── images4.txt ├── images5.jpg ├── images5.txt ├── images6.jpg ├── images7.jpg └── images7.txt Convert
-labelimg_to_yolov5 --src_dir dataset/labelImg_dataset \ --out_dir dataset/labelImg_dataset_output \ --val_ratio 0.2 \ --have_test true \ --test_ratio 0.</description>
     </item>
     
     <item>
@@ -40,18 +87,6 @@ labelimg_to_yolov5 --src_dir dataset/labelImg_dataset \ --out_dir dataset/labelI
 自豪地采用谷歌翻译
 一句 MMP 送给在座的各位程序正义垃圾。
 在线阅读 PDF格式 EPUB格式 MOBI格式 Github 赞助我 link 协议 link此版本遵循CC BY-NC-SA 4.0协议，原版无此约束。</description>
-    </item>
-    
-    <item>
-      <title>labelImg → PubLayNet</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_publaynet/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
-      
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_publaynet/</guid>
-      <description>Convert the yolo data format marked by the labelImg library to PubLayNet format data with one click.
-The labelImg label data directory structure is as follows (see dataset/labelImg_dataset for details):
-labelImg_dataset ├── classes.txt ├── images(13).jpg ├── images(13).txt ├── images(3).jpg ├── images(3).txt ├── images4.jpg ├── images4.txt ├── images5.jpg ├── images5.txt ├── images6.jpg ├── images7.jpg └── images7.txt Convert
-labelImg_to_publaynet --data_dir dataset/labelImg_dataset \ --val_ratio 0.2 \ --have_test true \ --test_ratio 0.2 --data_dir: the directory where labelImg is stored after labeling.</description>
     </item>
     
     <item>
@@ -252,15 +287,6 @@ include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { int distance 
     </item>
     
     <item>
-      <title>COCO → labelImg yolo</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_to_labelimg/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
-      
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_to_labelimg/</guid>
-      <description>One-click conversion of COCO format data to labelImg labeled yolo format data. COCO format directory structure（see dataset/YOLOV5_COCO_format for details）： YOLOV5_COCO_format ├── annotations │ ├── instances_train2017.json │ └── instances_val2017.json ├── train2017 │ ├── 000000000001.jpg │ └── 000000000002.jpg └── val2017 └── 000000000001.jpg Convert coco_to_labelimg --data_dir dataset/YOLOV5_COCO_format --data_dir: the directory where the COCO format dataset is located. Default is dataset/YOLOV5_COCO_format. Converted directory structure (see dataset/COCO_labelImg_format for details): COCO_labelImg_format ├── train │ ├── 000000000001.</description>
-    </item>
-    
-    <item>
       <title>练习7：更多变量和一些算术</title>
       <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex7/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
@@ -386,18 +412,6 @@ C中的switch语句与它们不同，实际上是一个“跳转表”。你只�
 在这个练习中你将会学到如何创建struct，将一个指针指向它们，以及使用它们来理解内存的内部结构。我也会借助上一节课中的指针知识，并且让你使用malloc从原始内存中构造这些结构体。
 像往常一样，下面是我们将要讨论的程序，你应该把它打下来并且使它正常工作：
 #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;assert.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;string.h&amp;gt; struct Person { char *name; int age; int height; int weight; }; struct Person *Person_create(char *name, int age, int height, int weight) { struct Person *who = malloc(sizeof(struct Person)); assert(who != NULL); who-&amp;gt;name = strdup(name); who-&amp;gt;age = age; who-&amp;gt;height = height; who-&amp;gt;weight = weight; return who; } void Person_destroy(struct Person *who) { assert(who !</description>
-    </item>
-    
-    <item>
-      <title>YOLOV5 → COCO</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/yolov5_to_coco/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
-      
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/yolov5_to_coco/</guid>
-      <description>Some background images can be added to the training by directly placing them into the backgroud_images directory.
-The conversion program will automatically scan this directory and add it to the training set, allowing seamless integration with subsequent YOLOX training.
-YOLOV5 training format directory structure (see dataset/YOLOV5 for details).
-YOLOV5 ├── classes.txt ├── background_images # usually images that are easily confused with the object to be detected │ └── bg1.jpeg ├── images │ ├── images(13).</description>
     </item>
     
     <item>
@@ -629,26 +643,6 @@ set -e cd /tmp curl -L -O http://archive.apache.org/dist/apr/apr-1.4.6.tar.gz ta
     </item>
     
     <item>
-      <title>前言</title>
-      <link>https://cuterwrite.top/TechDocs/docs/overview/</link>
-      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cuterwrite.top/TechDocs/docs/overview/</guid>
-      <description>这是一个计算机的技术资料库。</description>
-    </item>
-    
-    <item>
-      <title>YOLOV5 YAML → COCO</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/yolov5_yaml_to_coco/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
-      
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/yolov5_yaml_to_coco/</guid>
-      <description> The YOLOV5 yaml data file needs to contain.
-YOLOV5_yaml ├── images │ ├── train │ │ ├── images(13).jpg │ │ └── images(3).jpg │ └── val │ ├── images(13).jpg │ └── images(3).jpg ├── labels │ ├── train │ │ ├── images(13).txt │ │ └── images(3).txt │ └── val │ ├── images(13).txt │ └── images(3).txt └── sample.yaml Convert
-yolov5_yaml_to_coco --yaml_path dataset/YOLOV5_yaml/sample.yaml </description>
-    </item>
-    
-    <item>
       <title>练习27：创造性和防御性编程</title>
       <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex27/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
@@ -845,15 +839,6 @@ void copy(char to[], char from[]) { int i = 0; // while loop will not end if fro
     </item>
     
     <item>
-      <title>darknet → COCO</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/darknet_to_coco/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
-      
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/darknet_to_coco/</guid>
-      <description> Darknet training data directory structure (see dataset/darknet for details). darknet ├── class.names ├── gen_config.data ├── gen_train.txt ├── gen_valid.txt └── images ├── train └── valid Convert darknet_to_coco --data_path dataset/darknet/gen_config.data </description>
-    </item>
-    
-    <item>
       <title>练习37：哈希表</title>
       <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex37/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
@@ -1023,15 +1008,6 @@ TSTree的工作方式是，每个键都是字符串，根据字符串中字符�
     </item>
     
     <item>
-      <title>Visualize COCO image</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_visual/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
-      
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_visual/</guid>
-      <description> coco_visual --vis_num 1 \ --json_path dataset/YOLOV5_COCO_format/annotations/instances_train2017.json \ --img_dir dataset/YOLOV5_COCO_format/train2017 --vis_num: specify the index of the image to be viewed --json_path: path to the json file of the image to view --img_dir: view the directory where the image is located </description>
-    </item>
-    
-    <item>
       <title>练习47：一个快速的URL路由</title>
       <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex47/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
@@ -1076,12 +1052,356 @@ donor value jxdwinter 6.00 贾**@悠云.com 20.00 Mr.Moon 2.00 </description>
     </item>
     
     <item>
-      <title>Demo of COCO json</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/demo_of_coco/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
+      <title>A. 欢迎参赛</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1a/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/demo_of_coco/</guid>
-      <description>{ &amp;#34;info&amp;#34;: { &amp;#34;year&amp;#34;: 2022, &amp;#34;version&amp;#34;: &amp;#34;1.0&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;For object detection&amp;#34;, &amp;#34;date_created&amp;#34;: &amp;#34;2022&amp;#34; }, &amp;#34;licenses&amp;#34;: [{ &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;Apache License v2.0&amp;#34;, &amp;#34;url&amp;#34;: &amp;#34;https://github.com/RapidAI/YOLO2COCO/LICENSE&amp;#34; }], &amp;#34;images&amp;#34;: [{ &amp;#34;date_captured&amp;#34;: &amp;#34;2022&amp;#34;, &amp;#34;file_name&amp;#34;: &amp;#34;000000000001.jpg&amp;#34;, &amp;#34;id&amp;#34;: 1, &amp;#34;height&amp;#34;: 224, &amp;#34;width&amp;#34;: 224 }, { &amp;#34;date_captured&amp;#34;: &amp;#34;2022&amp;#34;, &amp;#34;file_name&amp;#34;: &amp;#34;000000000002.jpg&amp;#34;, &amp;#34;id&amp;#34;: 2, &amp;#34;height&amp;#34;: 424, &amp;#34;width&amp;#34;: 550 }], &amp;#34;annotations&amp;#34;: [{ &amp;#34;segmentation&amp;#34;: [[18.00, 2.99, 105.00, 2.99, 105.00, 89.00, 18.00, 89.00]], &amp;#34;area&amp;#34;: 7482.011, &amp;#34;iscrowd&amp;#34;: 0, &amp;#34;image_id&amp;#34;: 1, // Corresponding to the ID in images &amp;#34;bbox&amp;#34;: [18.</description>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1a/</guid>
+      <description>欢迎参赛 link欢迎参加第零届北京大学高性能计算综合能力竞赛！
+点击题目列表上方“进入超算平台”按钮即可登入 SCOW 平台。我们为每位选手预充值了一些金额，以方便大家的使用。
+如果需要在线编写和调试程序，我们推荐使用在线 VSCode。您可以在 SCOW 平台上打开“交互式应用”，并创建一个 VSCode 应用，然后点击连接即可。请注意，默认情况下一小时后打开的实例会被自动销毁。在创建交互式应用时，保持页面的默认配置即可（分区：compute，核心数：1）。
+您也可以选择使用在线 Shell 进行程序的编写和调试，但是我们提倡：不要在登录节点上运行大型计算任务。您可以通过 SCOW 的文件管理功能进行文件的上传和下载。您放在您家目录（/data/home/您的SCOW用户名（注意：和您的用户名、用户ID并不相同））内的文件将在所有集群内的机器上可见。交互式应用的销毁并不会导致您家目录内文件的丢失，但是我们仍提倡定期将集群内保存的代码等文件下载到本地。我们不对该集群上任何数据丢失负责。
+如何使用 GPU：在分区 GPU （大写）即可使用 GPU，记得在分配任务时需要指定 --gres=gpu:1，从而分配一块 GPU。
+关于本题 link本题意图祝愿大家在本次比赛中取得良好成绩，所以获得本题的分数也十分容易。您只需下载集群中的 /data/hpcgame/bonus/bonus.dat 并提交，即可获得本题的全部分数！</description>
+    </item>
+    
+    <item>
+      <title>B. 实验室的新机器</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1b/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1b/</guid>
+      <description>题面 link小北实验室最近新购置了几台服务器，供日常实验数据分析使用。为了让大家都能合理且方便地运用这些机器，你在它们上面安装了 slurm 和 SCOW，大家都使用得很开心。
+李华今年刚加入小北实验室。他的日常工作需要分析大量数据。李华撰写了一个程序，专门用于分析他的这些数据。他使用他的笔记本运行这个程序。但是，李华发现，随着研究的不断深入，他需要分析的数据也越来越复杂；终于有一天，李华的笔记本“罢工”了——它所使用的“火龙一号”处理器在持续不断的满负荷工作过程中产生了过量的热，导致自己处于被烧毁的边缘，触发了“罢工”的保护机制。
+于是，李华申请了实验室服务器账号，接下来他便可以把他的程序运行在实验室服务器上，他的笔记本也可以得到良好的休息。这将为他省下一大笔修理费用。
+但是李华发现，每次在集群上运行自己的程序都需要先输入一堆与 slurm 有关的命令，他觉得这有些繁琐，希望你能帮他编写一个脚本，运行这个脚本以后，就会自动地创建 Job 、分配资源并运行李华的程序，在程序运行完成之后还会留存该程序运行的资源消耗情况。
+你看在李华这次承诺不再需要你为他撰写一封收件人是你自己的感谢信的份上，决定帮他这个忙。
+提交要求 link请你提交一个脚本文件（允许的格式：Shell 脚本或 Python 脚本），它需要满足如下要求：
+在文件头部具有一个 Shebang，用于表明如何运行该脚本（例子：对于一个 Bash 脚本来说，通常为 #!/bin/bash） 该脚本需要完成如下工作： 在计算节点上运行李华的程序（./program），这个程序接收一个命令行参数，在调用你撰写的脚本时，也会传入这个参数，如果你编写 Shell 脚本，可以使用 $1 来访问；计算节点应位于 compute 分区，配置为一个机器、一个核心（-N1 -n1 -c1） 将程序的输出重定向到 output.dat 使用 seff 命令查看运行这个 Job 的资源使用情况，并将输出重定向到 seff.dat 注：李华不会使用 sbatch，所以你的程序是直接在登录节点上被执行的！
+提示 link 为了降低你的工作量，李华的程序会获取 Slurm Job ID 并输出至 job_id.dat 文件。 李华的程序不会输出至 stderr，只会输出至 stdout。 在 Shell 脚本中，将一个文件的内容作为命令参数的部分方式： 使用类似 command_name &amp;quot;$(cat filename.dat)&amp;quot; 的方式 使用类似 cat filename.dat | xargs command_name 的方式 </description>
+    </item>
+    
+    <item>
+      <title>C. 小北问答超速版</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1c/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1c/</guid>
+      <description>背景 link小 A 热衷于小北问答。但是小 A 觉得手工判卷太慢了。于是小 A 学会了 YAML 并试图实现自动评分。小 A 把它称作“小北问答·超速版”。他想要测试自己编写的自动评分系统正不正确，于是出了一套题，让你来帮忙试一试。
+据你所知，“超速”的含义是小 A 把这套自动评分程序运行于超算上。
+小 A 的题目 link TOP500中能效最高的超算是哪一台？（回答一个单词）
+戈登贝尔奖是并行计算领域的最高奖项，戈登贝尔奖设立在哪一年？（回答一个数字）
+一般来说，服务器使用的 CPU 相比于同代同等级的游戏 CPU，核心更 （ ）（填多 / 少），多核性能更（ ）（填强 / 弱）
+一般来说，服务器使用的 CPU 相比于同代同等级的游戏 CPU，单核最高频率更 （ ）（填高 / 低），因此起单核性能更 （ ）（填强 / 弱）
+5~7 题：对如下实现的矩阵乘法CN×N​=CN×N​+AN×N​BN×N​, 假设单位内存是1：（均填写含 N 的表达式，可以使用 +-*/ 运算符、小括号和 pow(a, b)，sqrt(n) 函数，等价形式均可）
+内存写策略是直写，全相联（块大小是1），替换策略是LRU。
+for m in [1, N]: for n in [1,N]: for k in [1, N]: C[m,n] = C[m,n] &amp;#43; A[m, k] * B[k, n] 对矩阵A, B, C均进行了（ ）次读，对C进行了（ ）次写。</description>
+    </item>
+    
+    <item>
+      <title>D. 简单题</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1d/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1d/</guid>
+      <description>题面 linkHint: mmap写入空文件的处理方式：https://stackoverflow.com/questions/44553907/mmap-sigbus-error-and-initializing-the-file
+不要惊慌。你没有看错，这就是一道简单题。
+啊偶，虽然在某些比赛中，被标注为“简单题”的题目往往并不简单，但是在这场比赛中，我们确实试图提供一些简单题，以让大家能够更容易地获得更多分数。
+你需要用 P 个核心，把 N 个 32 位有符号整数数组中所有元素 + 1，并且求原来（未加一）的数字之和(MOD 100001651)并输出。
+输入 link从 input.bin 读入。这是一个二进制文件，用小端法储存储存，可以直接进行内存映射。（题目保证这些数字小于 230）
+第一个参数是核心数 P ，表示当前程序运行平台的核心数。第二个参数是 N ，表示数据总数（在32位整数表示范围内）。
+输出 link输出到 output.bin。也是一个二进制文件，建议直接内存映射写入。
+第一个数字是求和取模的结果，后面的数字是修改后的数组。
+提交 link提交一个 C++ 源程序即可。
+编译命令：
+g&amp;#43;&amp;#43; -o solution solution.cpp -O1 -fopenmp -std=c&amp;#43;&amp;#43;11 一个可能有用的数据生成器 link #!/usr/bin/php &amp;lt;?php if ($argc != 4) { die(&amp;#34;USAGE: {$argv[0]} &amp;lt;OUTPUT_PATH&amp;gt; &amp;lt;P&amp;gt; &amp;lt;N_RANGE&amp;gt;\n&amp;#34;); } function i32_to_bytes(int $n): array { $rslt = []; for ($i = 0; $i &amp;lt; 4; &amp;#43;&amp;#43;$i) { $rslt[] = $n &amp;amp; 255; $n &amp;gt;&amp;gt;= 8; } return $rslt; } function bytes_to_string(array $n): string { $a = array_map(fn (int $num) =&amp;gt; chr($num), $n); return join(&amp;#39;&amp;#39;, $a); } function i32_to_string(int $n): string { return bytes_to_string(i32_to_bytes($n)); } $f = fopen($argv[1], &amp;#34;w&amp;#34;); $p = (int) $argv[2]; $n = (1 &amp;lt;&amp;lt; ((int) trim($argv[3]))); $n &amp;#43;= $n &amp;#43; rand(0, $n / 2); $part = 1; $n = floor($n / $part) * $part; echo &amp;#34;p={$p}, n={$n}&amp;#34; .</description>
+    </item>
+    
+    <item>
+      <title>A. 求积分！</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2a/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2a/</guid>
+      <description>题目 link小明对高等数学感到头疼。今天，他的作业里有一道计算积分的题目。他不知道自己的答案正不正确。他希望你能写一个程序，计算得越准确越好。由于他对于精度的要求非常高，又不希望等待程序运行花费太多时间，所以他将会把程序运行于超算上。你需要使得你编写的程序支持多线程处理从而提升处理速度。
+小明遇到的题目转化为离散形式是这样的：
+给定函数$f(x)$, 正整数 $N$, 计算 $I_N(f)$, 其中
+$$ \int_0^1 f(x)\approx I_N(f)=\frac{1}{N}\sum_{i=1}^Nf(\frac{x^i}{N})， x_i=i-\frac{1}{2} $$
+小明听说有个叫 OpenMP 的东西，能方便地帮助你编写并行的应用程序。你决定试一试。
+输入格式 link文件引用 rhs.h，该头文件定义了：
+void rhs(double &amp;amp;x, double &amp;amp;value); 即为提供的 f(x)。其中，x 将作为变量 x，函数将把 f(x) 函数值放入 value。
+程序需要接收一个命令行参数，即为 N。
+输出格式 link向文件 output.dat 中输出一个浮点数，通常可选择保留 12 位有效数字。与标准解答误差在 N⋅10−15 以内即算作正确。
+样例数据 linkrhs.cpp
+#include &amp;lt;cmath&amp;gt; #include &amp;#34;rhs.h&amp;#34; void rhs(double &amp;amp;x, double &amp;amp;value) { value = x; } rhs.h
+#ifndef _rhs_h_ #define _rhs_h_ void rhs(double &amp;amp;, double &amp;amp;); #endif 样例输入：1</description>
+    </item>
+    
+    <item>
+      <title>B. 乘一乘！</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2b/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2b/</guid>
+      <description>题目 link小明对线性代数也感到头疼。今天，他的作业里有一道计算矩阵乘法的题目。他不知道自己的答案正不正确。他希望你能写一个程序，计算得越准确越好。由于他对于精度的要求非常高，又不希望等待程序运行花费太多时间，所以他将会把程序运行于超算上。你需要使得你编写的程序支持多线程处理从而提升处理速度。
+小明遇到的题目是这样的：
+给定矩阵 A,B, 满足 A 列数与 B 行数相等, 计算 AB.
+小明再次向你介绍有个叫 OpenMP 的东西，能方便地帮助你编写并行的应用程序。你向他表明你在帮助他完成数学分析作业的时候，已经熟练运用了 OpenMP，并希望他下次能问你一些物理问题。
+输入格式 link文件引用 rhs.h，该头文件定义了：
+void matA(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); void matB(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); 设矩阵 A 为 ${a_{ij}​}$ ，矩阵 B 为 ${b_{ij}​}$，那么调用这两个函数将分别给出矩阵 A 和 B 第 i 行第 j 列的元素的值。函数将把值放入 value。
+程序需要接收三个命令行参数，即为 N1, N2, N3，表示矩阵 A 是 N1*N2 维的，矩阵 B 是 N2*N3 维的。
+输出格式 link向文件 output.dat 中输出结果矩阵，每行一个浮点数，按如下方式排布：（以 3x3 矩阵为例）</description>
+    </item>
+    
+    <item>
+      <title>C. 解方程！</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2c/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2c/</guid>
+      <description>题目 link小明这回的确问了个“物理”些的问题。虽然依旧是一个数学问题。他还是希望你能编写一个程序，帮他解决这个问题。他依旧想把你的程序运行在超算上，并要求你的程序是并行的。
+给定函数 $f(x,y)$, 正整数 $N$, 在 $N×N$ 均匀网格上用五点格式求解 Poisson 方程
+$$ \begin{cases} &amp;amp; -\Delta u(x,y)=f(x,y),(x,y)\in \Omega = (0,1)^2 \ &amp;amp; u(x,y)=0,(x,y)\in \partial \Omega \end{cases} $$
+记 $U_{i,j}$​ 为 $u(x_i,y_j​)$的近似值, 离散格式为
+$$ \begin{aligned} &amp;amp;4U_{i,j}-U_{i-1,j}-U{i+1,j}-U_{i,j-1}-U{i,j+1}=\frac{1}{N^2}f(x_i,y_i),x_i=\frac{i}{N},y_i=\frac{j}{N}\ &amp;amp; U_{i,j}=0,(i=0)\lor(i=N)\lor(j=0)\lor(j=N) \end{aligned} $$
+用 Gauss-Seidel 迭代求解上述线性方程组。
+小明定义了一个量，名叫 EPS（各分量绝对值差最大值）。他希望你的程序能在 EPS 小于 10−15 后输出结果。
+你看着题目苦笑了一下。如你所料，小明总是念念不忘他的 OpenMP。
+输入格式 link文件引用 rhs.h，该头文件定义了：
+void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数即为 f(x,y)。传入 x, y, value, 那么 f(x,y) 就会被保存到 value 内。
+程序需要接收一个命令行参数，即为 N。</description>
+    </item>
+    
+    <item>
+      <title>D. 道生一</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2d/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2d/</guid>
+      <description>题面 link道生一，一生二，二生三，三生万物。
+我们给你选择了三个“魔力数字”genA, genB, genC，请你使用这三个数生成n个“随从数字”并排序，得到data数组。经过对data数组的计算，你会得到一个归一数，把这个数输出到标准输出即可。 （本题中的所有数字都是64位无符号整数。）
+输入 link从标准输入中读入四个数字，分别是genA, genB, genC,n 。
+输出 link输出一个归一数到标准输出，生成方式见下文。
+数据生成与测试 link #define data_t unsigned long long /*data数组的生成的示意代码如下：*/ data_t gen_next(){ gen_A ^= gen_A &amp;lt;&amp;lt; 31; gen_A ^= gen_A &amp;gt;&amp;gt; 17; gen_B ^= gen_B &amp;lt;&amp;lt; 13; gen_B ^= gen_B &amp;gt;&amp;gt; 5; gen_C &amp;#43;&amp;#43;; gen_A ^=gen_B; gen_B ^= gen_C; return gen_A; } void data_init(){ scanf(&amp;#34;%llu%llu%llu%llu&amp;#34;, &amp;amp;gen_A, &amp;amp;gen_B, &amp;amp;gen_C, &amp;amp;n); a = (data_t *) malloc(sizeof(data_t) * n); for (data_t i = 0 ; i &amp;lt; n; i &amp;#43;&amp;#43;) { a[i] = gen_next(); } } /*归一数的计算方式如下：*/ data_t get_res(data_t *a,data_t n){ for (data_t i = 0,tmp; i &amp;lt; n; i &amp;#43;&amp;#43;) for (data_t j = 0; j &amp;lt; n - 1 - i; j &amp;#43;&amp;#43;) { if (a[j] &amp;gt; a[j &amp;#43; 1]) { tmp = a[j]; a[j] = a[j&amp;#43;1]; a[j&amp;#43;1] = tmp; } } data_t res = 0; for (data_t i = 0; i &amp;lt; n; i &amp;#43;&amp;#43;) { res ^= i * a[i]; } return res; } #undef data_t 其中i * a[i]的溢出处理方式是低64位截断。</description>
+    </item>
+    
+    <item>
+      <title>E. 卷？寄！</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2e/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2e/</guid>
+      <description>背景 link二维卷积是卷积神经网络的基础操作，可以提取数据特征，在图像识别领域应用广泛。卷积的复杂度导致训练困难，也是图像识别领域的重要瓶颈之一。
+对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的Deep Learning的第9章。我们只引用书中的一张图介绍卷积的计算。
+对于矩阵Input，我们使用一个比它规模小的多的Kernel进行运算。本题我们方法大概是这样：
+设Input是A∗B矩阵，Kernel是C∗D矩阵，对于每个位置(i, j)，如果可以取一个和Kernel大小一样的不越界矩阵(本题不考虑padding)，我们就把这个矩阵中与Kernel中对应元素乘起来并求和，结果放在Output(i,j)​中。
+$$ \begin{bmatrix} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j+D)} \ I_{(i+1,j)} &amp;amp; I_{(i+1,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+1,j+D)} \ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \ I_{(i+C,j)} &amp;amp; I_{(i+C,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+C,j+D)} \ \end{bmatrix} $$
+计算完所有可算的i, j，我们就得到了卷积的输出。
+$$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{(p,q)} $$
+下图引自Ian Goodfellow 等人著作Deep Learning`，很形象地表现了这一过程。因为元素运算是可向量化的，我们试图在CPU上使用SIMD（单指令多数据）的方法，优化二维卷积运算。
+要怎么做才好呢 link要不，问问chatGPT？
+他说的确实对，向量化的思路没错，但是我们不打算给你太多的核心，所以你得让每一条指令都能操作多个数据。
+硬件条件 link评测平台的CPU是Intel® Xeon® Platinum 8358，关闭超线程。
+每次评测分配1CPU核心，4G内存。
+CPU相关参数如下：
+32K数据L1缓存，1.25MB L2缓存。</description>
+    </item>
+    
+    <item>
+      <title>F. MPI算个PI</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</guid>
+      <description>MPI 算个 PI link前情提要 link本题是简单题，不想读背景的大佬请直接跳到题目要求。
+背景 link几乎从人类数学诞生以来，一代代数学家就在试图提高圆周率π的数值精度。从五千年前的1位精度提升到当下世界纪录的100万亿位，π的计算方法从粗略估计、测量估算，再到公式逼近、机器演算，我们可以从中看到人类科技的发展史。
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; standalone=&#34;no&#34;?&gt; &lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt; Record pi approximations Produced by GNUPLOT 4.6 patchlevel 0 1 100 104 106 108 1010 1012 1014 2000 BCE 250 BCE 480 1400 1450 1500 1550 1600 1650 1700 1750 1800 1850 1900 1950 2000 Number of decimal digits Year Record approximations of pi gnuplot_plot_1 当下，π的计算还是衡量高性能计算集群性能和算法优越性的重要量度，问题的维度从单纯的计算，拓展到了储存、通信、内存瓶颈等方方面面，各路超算纷纷借此机会大秀肌肉。
+但是在这一系列浩浩汤汤的计算过程中，有一小群人，在个人电脑刚刚普及的年代，却凭借着合作的力量，通过众包计算的方法，也达到了可喜的成就。其中一个项目是，通过分布式的方法，计算出了π中特殊位置数字的PiHex。在个人算力不足的年代，这可谓是工程学奇迹。
+现在我们假设你有一些算力不是很强的机器，来模拟这个场景。
+题目要求 link你有5个物理节点，每个的节点2个核心。你需要写一个MPI程序，计算π的近似值，精确到1∗10−14（15位有效数字）。
+因为MPI开销比较大，本题时间限制为30秒，不考察效率。（其实就是想让大家试一试MPI)
+请注意，我们的平台关闭了超线程，但是直接由MPI生成的线程数可能会是打开超线程后的。</description>
+    </item>
+    
+    <item>
+      <title>A. 从头开始造AI</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3a/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3a/</guid>
+      <description>Section 1 Can you train a simple neural network using Pytorch? linkIn this section, you need to complete the code of Pytorch.ipynb. You can see more tutorials and details in the file. We will check the completion and correctness of your code in this section.
+Section 2 Can you differentiate a weed from a crop seedling? linkWith the network training experience, we can solve a lot of interesting problems and let&amp;rsquo;s try one of them in this section.</description>
+    </item>
+    
+    <item>
+      <title>B. 神奇的焦散</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3b/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3b/</guid>
+      <description>任务背景 link焦散是光线经过透明物体后在某些位置汇聚形成的图案，因为其空间频率远高于单纯漫反射下的明暗，在渲染时需要较大的计算量。考虑一个简单的场景，一束方形截面的平行单色光经过若干方向玻璃板照在方形屏幕上。在这个场景中，只需要采样平行光最终到达屏幕的位置，即可得到焦散图案。
+物理模型 link这里我们假设玻璃板会让经过的光线发生不均匀的相位落后，从而向不同方向折射，为了简化计算，忽略玻璃板的厚度。相位落后由多个定义在半径为r的圆形区域内的，最大值为d的旋转对称模板函数相加。 模板函数具有如下形式
+$$ f(t=\frac{\sqrt{x^2 + y ^2}}{r})=d * exp(-\frac{4t^2}{1-t^2}) $$
+样例程序中包含计算模板函数梯度的部分，可以根据自己的需要修改。
+输入与输出 link题目数据量较大，因此将使用读写二进制文件的输入输出方式。处理输入输出的代码已经包含在样例程序中，可以根据自己的需要修改。
+任务目标 link你需要适当修改提供的在cpu上进行计算的样例程序，使其运行在gpu上。如果你直接提交样例程序虽然能够获得正确的结果但会运行相当长的时间。样例程序中会包含一个没用的kernel，用于证明这个程序确实在gpu上运行了。
+务必确保全程使用单精度浮点计算，允许的误差仅考虑到GPU与CPU浮点运算差异，单双精度浮点差别远大于此。
+有用的信息 linkr在0.05到0.10的范围内随机分布
+模板函数中心位置在方形区域内随机分布
+可以使用int atomicAdd(int* address, int val);进行计数。
+编译命令nvcc -O3
+运行在单核，八分之一个A100上
+共两个测试点：
+测试点 ID 玻璃板数量 每个玻璃板上的模板函数数量 采样数量 输出像素 分值 0 2 256 4096*4096 256*256 10 1 32 256 16384*16384 1024*1024 190 附件中提供一份输入文件，可以用于本地调试。
+评分标准 link如果能在目标时间内得到正确的焦散图案可以得到基本分。
+运行时间越短得到的附加分越高。
+样例程序 link #include &amp;lt;malloc.h&amp;gt; #include &amp;lt;string.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; struct lens_t { float x, y, r, d; }; struct pane_t { int panecount; float* panepos; int* lensindex; lens_t* lensdata; }; struct result_t { int raydensity; int sensordensity; int* sensordata; }; __global__ void ker_test(float* x, int n) { int i = blockDim.</description>
+    </item>
+    
+    <item>
+      <title>C. cuFFT并非不可战胜！</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3c/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3c/</guid>
+      <description>背景介绍 link密度泛函理论（Density Functional Theory，简称DFT）在材料计算，医药和分子化学等领域扮演着重要的角色，是微观世界建模的重要工具。在高性能计算技术与机器学习方法飞速发展的今天，理论计算有望更快速地突破科学边界，解决更多的实际问题。密度泛函理论兼具效率与精度，正在释放出巨大的潜力。
+ABACUS作为积淀深厚的国产开源密度泛函计算软件，致力于结合高性能计算和机器学习方法，推动电子结构新算法的发展和普及，为更多科研人员、老师和学生们提供更方便易用的免费开源软件，为更多开发者提供一个框架清晰、方便上手的开发平台，努力将第一性原理方法打造成面向实际应用场景的解决方案。
+在ABACUS等DFT软件计算中有一个很重要的倒易空间到实空间的转换，涉及到快速傅里叶算法也就是FFT。不过这个转化和通常的FFT不同，它带有一定的稀疏性。我们可以将在倒易空间需要变换的数据视为是一个球体，这个球体位于一个三维的正立方体中，球体直径小于等于立方体边长的一半，立方体其他部分置零，然后将整个立方体输入到FFT中进行变换得到实空间数据。但受限于接口问题目前只能应用cuFFT或者FFTW等成熟的库，没法有效利用数据的稀疏性。在实际计算中，FFT的计算占比达30%以上，是一个相当大的计算瓶颈。我们以ABACUS为基础，将相关问题抽象出来，提供了一个物理意义无关的优化问题模型。
+赛题描述 link考虑立方体$D$，定义其边长为$c$，球$R$为$D$中的一个球体，球的半径为$r$，$r\leq c/4$。
+为简化起见，考虑$D$和$R$的中心重合位于原点处。注意：这里边长都是整数，格点位于每个整点处，若长度为$m$，则格点数为$m+1$。若边长为奇数，则原点分布于正中间，若边长为偶数，则自动扩充边长为变长+1。
+FFT输入数据示意图，仅有彩色球体为有效数据，其余部分置为零。
+输入 link 立方体边长$c$ 球体半径$r$ 三维复数数据$A$，$A$的大小为$c^3$，以一维数组形式连续存储。$A$的初始化说明如下： 遍历A中的数据元素P(x,y,z); 如果P到球心距离小于半径r，则P=random_complex; 否则P置零。 输出 link A经过逆傅里叶变化后的输出数组B。 其中，A是频域空间，B是时域空间。
+评测说明 link 初始代码中提供了一份使用cuFFT作为实现的代码，以下简称为Baseline版本。要求选手实现的版本以下简称为Acclerate版本。 Baseline提供了编译说明，可以在Github下载，Baseline相关问题可直接在仓库提交ISSUE讨论。 Acclerate的输出应该和Baseline一致（允许误差：1∗10−5）。 你可以在/data/software/tools/cufft找到评测用的输入数据
+评分标准 link 将在规定的硬件平台上运行选手的程序，分别对于如下大小的c和r进行10次运行，取平均耗时为最终耗时结果： c r 权重 次数 1 33 8 0.15 10 2 33 6 0.15 10 3 65 16 0.15 10 4 65 12 0.15 10 5 129 32 0.1 10 6 129 24 0.1 10 9 257 64 0.05 10 10 257 48 0.</description>
+    </item>
+    
+    <item>
+      <title>A. 走，我们扫雷去</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4a/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4a/</guid>
+      <description>题目背景 link你很喜欢玩扫雷。
+在游戏“扫雷”中，你面对的是一个由若干方格组成的矩阵，每个方格中可能有一颗地雷，也可能没有地雷。
+你的基本操作名叫“点开”。每一次，你可以选择一个格子并“点开”它，如果它是地雷，那么你的分数会被扣掉一些，如果它不是地雷，那么你会获得一分，并且会有一个数字显现在方格上，这个数字代表着周围的的八个方格（上、下、左、右、左上、左下、右上、右下）中一共有多少颗地雷（数字为 0 到 8）。如果点开的方格中的数字为 0（这代表这个方格周围的八个方格都不是地雷），那么它周围的方格也会被自动“点开”（这个过程可以递归，也即，如果新的方格中的数字也是 0，那么它周围的八个方格也会被自动“点开”。我们称其为“间接点开”，相对应的，被玩家直接点开的格子称为“直接点开”）。当玩家主动退出，或者时间耗尽后，游戏结束。
+请注意，本题的扫雷与标准的扫雷有一些区别：
+在标准的扫雷中，点开一个包含地雷的方格后，游戏会立刻失败 当玩家程序点开所有非地雷方格后，游戏不会自动结束，需要玩家程序主动退出。 每次“点开”一个包含数字 0 的格子时，你的程序会收到点开的格子所在的连通块中的所有数字为 0 的格子以及边缘那些数字不为 0 的格子，哪怕这些格子已经被点开过。这个在后文有具体的描述。 下面是 KDE 桌面系统中的“扫雷”游戏的例子（红色的小旗子代表这个方格中有地雷，空白的格子表示格子中的数字为 0）：
+经过夜以继日的练习后，高级版扫雷的 30×16 的地图规模对你来说已经是小菜一碟。于是，你决定玩点刺激的。比如，65536×65535 的扫雷？
+当然，如此大规模的扫雷肯定不能手工完成。于是，你打算把毕生所学融入到一个程序中，让这个程序来自动化地扫雷。
+题目描述 link你需要写一个（可能是并行的）程序，与我们提供的扫雷 game server 交互。
+你可以使用下列库函数来与 game server 交互：
+void minesweeper_init(int &amp;amp;N, int &amp;amp;K, int &amp;amp;constant_A); 在程序开始前，请调用此函数来初始化程序。这个函数会把地图的边长 N 存放在变量 N 中，把地图中的雷的数量 K 存放在变量 K 中，将评分参数 A（详见下文）存放在变量 constant_A 中。
+Channel create_channel(void); 请使用此函数创建一个用于和 game server 通信的 Channel 对象。保证不同的 Channel 之间互不干扰，但若有两个进程 / 线程同时操作同一个 Channel，那么大概率会出错。所以建议为每个进程 / 线程单独开一个 Channel。</description>
+    </item>
+    
+    <item>
+      <title>AI算子优化</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</guid>
+      <description>Problem linkYou&amp;rsquo;ve entered an AI laboratory in a university.
+There are many commonly used operators in the field of deep learning, and what you need to do today is to optimize three of them.
+The code of your project is included in problem attachments.
+matmul linkCalculate the result of multiplying two 2D matrices.
+You can modify the macro MM_KERNEL_SIMPLE in /src/math/matmul_simple.c to optimize the operator.
+If you want to test the operator yourself, you can run this</description>
+    </item>
+    
+    <item>
+      <title>RDMA就是快</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</guid>
+      <description>问题描述 linkTCP/IP 协议基于软件协议栈传输的这种方式已经无法适应高速数据传输的需求，成为网络性能进一步增长的瓶颈，特别是应用数据在用户态和内核态之间的拷贝带来ms级的延时，协议栈对数据包的解析、寻址、校验等操作需要消耗大量CPU资源。为此，RDMA技术替代了传统的TCP/IP软件协议栈的设计。RDMA的全称是远程直接内存访问（remote direct memory access），它在硬件上实现了kernel bypass技术，数据不需要经过软件协议栈，并且不需要CPU参与寻址、解析等操作，从而提供低延时、高带宽、低CPU使用的性能优势。
+然而，想要充分挖掘RDMA的性能优势并不是一个容易的任务。我们这里假设一个最简单的场景：有一个数据生产者producer与一个数据消费者consumer，生产者不断给consumer发送数据。我们在附件提供了一个样例程序。该样例程序包含了producer与consumer的实现。作为参赛者，你需要进一步优化该样例程序，以达到更大的传输性能。注意，参赛者的最终提交不能修改其中的farm_cons.cpp与farm_prod.cpp（改了也没用），其余文件都可以自由改动.。
+你可以做的事情包括但不限于: 对原有的ringbuffer进行常数优化；调整原有ringbuffer的参数；调整RDMA的传输参数与设置以适应应用场景；利用RDMA原语自由设计新的数据结构。
+（你也可以到 https://github.com/N2-Sys/rdma-ringbuffer-demo 去看未经比赛工作组修改的程序）
+你主要需要关注的文件是farm.h与farm.cpp。common.cpp包含一些rdma与ringbuffer的通用接口，你也可以复用或改动其中的代码。注意，如果需要深入改动代码，你最好对RDMA编程有一些基本的了解，我们提供了一些参考资料。
+提示： link大包已经快接近物理极限了，主要是小包优化。
+评测环境ib卡的max_mtu是4096KB
+测试方法 link测试分为若干轮。每一轮都会传输多个message，message大小随着轮数逐渐增大，是以64B为首项，8为公比直至1MB的等比数列。每一轮传输的数据总量为25GB，每个点时间越少，分数越高。
+具体来说：你的得分由你程序的加速比确定，可以参考下表：
+Size ZeroScoreSpeed(MiB/s) FullScoreSpeed(MiB/s) Score 64 104 1044 40 512 860 4304 40 4096 5746 8650 40 32768 10222 11500 10 262144 9730 11000 10 1048576 7015 10500 10 另有10分的满分奖励
+提交方法 link你需要保留初始工作区的架构，修改其中文件。
+将你的答案打包成zip后提交，请注意：所有文件必须放在压缩文件的根下。我们将编译你的程序，进行测试。
+具体解释：什么叫所有文件必须放在压缩文件的根下：
+压缩文件不包括子目录，直接解压就得到文件，目录结构举例：
+- include/ - farm_prod.cpp - farm_cons.cpp - farm.cpp - common.cpp - cmake/ - CMakeLists.txt 而不是：
+- rdma - include/ - farm_prod.</description>
+    </item>
+    
+    <item>
+      <title>A. 共轭梯度法</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</guid>
+      <description>背景介绍 link在各类数值模拟计算问题中，求解线性方程是一个非常常见且重要的步骤。比如在流体数值计算（CFD）中，我们常常需要求解一个关于流体压力的泊松类型问题：
+$$ \frac{\delta t}{\rho}\nabla p = \nabla \cdot \vec {u} $$
+其中方程的左边是一个压力场$p$ 的二阶导数，而右边是速度场（矢量）的散度。通常我们想要在已知速度场的情况下，求解其对应的压力场 $p$，在特定的网格设定下，我们可以使用有限差分的方法我们可以将上面的微分方程转化为线性方程组。比如，下图演示了一个流体数值模拟中常用的，将压力存储在网格中心，将速度存储在网格界面上的离散形式：
+其对应的离散化方程式是：
+$$ \frac{\delta t}{\rho}\left[\frac{1}{dx}\cdot \left(\frac{p_{i+1,j}-p {i,j}}{dx} - \frac{p{i,j}-p_{i-1,j}}{dx} \right) + \frac{1}{dy} \cdot \left( \frac{p_{i,j+1}-p_{i,j}}{dy} - \frac{p_{i,j}-p_{i, j-1} }{dy} \right) \right] = \frac{u_{i,j}-u_{i-1,j}}{dx} + \frac{v_{i,j}- v_{i,j-1}}{dy} $$
+其中$i$和$j$都是 [1, n] 的整数，我们可以对整个计算区域的所有格子列出类似的方程共 $n×n$个。
+对上式稍作整理可以发现当格子大小$dx=dy $时，方程左边可以简化成
+$$ \frac{\delta t}{\rho dx^2}(4p_{i,j}-p_{i+1,j}-p_{i-1,j}-p_{i,j-1}- p_{i,j+1}) $$
+其中 $\frac{\delta t}{\rho dx^2}$是一个常数系数，为了简化问题我们可以直接将其省略。于是，我们可以将$p$ 的系数存入一个矩阵 $A$，而将$p$ 保存在一个向量中，上面的表达式就变成了如下的一个矩阵和向量的乘：
+于是这个问题就被转化为了求解线性方程组的问题。在各类数值仿真中，这样的例子还有很多很多。
+共轭梯度法（Conjugate-gradient，以下简称为 CG 方法）是一种求解系数矩阵为对称正定矩阵的线性方程组的迭代解法。假设我们要求解如下的线性系统：
+$Ax=b$
+其中$A$ 是一个对称且正定，大小为 $n×n$的实数矩阵，$x$ 为待求解的大小为 $n×1$的未知数向量。</description>
+    </item>
+    
+    <item>
+      <title>B. 高性能存储阵列的软件开销优化</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalb/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalb/</guid>
+      <description>一、背景介绍 link近些年来，SSD因其高带宽、低延迟、低能耗的特点，已经成为了高性能计算、数据中心、云服务等场景下的主要存储设备。但不幸的是，由于其自身的物理性质，相较于HDD，SSD通常更容易损坏，导致数据丢失。
+存储阵列（RAID）是解决这个问题的手段之一。通过条带化技术，RAID可以聚合多个SSD的性能，同时对外提供服务，以驱动高性能计算中大量I/O的场景；通过校验和技术，RAID可以保证存储阵列具有一定的容错性，即使其中的一个磁盘损坏，也能从剩余的磁盘中恢复数据。
+Linux software RAID（mdraid）是Linux内核中自带的RAID引擎，设计于二十多年前，因其高昂的软件开销，已不再适合用来创建和管理现有的高性能存储设备（如NVMe SSD）。如何优化mdraid，使得高性能SSD组成的存储阵列能够发挥出优异的性能，是现在学术界和工业界关注和研究的重点。
+二、赛题描述 link本次比赛允许优化mdraid中的任何软件开销，考虑到比赛时间限制，参赛者可以通过阅读论文[1][2]了解到mdraid中已知的可优化的开销。同时，我们鼓励参赛者自己通过perf，fio等工具剖析RAID软件栈，找出其他可优化的部分。
+下面简单介绍一下mdraid中的一个和锁相关开销，该开销的详细分析和说明可见论文[1]。如下图所示，在mdraid中，当I/O线程在处理写请求时，它首先会将数据分割为多个stripe unit。拥有相同offset的stripe unit属于同一个条带，它们会被一起处理 ①。但在处理之前，I/O线程需要向守护进程获取一个名为stripe_head的数据结构 ②。但是，为了防止多线程之间的冲突，mdraid使用全局的锁去管理stripe_head的分配。因此，如果我们使用多个线程来处理I/O请求，它们就会被这个锁阻塞，无法并行处理，造成大量的软件开销。解决这个问题的办法很简单，我们可以给每个stripe_head都分配一个锁，单独进行管理，再使用hash算法让不同的线程去找到不同的stripe_head，从而最大化线程的并行度。
+类似的软件开销还有很多，请参赛者务必阅读论文[1][2]，以对mdraid相关的设计和开销形成初步的了解。除此之外，这里推荐查看资料[3]，辅助阅读mdraid相关的代码。
+三、评测说明 link 我们允许修改附件中md文件夹下的任何代码，但其中很多代码只是因为编译需要而存在，和本次比赛相关度较低，因此我们建议参赛者关注文件raid5.，md.*；
+修改代码后，参赛者可以根据附件README安装测试环境，测试自己代码的正确性。评测过程中也会使用相同的内核（linux-5.11-46）；
+在评测过程中，我们会使用mdadm创建RAID5，参赛者可以参考[4]学习mdadm的使用方法；
+在评测过程中，我们会使用高性能的NVMe SSD组建RAID,如果参赛者自己的Coding环境没有足够的磁盘，可以参考附录A，使用RAM模拟磁盘;
+[1]的代码是开源的，我们允许参赛者整合该开源代码作为基础继续修改，但必须有其他的设计以作为此次参赛的内容；
+在评测过程中，我们会使用fio产生IO请求，参赛者可以参考[5]学习fio的使用。
+四、评分标准 link我们会用高性能的NVMe SSD组成2+1，4+1两种RAID5，并使用fio评估I/O的带宽和完成时延。带宽越高分数越高，延迟越低分数越高，按排名正态分布给分。我们使用到的测试参数如下表所示，其中worker thread的定义可以参考论文[1][2],并通过修改文件/sys/block/mdx/md/group_thread_cnt修改，这里mdx是你通过mdadm创建的RAID：
+RAID类型 I/O Size No. of I/O threads No. of Worker threads IO depth 类别 指标 分数占比 2+1 64 KB 8 8 32 随机写 带宽 6.25 % 2+1 128 KB 8 8 32 随机写 带宽 6.25 % 4+1 64 KB 8 8 32 随机写 带宽 6.</description>
+    </item>
+    
+    <item>
+      <title>C. 工程精度离散单元法计算程序优化</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalc/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalc/</guid>
+      <description>一、题目背景 link离散单元法 (discrete element method, DEM) 由岩土工程学者 Cundall 和 Strack 于 1979 年提出，是一种数值仿真方法。它将世界抽象为若干细小颗粒 (particle) 的集合，将时间抽象为若干个细小的时间步 (time step)，在每个时间步内，分析颗粒之间的接触 (contact)，通过适当的接触模型 (contact model) 计算接触力 (矩)，利用牛顿第三定律 (Newton&amp;rsquo;s third law) 赋予颗粒上。归集每个颗粒所受的合力 (矩)，然后利用牛顿第二定律 (Newton&amp;rsquo;s second law) 求得颗粒 (角) 加速度，再对 (角) 加速度两次时间积分，得到颗粒位置 (方位) 的变动。重复以上过程，即可模拟时间的流逝和世界的演变。
+DEM 因为基本假设简单，适用范围广，限制少。相比有限单元法 (finite element method, FEM)，DEM 可以自然模拟开裂、破碎等大变形问题，显式 DEM 也没有迭代收敛问题。DEM 被广泛用于土木工程、化学工程、工业工程等领域，通过数值仿真预测产品性能或工艺效果，从而指导工程实践。DEM 具有数值仿真共同的低成本优势，能以相比实验更低的成本，创造显著的经济效益。
+然而，DEM 有一个显著的劣势——计算量大，计算速度慢。因此，高性能计算 (high performance computing, HPC) 对 DEM 仿真的加速必不可少，以保证 DEM 的计算时间处于可接受的范围内，确保生产效率。
+2022 年 09 月，Taichi 社区举办了活动“Taichi DEM 代码优化挑战赛”。参赛作品使用 Taichi 高性能计算语言，编写 DEM 程序，丰富和完善其 DEM 各项功能。</description>
+    </item>
+    
+    <item>
+      <title>D. Linkpack节点的选择程序优化</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finald/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finald/</guid>
+      <description>赛题描述 link给定2个SPINE交换机下48个候选节点，要求在不超过3次Linpack计算的情况下，通过程序或脚本以全自动的方式选择16个节点，得到16节点的Linpack最优值。
+linpack的评测指标是gflops。
+输入 link无，选手可自行获取相关信息
+输出 link结果输出到output.txt，其中包含16个节点名(可通过hostname -s获取)。与最优值误差在0.1%之内的结果都算正确。
+提交方式 link选手提交一个压缩包，我们运行其中run.sh，选手程序输出结果，我们进行核验。选手程序中NB值等可在run.sh指定，最后输出gflops值。
+测试环境 link我们提供了一个样例集群共选手实验提交之用，请注意，该集群及网络拓扑与最终测试的集群并不一致，选手程序需要有通用性，请勿针对该集群进行设计。
+选手可以向linpack分区提交任务以测试。请注意，单次申请节点数不得超过4个，单次申请时间不得超过30分钟，否则将失去该节点申请资格。建议选手在compute节点进行编码，向linpack提交任务进行测试。
+申请节点时请加上--exclusive选项，以免受其他评测影响。
+提示 link1． 使用Intel OneAPI MKL函数库下的mp_linpack软件测试包用于Linpack测试（安装在/data/software/intel/mkl/）。我们的集群中，只有SCOW集群安装了该脚本，请 2． 建议编写dgemm测试程序用于筛选Linpack测试的NB值，以及筛选候选节点的双精度性能 3． 建议采用MPI pingpong测试的方式分析出候选节点的网络拓扑</description>
     </item>
     
   </channel>

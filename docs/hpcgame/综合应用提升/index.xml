@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4. 综合应用提升 on CS技术文档</title>
+    <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/</link>
+    <description>Recent content in 4. 综合应用提升 on CS技术文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 10 Oct 2022 02:21:15 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A. 走，我们扫雷去</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4a/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4a/</guid>
+      <description>题目背景 link你很喜欢玩扫雷。
+在游戏“扫雷”中，你面对的是一个由若干方格组成的矩阵，每个方格中可能有一颗地雷，也可能没有地雷。
+你的基本操作名叫“点开”。每一次，你可以选择一个格子并“点开”它，如果它是地雷，那么你的分数会被扣掉一些，如果它不是地雷，那么你会获得一分，并且会有一个数字显现在方格上，这个数字代表着周围的的八个方格（上、下、左、右、左上、左下、右上、右下）中一共有多少颗地雷（数字为 0 到 8）。如果点开的方格中的数字为 0（这代表这个方格周围的八个方格都不是地雷），那么它周围的方格也会被自动“点开”（这个过程可以递归，也即，如果新的方格中的数字也是 0，那么它周围的八个方格也会被自动“点开”。我们称其为“间接点开”，相对应的，被玩家直接点开的格子称为“直接点开”）。当玩家主动退出，或者时间耗尽后，游戏结束。
+请注意，本题的扫雷与标准的扫雷有一些区别：
+在标准的扫雷中，点开一个包含地雷的方格后，游戏会立刻失败 当玩家程序点开所有非地雷方格后，游戏不会自动结束，需要玩家程序主动退出。 每次“点开”一个包含数字 0 的格子时，你的程序会收到点开的格子所在的连通块中的所有数字为 0 的格子以及边缘那些数字不为 0 的格子，哪怕这些格子已经被点开过。这个在后文有具体的描述。 下面是 KDE 桌面系统中的“扫雷”游戏的例子（红色的小旗子代表这个方格中有地雷，空白的格子表示格子中的数字为 0）：
+经过夜以继日的练习后，高级版扫雷的 30×16 的地图规模对你来说已经是小菜一碟。于是，你决定玩点刺激的。比如，65536×65535 的扫雷？
+当然，如此大规模的扫雷肯定不能手工完成。于是，你打算把毕生所学融入到一个程序中，让这个程序来自动化地扫雷。
+题目描述 link你需要写一个（可能是并行的）程序，与我们提供的扫雷 game server 交互。
+你可以使用下列库函数来与 game server 交互：
+void minesweeper_init(int &amp;amp;N, int &amp;amp;K, int &amp;amp;constant_A); 在程序开始前，请调用此函数来初始化程序。这个函数会把地图的边长 N 存放在变量 N 中，把地图中的雷的数量 K 存放在变量 K 中，将评分参数 A（详见下文）存放在变量 constant_A 中。
+Channel create_channel(void); 请使用此函数创建一个用于和 game server 通信的 Channel 对象。保证不同的 Channel 之间互不干扰，但若有两个进程 / 线程同时操作同一个 Channel，那么大概率会出错。所以建议为每个进程 / 线程单独开一个 Channel。</description>
+    </item>
+    
+    <item>
+      <title>AI算子优化</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</guid>
+      <description>Problem linkYou&amp;rsquo;ve entered an AI laboratory in a university.
+There are many commonly used operators in the field of deep learning, and what you need to do today is to optimize three of them.
+The code of your project is included in problem attachments.
+matmul linkCalculate the result of multiplying two 2D matrices.
+You can modify the macro MM_KERNEL_SIMPLE in /src/math/matmul_simple.c to optimize the operator.
+If you want to test the operator yourself, you can run this</description>
+    </item>
+    
+    <item>
+      <title>RDMA就是快</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</guid>
+      <description>问题描述 linkTCP/IP 协议基于软件协议栈传输的这种方式已经无法适应高速数据传输的需求，成为网络性能进一步增长的瓶颈，特别是应用数据在用户态和内核态之间的拷贝带来ms级的延时，协议栈对数据包的解析、寻址、校验等操作需要消耗大量CPU资源。为此，RDMA技术替代了传统的TCP/IP软件协议栈的设计。RDMA的全称是远程直接内存访问（remote direct memory access），它在硬件上实现了kernel bypass技术，数据不需要经过软件协议栈，并且不需要CPU参与寻址、解析等操作，从而提供低延时、高带宽、低CPU使用的性能优势。
+然而，想要充分挖掘RDMA的性能优势并不是一个容易的任务。我们这里假设一个最简单的场景：有一个数据生产者producer与一个数据消费者consumer，生产者不断给consumer发送数据。我们在附件提供了一个样例程序。该样例程序包含了producer与consumer的实现。作为参赛者，你需要进一步优化该样例程序，以达到更大的传输性能。注意，参赛者的最终提交不能修改其中的farm_cons.cpp与farm_prod.cpp（改了也没用），其余文件都可以自由改动.。
+你可以做的事情包括但不限于: 对原有的ringbuffer进行常数优化；调整原有ringbuffer的参数；调整RDMA的传输参数与设置以适应应用场景；利用RDMA原语自由设计新的数据结构。
+（你也可以到 https://github.com/N2-Sys/rdma-ringbuffer-demo 去看未经比赛工作组修改的程序）
+你主要需要关注的文件是farm.h与farm.cpp。common.cpp包含一些rdma与ringbuffer的通用接口，你也可以复用或改动其中的代码。注意，如果需要深入改动代码，你最好对RDMA编程有一些基本的了解，我们提供了一些参考资料。
+提示： link大包已经快接近物理极限了，主要是小包优化。
+评测环境ib卡的max_mtu是4096KB
+测试方法 link测试分为若干轮。每一轮都会传输多个message，message大小随着轮数逐渐增大，是以64B为首项，8为公比直至1MB的等比数列。每一轮传输的数据总量为25GB，每个点时间越少，分数越高。
+具体来说：你的得分由你程序的加速比确定，可以参考下表：
+Size ZeroScoreSpeed(MiB/s) FullScoreSpeed(MiB/s) Score 64 104 1044 40 512 860 4304 40 4096 5746 8650 40 32768 10222 11500 10 262144 9730 11000 10 1048576 7015 10500 10 另有10分的满分奖励
+提交方法 link你需要保留初始工作区的架构，修改其中文件。
+将你的答案打包成zip后提交，请注意：所有文件必须放在压缩文件的根下。我们将编译你的程序，进行测试。
+具体解释：什么叫所有文件必须放在压缩文件的根下：
+压缩文件不包括子目录，直接解压就得到文件，目录结构举例：
+- include/ - farm_prod.cpp - farm_cons.cpp - farm.cpp - common.cpp - cmake/ - CMakeLists.txt 而不是：
+- rdma - include/ - farm_prod.</description>
+    </item>
+    
+  </channel>
+</rss>

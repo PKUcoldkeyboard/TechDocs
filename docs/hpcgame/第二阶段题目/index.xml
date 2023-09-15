@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5. 第二阶段题目 on CS技术文档</title>
+    <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/</link>
+    <description>Recent content in 5. 第二阶段题目 on CS技术文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 10 Oct 2022 02:21:15 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A. 共轭梯度法</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</guid>
+      <description>背景介绍 link在各类数值模拟计算问题中，求解线性方程是一个非常常见且重要的步骤。比如在流体数值计算（CFD）中，我们常常需要求解一个关于流体压力的泊松类型问题：
+$$ \frac{\delta t}{\rho}\nabla p = \nabla \cdot \vec {u} $$
+其中方程的左边是一个压力场$p$ 的二阶导数，而右边是速度场（矢量）的散度。通常我们想要在已知速度场的情况下，求解其对应的压力场 $p$，在特定的网格设定下，我们可以使用有限差分的方法我们可以将上面的微分方程转化为线性方程组。比如，下图演示了一个流体数值模拟中常用的，将压力存储在网格中心，将速度存储在网格界面上的离散形式：
+其对应的离散化方程式是：
+$$ \frac{\delta t}{\rho}\left[\frac{1}{dx}\cdot \left(\frac{p_{i+1,j}-p {i,j}}{dx} - \frac{p{i,j}-p_{i-1,j}}{dx} \right) + \frac{1}{dy} \cdot \left( \frac{p_{i,j+1}-p_{i,j}}{dy} - \frac{p_{i,j}-p_{i, j-1} }{dy} \right) \right] = \frac{u_{i,j}-u_{i-1,j}}{dx} + \frac{v_{i,j}- v_{i,j-1}}{dy} $$
+其中$i$和$j$都是 [1, n] 的整数，我们可以对整个计算区域的所有格子列出类似的方程共 $n×n$个。
+对上式稍作整理可以发现当格子大小$dx=dy $时，方程左边可以简化成
+$$ \frac{\delta t}{\rho dx^2}(4p_{i,j}-p_{i+1,j}-p_{i-1,j}-p_{i,j-1}- p_{i,j+1}) $$
+其中 $\frac{\delta t}{\rho dx^2}$是一个常数系数，为了简化问题我们可以直接将其省略。于是，我们可以将$p$ 的系数存入一个矩阵 $A$，而将$p$ 保存在一个向量中，上面的表达式就变成了如下的一个矩阵和向量的乘：
+于是这个问题就被转化为了求解线性方程组的问题。在各类数值仿真中，这样的例子还有很多很多。
+共轭梯度法（Conjugate-gradient，以下简称为 CG 方法）是一种求解系数矩阵为对称正定矩阵的线性方程组的迭代解法。假设我们要求解如下的线性系统：
+$Ax=b$
+其中$A$ 是一个对称且正定，大小为 $n×n$的实数矩阵，$x$ 为待求解的大小为 $n×1$的未知数向量。</description>
+    </item>
+    
+    <item>
+      <title>B. 高性能存储阵列的软件开销优化</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalb/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalb/</guid>
+      <description>一、背景介绍 link近些年来，SSD因其高带宽、低延迟、低能耗的特点，已经成为了高性能计算、数据中心、云服务等场景下的主要存储设备。但不幸的是，由于其自身的物理性质，相较于HDD，SSD通常更容易损坏，导致数据丢失。
+存储阵列（RAID）是解决这个问题的手段之一。通过条带化技术，RAID可以聚合多个SSD的性能，同时对外提供服务，以驱动高性能计算中大量I/O的场景；通过校验和技术，RAID可以保证存储阵列具有一定的容错性，即使其中的一个磁盘损坏，也能从剩余的磁盘中恢复数据。
+Linux software RAID（mdraid）是Linux内核中自带的RAID引擎，设计于二十多年前，因其高昂的软件开销，已不再适合用来创建和管理现有的高性能存储设备（如NVMe SSD）。如何优化mdraid，使得高性能SSD组成的存储阵列能够发挥出优异的性能，是现在学术界和工业界关注和研究的重点。
+二、赛题描述 link本次比赛允许优化mdraid中的任何软件开销，考虑到比赛时间限制，参赛者可以通过阅读论文[1][2]了解到mdraid中已知的可优化的开销。同时，我们鼓励参赛者自己通过perf，fio等工具剖析RAID软件栈，找出其他可优化的部分。
+下面简单介绍一下mdraid中的一个和锁相关开销，该开销的详细分析和说明可见论文[1]。如下图所示，在mdraid中，当I/O线程在处理写请求时，它首先会将数据分割为多个stripe unit。拥有相同offset的stripe unit属于同一个条带，它们会被一起处理 ①。但在处理之前，I/O线程需要向守护进程获取一个名为stripe_head的数据结构 ②。但是，为了防止多线程之间的冲突，mdraid使用全局的锁去管理stripe_head的分配。因此，如果我们使用多个线程来处理I/O请求，它们就会被这个锁阻塞，无法并行处理，造成大量的软件开销。解决这个问题的办法很简单，我们可以给每个stripe_head都分配一个锁，单独进行管理，再使用hash算法让不同的线程去找到不同的stripe_head，从而最大化线程的并行度。
+类似的软件开销还有很多，请参赛者务必阅读论文[1][2]，以对mdraid相关的设计和开销形成初步的了解。除此之外，这里推荐查看资料[3]，辅助阅读mdraid相关的代码。
+三、评测说明 link 我们允许修改附件中md文件夹下的任何代码，但其中很多代码只是因为编译需要而存在，和本次比赛相关度较低，因此我们建议参赛者关注文件raid5.，md.*；
+修改代码后，参赛者可以根据附件README安装测试环境，测试自己代码的正确性。评测过程中也会使用相同的内核（linux-5.11-46）；
+在评测过程中，我们会使用mdadm创建RAID5，参赛者可以参考[4]学习mdadm的使用方法；
+在评测过程中，我们会使用高性能的NVMe SSD组建RAID,如果参赛者自己的Coding环境没有足够的磁盘，可以参考附录A，使用RAM模拟磁盘;
+[1]的代码是开源的，我们允许参赛者整合该开源代码作为基础继续修改，但必须有其他的设计以作为此次参赛的内容；
+在评测过程中，我们会使用fio产生IO请求，参赛者可以参考[5]学习fio的使用。
+四、评分标准 link我们会用高性能的NVMe SSD组成2+1，4+1两种RAID5，并使用fio评估I/O的带宽和完成时延。带宽越高分数越高，延迟越低分数越高，按排名正态分布给分。我们使用到的测试参数如下表所示，其中worker thread的定义可以参考论文[1][2],并通过修改文件/sys/block/mdx/md/group_thread_cnt修改，这里mdx是你通过mdadm创建的RAID：
+RAID类型 I/O Size No. of I/O threads No. of Worker threads IO depth 类别 指标 分数占比 2+1 64 KB 8 8 32 随机写 带宽 6.25 % 2+1 128 KB 8 8 32 随机写 带宽 6.25 % 4+1 64 KB 8 8 32 随机写 带宽 6.</description>
+    </item>
+    
+    <item>
+      <title>C. 工程精度离散单元法计算程序优化</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalc/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalc/</guid>
+      <description>一、题目背景 link离散单元法 (discrete element method, DEM) 由岩土工程学者 Cundall 和 Strack 于 1979 年提出，是一种数值仿真方法。它将世界抽象为若干细小颗粒 (particle) 的集合，将时间抽象为若干个细小的时间步 (time step)，在每个时间步内，分析颗粒之间的接触 (contact)，通过适当的接触模型 (contact model) 计算接触力 (矩)，利用牛顿第三定律 (Newton&amp;rsquo;s third law) 赋予颗粒上。归集每个颗粒所受的合力 (矩)，然后利用牛顿第二定律 (Newton&amp;rsquo;s second law) 求得颗粒 (角) 加速度，再对 (角) 加速度两次时间积分，得到颗粒位置 (方位) 的变动。重复以上过程，即可模拟时间的流逝和世界的演变。
+DEM 因为基本假设简单，适用范围广，限制少。相比有限单元法 (finite element method, FEM)，DEM 可以自然模拟开裂、破碎等大变形问题，显式 DEM 也没有迭代收敛问题。DEM 被广泛用于土木工程、化学工程、工业工程等领域，通过数值仿真预测产品性能或工艺效果，从而指导工程实践。DEM 具有数值仿真共同的低成本优势，能以相比实验更低的成本，创造显著的经济效益。
+然而，DEM 有一个显著的劣势——计算量大，计算速度慢。因此，高性能计算 (high performance computing, HPC) 对 DEM 仿真的加速必不可少，以保证 DEM 的计算时间处于可接受的范围内，确保生产效率。
+2022 年 09 月，Taichi 社区举办了活动“Taichi DEM 代码优化挑战赛”。参赛作品使用 Taichi 高性能计算语言，编写 DEM 程序，丰富和完善其 DEM 各项功能。</description>
+    </item>
+    
+    <item>
+      <title>D. Linkpack节点的选择程序优化</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finald/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finald/</guid>
+      <description>赛题描述 link给定2个SPINE交换机下48个候选节点，要求在不超过3次Linpack计算的情况下，通过程序或脚本以全自动的方式选择16个节点，得到16节点的Linpack最优值。
+linpack的评测指标是gflops。
+输入 link无，选手可自行获取相关信息
+输出 link结果输出到output.txt，其中包含16个节点名(可通过hostname -s获取)。与最优值误差在0.1%之内的结果都算正确。
+提交方式 link选手提交一个压缩包，我们运行其中run.sh，选手程序输出结果，我们进行核验。选手程序中NB值等可在run.sh指定，最后输出gflops值。
+测试环境 link我们提供了一个样例集群共选手实验提交之用，请注意，该集群及网络拓扑与最终测试的集群并不一致，选手程序需要有通用性，请勿针对该集群进行设计。
+选手可以向linpack分区提交任务以测试。请注意，单次申请节点数不得超过4个，单次申请时间不得超过30分钟，否则将失去该节点申请资格。建议选手在compute节点进行编码，向linpack提交任务进行测试。
+申请节点时请加上--exclusive选项，以免受其他评测影响。
+提示 link1． 使用Intel OneAPI MKL函数库下的mp_linpack软件测试包用于Linpack测试（安装在/data/software/intel/mkl/）。我们的集群中，只有SCOW集群安装了该脚本，请 2． 建议编写dgemm测试程序用于筛选Linpack测试的NB值，以及筛选候选节点的双精度性能 3． 建议采用MPI pingpong测试的方式分析出候选节点的网络拓扑</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1. 高性能计算简介 on CS技术文档</title>
+    <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/</link>
+    <description>Recent content in 1. 高性能计算简介 on CS技术文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 10 Oct 2022 02:21:15 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A. 欢迎参赛</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1a/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1a/</guid>
+      <description>欢迎参赛 link欢迎参加第零届北京大学高性能计算综合能力竞赛！
+点击题目列表上方“进入超算平台”按钮即可登入 SCOW 平台。我们为每位选手预充值了一些金额，以方便大家的使用。
+如果需要在线编写和调试程序，我们推荐使用在线 VSCode。您可以在 SCOW 平台上打开“交互式应用”，并创建一个 VSCode 应用，然后点击连接即可。请注意，默认情况下一小时后打开的实例会被自动销毁。在创建交互式应用时，保持页面的默认配置即可（分区：compute，核心数：1）。
+您也可以选择使用在线 Shell 进行程序的编写和调试，但是我们提倡：不要在登录节点上运行大型计算任务。您可以通过 SCOW 的文件管理功能进行文件的上传和下载。您放在您家目录（/data/home/您的SCOW用户名（注意：和您的用户名、用户ID并不相同））内的文件将在所有集群内的机器上可见。交互式应用的销毁并不会导致您家目录内文件的丢失，但是我们仍提倡定期将集群内保存的代码等文件下载到本地。我们不对该集群上任何数据丢失负责。
+如何使用 GPU：在分区 GPU （大写）即可使用 GPU，记得在分配任务时需要指定 --gres=gpu:1，从而分配一块 GPU。
+关于本题 link本题意图祝愿大家在本次比赛中取得良好成绩，所以获得本题的分数也十分容易。您只需下载集群中的 /data/hpcgame/bonus/bonus.dat 并提交，即可获得本题的全部分数！</description>
+    </item>
+    
+    <item>
+      <title>B. 实验室的新机器</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1b/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1b/</guid>
+      <description>题面 link小北实验室最近新购置了几台服务器，供日常实验数据分析使用。为了让大家都能合理且方便地运用这些机器，你在它们上面安装了 slurm 和 SCOW，大家都使用得很开心。
+李华今年刚加入小北实验室。他的日常工作需要分析大量数据。李华撰写了一个程序，专门用于分析他的这些数据。他使用他的笔记本运行这个程序。但是，李华发现，随着研究的不断深入，他需要分析的数据也越来越复杂；终于有一天，李华的笔记本“罢工”了——它所使用的“火龙一号”处理器在持续不断的满负荷工作过程中产生了过量的热，导致自己处于被烧毁的边缘，触发了“罢工”的保护机制。
+于是，李华申请了实验室服务器账号，接下来他便可以把他的程序运行在实验室服务器上，他的笔记本也可以得到良好的休息。这将为他省下一大笔修理费用。
+但是李华发现，每次在集群上运行自己的程序都需要先输入一堆与 slurm 有关的命令，他觉得这有些繁琐，希望你能帮他编写一个脚本，运行这个脚本以后，就会自动地创建 Job 、分配资源并运行李华的程序，在程序运行完成之后还会留存该程序运行的资源消耗情况。
+你看在李华这次承诺不再需要你为他撰写一封收件人是你自己的感谢信的份上，决定帮他这个忙。
+提交要求 link请你提交一个脚本文件（允许的格式：Shell 脚本或 Python 脚本），它需要满足如下要求：
+在文件头部具有一个 Shebang，用于表明如何运行该脚本（例子：对于一个 Bash 脚本来说，通常为 #!/bin/bash） 该脚本需要完成如下工作： 在计算节点上运行李华的程序（./program），这个程序接收一个命令行参数，在调用你撰写的脚本时，也会传入这个参数，如果你编写 Shell 脚本，可以使用 $1 来访问；计算节点应位于 compute 分区，配置为一个机器、一个核心（-N1 -n1 -c1） 将程序的输出重定向到 output.dat 使用 seff 命令查看运行这个 Job 的资源使用情况，并将输出重定向到 seff.dat 注：李华不会使用 sbatch，所以你的程序是直接在登录节点上被执行的！
+提示 link 为了降低你的工作量，李华的程序会获取 Slurm Job ID 并输出至 job_id.dat 文件。 李华的程序不会输出至 stderr，只会输出至 stdout。 在 Shell 脚本中，将一个文件的内容作为命令参数的部分方式： 使用类似 command_name &amp;quot;$(cat filename.dat)&amp;quot; 的方式 使用类似 cat filename.dat | xargs command_name 的方式 </description>
+    </item>
+    
+    <item>
+      <title>C. 小北问答超速版</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1c/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1c/</guid>
+      <description>背景 link小 A 热衷于小北问答。但是小 A 觉得手工判卷太慢了。于是小 A 学会了 YAML 并试图实现自动评分。小 A 把它称作“小北问答·超速版”。他想要测试自己编写的自动评分系统正不正确，于是出了一套题，让你来帮忙试一试。
+据你所知，“超速”的含义是小 A 把这套自动评分程序运行于超算上。
+小 A 的题目 link TOP500中能效最高的超算是哪一台？（回答一个单词）
+戈登贝尔奖是并行计算领域的最高奖项，戈登贝尔奖设立在哪一年？（回答一个数字）
+一般来说，服务器使用的 CPU 相比于同代同等级的游戏 CPU，核心更 （ ）（填多 / 少），多核性能更（ ）（填强 / 弱）
+一般来说，服务器使用的 CPU 相比于同代同等级的游戏 CPU，单核最高频率更 （ ）（填高 / 低），因此起单核性能更 （ ）（填强 / 弱）
+5~7 题：对如下实现的矩阵乘法CN×N​=CN×N​+AN×N​BN×N​, 假设单位内存是1：（均填写含 N 的表达式，可以使用 +-*/ 运算符、小括号和 pow(a, b)，sqrt(n) 函数，等价形式均可）
+内存写策略是直写，全相联（块大小是1），替换策略是LRU。
+for m in [1, N]: for n in [1,N]: for k in [1, N]: C[m,n] = C[m,n] &amp;#43; A[m, k] * B[k, n] 对矩阵A, B, C均进行了（ ）次读，对C进行了（ ）次写。</description>
+    </item>
+    
+    <item>
+      <title>D. 简单题</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1d/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1d/</guid>
+      <description>题面 linkHint: mmap写入空文件的处理方式：https://stackoverflow.com/questions/44553907/mmap-sigbus-error-and-initializing-the-file
+不要惊慌。你没有看错，这就是一道简单题。
+啊偶，虽然在某些比赛中，被标注为“简单题”的题目往往并不简单，但是在这场比赛中，我们确实试图提供一些简单题，以让大家能够更容易地获得更多分数。
+你需要用 P 个核心，把 N 个 32 位有符号整数数组中所有元素 + 1，并且求原来（未加一）的数字之和(MOD 100001651)并输出。
+输入 link从 input.bin 读入。这是一个二进制文件，用小端法储存储存，可以直接进行内存映射。（题目保证这些数字小于 230）
+第一个参数是核心数 P ，表示当前程序运行平台的核心数。第二个参数是 N ，表示数据总数（在32位整数表示范围内）。
+输出 link输出到 output.bin。也是一个二进制文件，建议直接内存映射写入。
+第一个数字是求和取模的结果，后面的数字是修改后的数组。
+提交 link提交一个 C++ 源程序即可。
+编译命令：
+g&amp;#43;&amp;#43; -o solution solution.cpp -O1 -fopenmp -std=c&amp;#43;&amp;#43;11 一个可能有用的数据生成器 link #!/usr/bin/php &amp;lt;?php if ($argc != 4) { die(&amp;#34;USAGE: {$argv[0]} &amp;lt;OUTPUT_PATH&amp;gt; &amp;lt;P&amp;gt; &amp;lt;N_RANGE&amp;gt;\n&amp;#34;); } function i32_to_bytes(int $n): array { $rslt = []; for ($i = 0; $i &amp;lt; 4; &amp;#43;&amp;#43;$i) { $rslt[] = $n &amp;amp; 255; $n &amp;gt;&amp;gt;= 8; } return $rslt; } function bytes_to_string(array $n): string { $a = array_map(fn (int $num) =&amp;gt; chr($num), $n); return join(&amp;#39;&amp;#39;, $a); } function i32_to_string(int $n): string { return bytes_to_string(i32_to_bytes($n)); } $f = fopen($argv[1], &amp;#34;w&amp;#34;); $p = (int) $argv[2]; $n = (1 &amp;lt;&amp;lt; ((int) trim($argv[3]))); $n &amp;#43;= $n &amp;#43; rand(0, $n / 2); $part = 1; $n = floor($n / $part) * $part; echo &amp;#34;p={$p}, n={$n}&amp;#34; .</description>
+    </item>
+    
+  </channel>
+</rss>
