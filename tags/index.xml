@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on CS技术文档</title>
-    <link>https://cuterwrite/TechDocs/tags/</link>
+    <link>https://cuterwrite.top/TechDocs/tags/</link>
     <description>Recent content in Tags on CS技术文档</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 08 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cuterwrite/TechDocs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beginners</title>
-      <link>https://cuterwrite/TechDocs/tags/beginners/</link>
+      <link>https://cuterwrite.top/TechDocs/tags/beginners/</link>
       <pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cuterwrite/TechDocs/tags/beginners/</guid>
+      <guid>https://cuterwrite.top/TechDocs/tags/beginners/</guid>
       <description></description>
     </item>
     
