@@ -84,7 +84,7 @@ void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数
 对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的 Deep Learning 的第9章。我们只引用书中的一张图介绍卷积的计算。
 对于矩阵 Input，我们使用一个比它规模小的多的 Kernel 进行运算。本题我们方法大概是这样：
 设 Input 是A∗B矩阵，Kernel 是C∗D矩阵，对于每个位置 (i, j) ，如果可以取一个和 Kernel 大小一样的不越界矩阵(本题不考虑padding)，我们就把这个矩阵中与 Kernel 中对应元素乘起来并求和，结果放在 Output(i,j) ​中。
-$$ \left[ \begin{array} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j+D)} \ I_{(i+1,j)} &amp;amp; I_{(i+1,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+1,j+D)} \ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \ I_{(i+C,j)} &amp;amp; I_{(i+C,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+C,j+D)} \ \end{array} \right] $$
+$$ \left[ \begin{array}{cccc} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j+D)} \ I_{(i+1,j)} &amp;amp; I_{(i+1,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+1,j+D)} \ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \ I_{(i+C,j)} &amp;amp; I_{(i+C,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+C,j+D)} \ \end{array} \right] $$
 计算完所有可算的 i, j ，我们就得到了卷积的输出。
 $$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{(p,q)} $$</description>
     </item>
