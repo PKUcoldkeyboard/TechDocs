@@ -2,53 +2,212 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/introduction/</loc>
-    <lastmod>2023-09-15T22:29:47+08:00</lastmod>
-  </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/</loc>
-    <lastmod>2023-09-15T22:29:47+08:00</lastmod>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/summary/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
   </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_yolov5/</loc>
     <lastmod>2023-09-15T10:10:47+08:00</lastmod>
   </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/readme/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_publaynet/</loc>
     <lastmod>2023-09-15T10:10:47+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/preface/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/introduction/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex0/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex1/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex2/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex3/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex4/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex5/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex6/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
   </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_to_labelimg/</loc>
     <lastmod>2023-09-15T10:10:47+08:00</lastmod>
   </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex7/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex8/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex9/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex10/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex11/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex12/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex13/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex14/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex15/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex16/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/supportconversions/yolov5_to_coco/</loc>
     <lastmod>2023-09-15T10:10:47+08:00</lastmod>
   </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex17/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex18/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex19/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex20/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex21/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex22/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex23/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex24/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex25/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex26/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/overview/</loc>
-    <lastmod>2023-09-15T22:29:47+08:00</lastmod>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
   </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/supportconversions/yolov5_yaml_to_coco/</loc>
     <lastmod>2023-09-15T10:10:47+08:00</lastmod>
   </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex27/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex28/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/supportconversions/</loc>
     <lastmod>2023-09-08T09:24:14+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex29/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
   </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/c-guide/</loc>
     <lastmod>2023-09-15T22:29:47+08:00</lastmod>
   </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex30/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex31/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex32/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex33/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex34/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex35/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex36/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/supportconversions/darknet_to_coco/</loc>
     <lastmod>2023-09-15T10:10:47+08:00</lastmod>
   </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex37/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex38/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex39/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex40/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex41/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex42/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex43/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex44/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex45/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex46/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_visual/</loc>
     <lastmod>2023-09-15T10:10:47+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/ex47/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/postscript/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
+  </url><url>
+    <loc>https://cuterwrite.top/TechDocs/docs/c-guide/donors/</loc>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
   </url><url>
     <loc>https://cuterwrite.top/TechDocs/docs/supportconversions/demo_of_coco/</loc>
     <lastmod>2023-09-15T10:10:47+08:00</lastmod>
   </url><url>
     <loc>https://cuterwrite.top/TechDocs/</loc>
-    <lastmod>2023-09-15T22:29:47+08:00</lastmod>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
   </url><url>
     <loc>https://cuterwrite.top/TechDocs/tags/beginners/</loc>
-    <lastmod>2023-09-15T22:29:47+08:00</lastmod>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
   </url><url>
     <loc>https://cuterwrite.top/TechDocs/tags/</loc>
-    <lastmod>2023-09-15T22:29:47+08:00</lastmod>
+    <lastmod>2023-09-15T22:54:01+08:00</lastmod>
   </url><url>
     <loc>https://cuterwrite.top/TechDocs/categories/</loc>
   </url>

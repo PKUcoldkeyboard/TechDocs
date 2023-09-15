@@ -8,12 +8,77 @@
     <language>zh-cn</language>
     <lastBuildDate>Fri, 15 Sep 2023 02:21:15 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/summary/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/summary/</guid>
+      <description> 笨办法学C 中文版 前言 导言：C的笛卡尔之梦 练习0：准备 练习1：启用编译器 练习2：用Make来代替Python 练习3：格式化输出 练习4：Valgrind 介绍 练习5：一个C程序的结构 练习6：变量类型 练习7：更多变量和一些算术 练习8：大小和数组 练习9：数组和字符串 练习10：字符串数组和循环 练习11：While循环和布尔表达式 练习12：If，Else If，Else 练习13：Switch语句 练习14：编写并使用函数 练习15：指针，可怕的指针 练习16：结构体和指向它们的指针 练习17：堆和栈的内存分配 练习18：函数指针 练习19：一个简单的对象系统 练习20：Zed的强大的调试宏 练习21：高级数据类型和控制结构 练习22：栈、作用域和全局 练习23：认识达夫设备 练习24：输入输出和文件 练习25：变参函数 练习26：编写第一个真正的程序 练习27：创造性和防御性编程 练习28：Makefile 进阶 练习29：库和链接 练习30：自动化测试 练习31：代码调试 练习32：双向链表 练习33：链表算法 练习34：动态数组 练习35：排序和搜索 练习36：更安全的字符串 练习37：哈希表 练习38：哈希算法 练习39：字符串算法 练习40：二叉搜索树 练习41：将 Cachegrind 和 Callgrind 用于性能调优 练习42：栈和队列 练习43：一个简单的统计引擎 练习44：环形缓冲区 练习45：一个简单的TCP/IP客户端 练习46：三叉搜索树 练习47：一个快速的URL路由 后记：“解构 K&amp;amp;R C” 已死 捐赠名单 </description>
+    </item>
+    
+    <item>
+      <title>labelImg → YOLOV5</title>
+      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_yolov5/</link>
+      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_yolov5/</guid>
+      <description>Convert the yolo data format marked by the labelImg library to YOLOV5 format data with one click.
+The labelImg label data directory structure is as follows (see dataset/labelImg_dataset for details):
+labelImg_dataset ├── classes.txt ├── images(13).jpg ├── images(13).txt ├── images(3).jpg ├── images(3).txt ├── images4.jpg ├── images4.txt ├── images5.jpg ├── images5.txt ├── images6.jpg ├── images7.jpg └── images7.txt Convert
+labelimg_to_yolov5 --src_dir dataset/labelImg_dataset \ --out_dir dataset/labelImg_dataset_output \ --val_ratio 0.2 \ --have_test true \ --test_ratio 0.</description>
+    </item>
+    
+    <item>
+      <title>笨办法学C 中文版</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/readme/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/readme/</guid>
+      <description>来源：Learn C The Hard Way
+作者：Zed A. Shaw
+译者：飞龙
+自豪地采用谷歌翻译
+一句 MMP 送给在座的各位程序正义垃圾。
+在线阅读 PDF格式 EPUB格式 MOBI格式 Github 赞助我 link 协议 link此版本遵循CC BY-NC-SA 4.0协议，原版无此约束。</description>
+    </item>
+    
+    <item>
+      <title>labelImg → PubLayNet</title>
+      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_publaynet/</link>
+      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_publaynet/</guid>
+      <description>Convert the yolo data format marked by the labelImg library to PubLayNet format data with one click.
+The labelImg label data directory structure is as follows (see dataset/labelImg_dataset for details):
+labelImg_dataset ├── classes.txt ├── images(13).jpg ├── images(13).txt ├── images(3).jpg ├── images(3).txt ├── images4.jpg ├── images4.txt ├── images5.jpg ├── images5.txt ├── images6.jpg ├── images7.jpg └── images7.txt Convert
+labelImg_to_publaynet --data_dir dataset/labelImg_dataset \ --val_ratio 0.2 \ --have_test true \ --test_ratio 0.2 --data_dir: the directory where labelImg is stored after labeling.</description>
+    </item>
+    
+    <item>
+      <title>前言</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/preface/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/preface/</guid>
+      <description>原文：Preface
+译者：飞龙
+这是本书创作中的转储版本，所用的措辞可能不是很好，也可能缺失了一些章节，但是你可以看到我编写这本书的过程，以及我的做事风格。
+你也可以随时发送邮件到help@learncodethehardway.org来向我寻求帮助，我通常会在1~2天之内答复。
+这个列表是一个讨论列表，并不只允许发布公告，它用于讨论本书和询问问题。
+最后，不要忘了我之前写过笨办法学Python，如果你还不会编程，你应该先读完它。LCTHW并不面向初学者，而是面向至少读完LPTHW或者已经懂得一门其它编程语言的人。
+常见问题 link这门课程需要多少时间？
+你应该花一些时间直到你掌握它，并且每天都要坚持编写代码。一些人花了大约三个月，其它人花了六个月，还有一些人只用了一个星期。
+我需要准备什么样的电脑？
+你需要OSX或者Linux来完成这本书。</description>
+    </item>
+    
+    <item>
       <title>导言：C的笛卡尔之梦</title>
       <link>https://cuterwrite.top/TechDocs/docs/c-guide/introduction/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/c-guide/introduction/</guid>
-      <description>导言：C的笛卡尔之梦 link 原文：Introduction: The Cartesian Dream Of C
+      <description>原文：Introduction: The Cartesian Dream Of C
 译者：飞龙
 ‍
 直到现在，凡是我当作最真实、最可靠而接受的东西，都是从感官或通过感官得来的。不过，我有时觉得这些感官是骗人的，并且为了小心谨慎起见，对于一经骗过我们的东西就决不完全加以信任。
@@ -43,27 +108,147 @@ C比其它语言都要难，而这是由于C并不对你隐藏细节，它们在
     </item>
     
     <item>
-      <title>labelImg → YOLOV5</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_yolov5/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
+      <title>练习0：准备</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex0/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_yolov5/</guid>
-      <description>Convert the yolo data format marked by the labelImg library to YOLOV5 format data with one click.
-The labelImg label data directory structure is as follows (see dataset/labelImg_dataset for details):
-labelImg_dataset ├── classes.txt ├── images(13).jpg ├── images(13).txt ├── images(3).jpg ├── images(3).txt ├── images4.jpg ├── images4.txt ├── images5.jpg ├── images5.txt ├── images6.jpg ├── images7.jpg └── images7.txt Convert
-labelimg_to_yolov5 --src_dir dataset/labelImg_dataset \ --out_dir dataset/labelImg_dataset_output \ --val_ratio 0.2 \ --have_test true \ --test_ratio 0.</description>
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex0/</guid>
+      <description>原文：Exercise 0: The Setup
+译者：飞龙
+在这一章中，你将为C语言编程配置好你的系统。一个好消息是对于所有使用Linux或者Mac的人，你的系统是为C语言编程而设计的。C语言的创造者也对Unix操作系统的创造做出了贡献，并且Linux和OSX都是基于Unix的。事实上，安装工作会非常简单。
+对于Windows上的用户，我有一个坏消息：在Windows上学习C非常痛苦。你可以在Windows上编写C代码，这并不是问题。问题是所有的库、函数和工具都和其它的C语言环境有些差异。C来自于Unix，并且和Unix平台配合得比较好。恐怕这是一个你并不能接受的事实。
+然而你并不需要为此恐慌。我并不是说要完全避免Windows。然而我说的是，如果你打算以最短的时间来学习C，你需要接触Unix并适应它。这同时也对你有帮助，因为懂得一些Unix的知识，也会让你懂得一些C编程的习惯，以及扩充你的技能。
+这也意味着每个人都需要使用命令行。嗯，就是这样。你将会进入命令行并且键入一些命令。不要为此感到害怕，因为我会告诉你要键入什么，以及结果应该是什么样子，所以你实际上会学到很多东西，同时扩充自己的技能。
+Linux link在多数Linux系统上你都需要安装一些包。对于基于Debian的系统，例如Ubuntu你需要使用下列命令来安装一些东西：
+$ sudo apt-get install build-essential 上面是命令行提示符的一个示例。你需要接触到能输入它的地方，找到你的“终端”程序并且运行它。接着，你会看到一个类似于$的Shell提示符，并且你可以在里面键入命令。不要键入$，而是它后面的东西。
+下面是在基于RPM的Linux系统，例如Fedora中执行相同安装工作的方法：
+$ su -c &amp;#34;yum groupinstall development-tools&amp;#34; 一旦你运行了它，它会正常工作，你应该能够做本书的第一个练习。如果不能请告诉我。
+Mac OSX link在 Mac OSX上，安装工作会更简单。首先，你需要从苹果官网下载最新的XCode，或者找到你的安装DVD并从中安装。需要下载的文件很大，要花费很长时间，所以我推荐你从DVD安装。同时，上网搜索“安装xcode”来指导你来安装它。
+一旦你安装完XCode，可能需要重启你的电脑。你可以找到你的终端程序并且将它放到快捷启动栏中。在本书中你会经常用到终端，所以最好将它放到顺手的区域。
+Windows link对于Windows用户，你需要在虚拟机中安装并运行一个基本的Ubuntu Linux系统，来做本书的练习，并且避免任何Windows中安装的问题。
+译者注：如果你的Windows版本是Win10 14316及之后的版本，可以开启Ubuntu子系统来获取Linux环境。
+文本编辑器 link对于程序员来说，文本编辑器的选择有些困难。对于初学者我推荐他们使用Gedit，因为它很简单，并且可以用于编写代码。然而，它在特定的国际化环境中并不能正常工作。如果你已经是老司机的话，你可以选用你最喜欢的编辑器。
+出于这种考虑，我打算让你尝试一些你所在平台上的标准的用于编程的文本编辑器，并且长期使用其中你最喜欢的一个。如果你已经用了Gedit并且很喜欢他，那么就一致用下去。如果你打算尝试一些不同的编辑器，则赶快尝试并选择一个。
+最重要的事情是，不要纠结于寻找最完美的编辑器。文本编辑器几乎都很奇怪，你只需要选择一个并熟悉它，如果你发现喜欢别的编辑器可以切换到它。不要在挑选它和把它变得更好上面花很多时间。
+这是亦可以尝试的一些编辑器：
+Linux和OSX上的Gedit。 OSX上的TextWrangler。 可以在终端中运行并几乎在任何地方工作的Nano。 Emacs和Emacs OSX。需要学习一些东西。 Vim和Mac Vim。 每个人都可能选择一款不同的编辑器，这些只是一部分人所选择的开源编辑器。在找到你最喜欢的那个之前，尝试其中的一些，甚至是一些商业编辑器。
+警告：不要使用IDE linkIDE，或者“集成开发工具”，会使你变笨。如果你想要成为一个好的程序员，它会是最糟糕的工具，因为它隐藏了背后的细节，你的工作是弄清楚背后发生了什么。如果你试着完成一些事情，并且所在平台根据特定的IDE而设计，它们非常有用，但是对于学习C编程（以及许多其它语言），它们没有意义。
+注
+如果你玩过吉他，你应该知道TAB是什么。但是对于其它人，让我对其做个解释。在音乐中有一种乐谱叫做“五线谱”。它是通用、非常古老的乐谱，以一种通用的方法来记下其它人应该在乐器上弹奏的音符。如果你弹过钢琴，这种乐谱非常易于使用，因为它几乎就是为钢琴和交响乐发明的。
+然而吉他是一种奇怪的乐器，它并不能很好地适用这种乐谱。所以吉他手通常使用一种叫做TAB（tablature）的乐谱。它所做的不是告诉你该弹奏哪个音符，而是在当时应该拨哪根弦。你完全可以在不知道所弹奏的单个音符的情况下学习整首乐曲，许多人也都是这么做的，但是如果你想知道你弹的是什么，TAB是毫无意义的。
+传统的乐谱可能比TAB更难一些，但是会告诉你如何演奏音乐，而不是如果玩吉他。通过传统的乐谱我可以在钢琴上，或者在贝斯上弹奏相同的曲子。我也可以将它放到电脑中，为它设计全部的曲谱。但是通过TAB我只能在吉他上弹奏。
+IDE就像是TAB，你可以用它非常快速地编程，但是你只能够用一种语言在一个平台上编程。这就是公司喜欢将它卖给你的原因。它们知道你比较懒，并且由于它只适用于它们自己的平台，他们就将你锁定在了那个平台上。
+打破这一循环的办法就是不用IDE学习编程。一个普通的文本编辑器，或者一个程序员使用的文本编辑器，例如Vim或者Emacs，能让你更熟悉代码。这有一点点困难，但是终结果是你将会熟悉任何代码，在任何计算机上，以任何语言，并且懂得背后的原理。</description>
     </item>
     
     <item>
-      <title>labelImg → PubLayNet</title>
-      <link>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_publaynet/</link>
-      <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
+      <title>练习1：启用编译器</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex1/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/labelimg_to_publaynet/</guid>
-      <description>Convert the yolo data format marked by the labelImg library to PubLayNet format data with one click.
-The labelImg label data directory structure is as follows (see dataset/labelImg_dataset for details):
-labelImg_dataset ├── classes.txt ├── images(13).jpg ├── images(13).txt ├── images(3).jpg ├── images(3).txt ├── images4.jpg ├── images4.txt ├── images5.jpg ├── images5.txt ├── images6.jpg ├── images7.jpg └── images7.txt Convert
-labelImg_to_publaynet --data_dir dataset/labelImg_dataset \ --val_ratio 0.2 \ --have_test true \ --test_ratio 0.2 --data_dir: the directory where labelImg is stored after labeling.</description>
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex1/</guid>
+      <description>原文：Exercise 1: Dust Off That Compiler
+译者：飞龙
+这是你用C写的第一个简单的程序：
+int main(int argc, char *argv[]) { puts(&amp;#34;Hello world.&amp;#34;); return 0; } 把它写进 ex1.c 并输入：
+$ make ex1 cc ex1.c -o ex1 你的编译器可能会使用一个有些不同的命令，但是最后应该会产生一个名为ex1的文件，并且你可以运行它。
+你会看到什么 link现在你可以运行程序并看到输出。
+$ ./ex1 Hello world. 如果没有，则需要返回去修复它。
+如何使它崩溃 link在这本书中我会添加一个小节，关于如何使程序崩溃。我会让你对程序做一些奇怪的事情，以奇怪的方式运行，或者修改代码，以便让你看到崩溃和编译器错误。
+对于这个程序，打开所有编译警告重新构建它：
+$ rm ex1 $ CFLAGS=&amp;#34;-Wall&amp;#34; make ex1 cc -Wall ex1.c -o ex1 ex1.c: In function &amp;#39;main&amp;#39;: ex1.c:3: warning: implicit declaration of function &amp;#39;puts&amp;#39; $ ./ex1 Hello world. $ 现在你会得到一个警告，说puts函数是隐式声明的。C语言的编译器很智能，它能够理解你想要什么。但是如果可以的话，你应该去除所有编译器警告。把下面一行添加到ex1.c文件的最上面，之后重新编译来去除它：</description>
+    </item>
+    
+    <item>
+      <title>练习2：用Make来代替Python</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex2/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex2/</guid>
+      <description>原文：Exercise 2: Make Is Your Python Now
+译者：飞龙
+在Python中，你仅仅需要输入python，就可以运行你想要运行的代码。Python的解释器会运行它们，并且在运行中导入它所需的库和其它东西。C是完全不同的东西，你需要事先编译你的源文件，并且手动将它们整合为一个可以自己运行的二进制文件。手动来做这些事情很痛苦，在上一个练习中只需要运行make就能完成。
+这个练习是GNU make 的速成课，由于你在学C语言，所以你就必须掌握它。Make 将贯穿剩下的课程，等效于Python（命令）。它会构建源码，执行测试，设置一些选项以及为你做所有Python通常会做的事情。
+有所不同的是，我会向你展示一些更智能化的Makefile魔法，你不需要指出你的C程序的每一个愚蠢的细节来构建它。我不会在练习中那样做，但是你需要先用一段时间的“低级 make”，我才能向你演示“大师级的make”。
+使用 Make link使用make的第一阶段就是用它已知的方式来构建程序。Make预置了一些知识，来从其它文件构建多种文件。上一个练习中，你已经使用像下面的命令来这样做了：
+$ make ex1 $ CFLAGS=&amp;#34;-Wall&amp;#34; make ex1 第一个命令中你告诉make，“我想创建名为ex1的文件”。于是Make执行下面的动作：
+文件ex1存在吗？ 没有。好的，有没有其他文件以ex1开头？ 有，叫做ex1.c。我知道如何构建.c文件吗？ 是的，我会运行命令cc ex1.c -o ex1来构建它。 我将使用cc从ex1.c文件来为你构建ex1。 上面列出的第二条命令是一种向make命令传递“修改器”的途径。如果你不熟悉Unix shell如何工作，你可以创建这些“环境变量”，它们会在程序运行时生效。有时你会用一条类似于export CFLAGS=&amp;quot;-Wall&amp;quot;的命令来执行相同的事情，取决于你所用的shell。然而你可以仅仅把它们放到你想执行的命令前面，于是环境变量只会在程序运行时有效。
+在这个例子中我执行了CFLAGS=&amp;quot;-Wall&amp;quot; make ex1，所以它会给make通常使用的cc命令添加-Wall选项。这行命令告诉cc编译器要报告所有的警告（然而实际上不可能报告所有警告）。
+实际上你可以深入探索使用make的上述方法，但是先让我们来看看Makefile，以便让你对make了解得更多一点。首先，创建文件并写入以下内容：
+CFLAGS=-Wall -g clean: rm -f ex1 将文件在你的当前文件夹上保存为Makefile。Make会自动假设当前文件夹中有一个叫做Makefile的文件，并且会执行它。此外，一定要注意：确保你只输入了 TAB 字符，而不是空格和 TAB 的混合。
+译者注：上述代码中第四行rm前面是一个 TAB ，而不是多个等量的空格。
+Makefile向你展示了make的一些新功能。首先我们在文件中设置CFLAGS，所以之后就不用再设置了。并且，我们添加了-g标识来获取调试信息。接着我们写了一个叫做clean的部分，它告诉make如何清理我们的小项目。
+确保它和你的ex1.c文件在相同的目录中，之后运行以下命令：
+$ make clean $ make ex1 你会看到什么 link如果代码能正常工作，你应该看到这些：
+$ make clean rm -f ex1 $ make ex1 cc -Wall -g ex1.</description>
+    </item>
+    
+    <item>
+      <title>练习3：格式化输出</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex3/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex3/</guid>
+      <description>原文：Exercise 3: Formatted Printing
+译者：飞龙
+不要删除Makefile，因为它可以帮你指出错误，以及当我们需要自动化处理一些事情时，可以向它添加新的东西。
+许多编程语言都使用了C风格的格式化输出，所以让我们尝试一下：
+#include &amp;lt;stdio.h&amp;gt; int main() { int age = 10; int height = 72; printf(&amp;#34;I am %d years old.\n&amp;#34;, age); printf(&amp;#34;I am %d inches tall.\n&amp;#34;, height); return 0; } 写完之后，执行通常的make ex3命令来构建并运行它。一定要确保你处理了所有的警告。
+这个练习的代码量很小，但是信息量很大，所以让我们逐行分析一下：
+首先你包含了另一个头文件叫做stdio.h。这告诉了编译器你要使用“标准的输入/输出函数”。它们之一就是printf。 然后你使用了一个叫age的变量并且将它设置为10。 接着你使用了一个叫height的变量并且设置为72。 再然后你使用printf函数来打印这个星球上最高的十岁的人的年龄和高度。 在printf中你会注意到你传入了一个字符串，这就是格式字符串，和其它语言中一样。 在格式字符串之后，你传入了一些变量，它们应该被printf“替换”进格式字符串中。 这些语句的结果就是你用printf处理了一些变量，并且它会构造出一个新的字符串，之后将它打印在终端上。
+你会看到什么 link当你做完上面的整个步骤，你应该看到这些东西：
+$ make ex3 cc -Wall -g ex3.c -o ex3 $ ./ex3 I am 10 years old. I am 72 inches tall. $ 不久之后我会停下来让你运行make，并且告诉你构建过程是什么样子的。所以请确保你正确得到了这些信息并且能正常执行。</description>
+    </item>
+    
+    <item>
+      <title>练习4：Valgrind 介绍</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex4/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex4/</guid>
+      <description>原文：Exercise 4: Introducing Valgrind
+译者：飞龙
+现在是介绍另一个工具的时间了，在你学习C的过程中，你会时时刻刻用到它，它就是 Valgrind。我现在就向你介绍 Valgrind，是因为从现在开始你将会在“如何使它崩溃”一节中用到它。Valgrind是一个运行你的程序的程序，并且随后会报告所有你犯下的可怕错误。它是一款相当棒的自由软件，我在编写C代码时一直使用它。
+回忆一下在上一章中，我让你移除printf的一个参数，来使你的代码崩溃。它打印出了一些奇怪的结果，但我并没有告诉你为什么它会这样打印。这个练习中我们要使用Valgrind来搞清楚为什么。
+注
+这本书的前几章讲解了一小段代码，同时掺杂了一些必要的工具，它们在本书的剩余章节会用到。这样做的原因是，阅读这本书的大多数人都不熟悉编译语言，也必然不熟悉自动化的辅助工具。通过先让你懂得如何使用make和Valgrind，我可以在后面使用它们更快地教你C语言，以及帮助你尽早找出所有的bug。
+这一章之后我就不再介绍更多的工具了，每章的内容大部分是代码，以及少量的语法。然而，我也会提及少量工具，我们可以用它来真正了解发生了什么，以及更好地了解常见的错误和问题。
+安装 Valgrind link你可以用OS上的包管理器来安装Valgrind，但是我想让你学习如何从源码安装程序。这涉及到下面几个步骤：
+下载源码的归档文件来获得源码 解压归档文件，将文件提取到你的电脑上 运行./configure来建立构建所需的配置 运行make来构建源码，就像之前所做的那样 运行sudo make install来将它安装到你的电脑 下面是执行以上步骤的脚本，我想让你复制它：
+curl -O http://valgrind.org/downloads/valgrind-3.6.1.tar.bz2 md5sum valgrind-3.6.1.tar.bz2 tar -xjvf valgrind-3.6.1.tar.bz2 cd valgrind-3.6.1 ./configure make sudo make install 按照这份脚本，但是如果 Valgrind 有新的版本请更新它。如果它不能正常执行，也请试着深入研究原因。
+使用 Valgrind link使用 Valgrind 十分简单，只要执行valgrind theprogram，它就会运行你的程序，随后打印出你的程序运行时出现的所有错误。在这个练习中，我们会崩溃在一个错误输出上，然后会修复它。
+首先，这里有一个ex3.c的故意出错的版本，叫做ex4.c。出于练习目的，将它再次输入到文件中：
+#include &amp;lt;stdio.h&amp;gt; /* Warning: This program is wrong on purpose. */ int main() { int age = 10; int height; printf(&amp;#34;I am %d years old.</description>
+    </item>
+    
+    <item>
+      <title>练习5：一个C程序的结构</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex5/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex5/</guid>
+      <description>原文：Exercise 5: The Structure Of A C Program
+译者：飞龙
+你已经知道了如何使用printf，也有了可以随意使用的一些工具，现在让我们逐行分析一个简单的C程序，以便你了解它是如何组织的。在这个程序里你会编写一些不是很熟悉的东西，我会轻松地把它们拆开。之后在后面的几章我们将会处理这些概念。
+#include &amp;lt;stdio.h&amp;gt; /* This is a comment. */ int main(int argc, char *argv[]) { int distance = 100; // this is also a comment printf(&amp;#34;You are %d miles away.\n&amp;#34;, distance); return 0; } 手动输入这段代码并运行它，之后确保在Valgrind下不出现任何错误。你可能不会这样做，但你得习惯它。
+你会看到什么 link这真是一段无聊的输出，但是这个练习的目的是让你分析代码：
+$ make ex5 cc -Wall -g ex5.c -o ex5 $ ./ex5 You are 100 miles away. $ 分解代码 link当你输出这段代码时，可能你只弄清楚了这段代码中的一小部分C语言特性。让我们快速地逐行分解它，之后我们可以做一些练习来更好地了解每一部分：
+ex5.c:1
+这是一个include，它是将一个文件的内容导入到这个文件的方式。C具有使用.h扩展名作为头文件的惯例。头文件中拥有一些函数的列表，这些都是你想在程序中使用的函数。
+ex5.c:3
+这是多行注释，你可以在/*和*/之间放置任意多行。</description>
+    </item>
+    
+    <item>
+      <title>练习6：变量类型</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex6/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex6/</guid>
+      <description>原文：Exercise 6: Types Of Variables
+译者：飞龙
+你应该掌握了一个简单的C程序的结构，所以让我们执行下一步简单的操作，声明不同类型的变量。
+include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { int distance = 100; float power = 2.345f; double super_power = 56789.4532; char initial = &amp;#39;A&amp;#39;; char first_name[] = &amp;#34;Zed&amp;#34;; char last_name[] = &amp;#34;Shaw&amp;#34;; printf(&amp;#34;You are %d miles away.\n&amp;#34;, distance); printf(&amp;#34;You have %f levels of power.\n&amp;#34;, power); printf(&amp;#34;You have %f awesome super powers.\n&amp;#34;, super_power); printf(&amp;#34;I have an initial %c.\n&amp;#34;, initial); printf(&amp;#34;I have a first name %s.</description>
     </item>
     
     <item>
@@ -73,6 +258,134 @@ labelImg_to_publaynet --data_dir dataset/labelImg_dataset \ --val_ratio 0.2 \ --
       
       <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_to_labelimg/</guid>
       <description>One-click conversion of COCO format data to labelImg labeled yolo format data. COCO format directory structure（see dataset/YOLOV5_COCO_format for details）： YOLOV5_COCO_format ├── annotations │ ├── instances_train2017.json │ └── instances_val2017.json ├── train2017 │ ├── 000000000001.jpg │ └── 000000000002.jpg └── val2017 └── 000000000001.jpg Convert coco_to_labelimg --data_dir dataset/YOLOV5_COCO_format --data_dir: the directory where the COCO format dataset is located. Default is dataset/YOLOV5_COCO_format. Converted directory structure (see dataset/COCO_labelImg_format for details): COCO_labelImg_format ├── train │ ├── 000000000001.</description>
+    </item>
+    
+    <item>
+      <title>练习7：更多变量和一些算术</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex7/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex7/</guid>
+      <description>原文：Exercise 7: More Variables, Some Math
+译者：飞龙
+你可以通过声明int，float，char和double类型的变量，来对它们做更多的事情，让我们来熟悉它们吧。接下来我们会在各种数学表达式中使用它们，所以我会向你介绍C的基本算术操作。
+int main(int argc, char *argv[]) { int bugs = 100; double bug_rate = 1.2; printf(&amp;#34;You have %d bugs at the imaginary rate of %f.\n&amp;#34;, bugs, bug_rate); long universe_of_defects = 1L * 1024L * 1024L * 1024L; printf(&amp;#34;The entire universe has %ld bugs.\n&amp;#34;, universe_of_defects); double expected_bugs = bugs * bug_rate; printf(&amp;#34;You are expected to have %f bugs.\n&amp;#34;, expected_bugs); double part_of_universe = expected_bugs / universe_of_defects; printf(&amp;#34;That is only a %e portion of the universe.</description>
+    </item>
+    
+    <item>
+      <title>练习8：大小和数组</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex8/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex8/</guid>
+      <description>原文：Exercise 8: Sizes And Arrays
+译者：飞龙
+在上一个练习中你做了一些算术运算，并且使用了&#39;\0&#39;（空）字符。这对于其它语言来说非常奇怪，因为它们把“字符串”和“字节数组”看做不同的东西。但是C中的字符串就是字节数组，并且只有不同的打印函数才知道它们的不同。
+在我真正解释其重要性之前，我先要介绍一些概念：sizeof和数组。下面是我们将要讨论的一段代码：
+#include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { int areas[] = {10, 12, 13, 14, 20}; char name[] = &amp;#34;Zed&amp;#34;; char full_name[] = { &amp;#39;Z&amp;#39;, &amp;#39;e&amp;#39;, &amp;#39;d&amp;#39;, &amp;#39; &amp;#39;, &amp;#39;A&amp;#39;, &amp;#39;.&amp;#39;, &amp;#39; &amp;#39;, &amp;#39;S&amp;#39;, &amp;#39;h&amp;#39;, &amp;#39;a&amp;#39;, &amp;#39;w&amp;#39;, &amp;#39;\0&amp;#39; }; // WARNING: On some systems you may have to change the // %ld in this code to a %u since it will use unsigned ints printf(&amp;#34;The size of an int: %ld\n&amp;#34;, sizeof(int)); printf(&amp;#34;The size of areas (int[]): %ld\n&amp;#34;, sizeof(areas)); printf(&amp;#34;The number of ints in areas: %ld\n&amp;#34;, sizeof(areas) / sizeof(int)); printf(&amp;#34;The first area is %d, the 2nd %d.</description>
+    </item>
+    
+    <item>
+      <title>练习9：数组和字符串</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex9/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex9/</guid>
+      <description>原文：Exercise 9: Arrays And Strings
+译者：飞龙
+上一个练习中，我们学习了如何创建基本的数组，以及数组如何映射为字符串。这个练习中我们会更加全面地展示数组和字符串的相似之处，并且深入了解更多内存布局的知识。
+这个练习向你展示了C只是简单地将字符串储存为字符数组，并且在结尾加上&#39;\0&#39;（空字符）。你可能在上个练习中得到了暗示，因为我们手动这样做了。下面我会通过将它与数字数组比较，用另一种方法更清楚地实现它。
+#include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { int numbers[4] = {0}; char name[4] = {&amp;#39;a&amp;#39;}; // first, print them out raw printf(&amp;#34;numbers: %d %d %d %d\n&amp;#34;, numbers[0], numbers[1], numbers[2], numbers[3]); printf(&amp;#34;name each: %c %c %c %c\n&amp;#34;, name[0], name[1], name[2], name[3]); printf(&amp;#34;name: %s\n&amp;#34;, name); // setup the numbers numbers[0] = 1; numbers[1] = 2; numbers[2] = 3; numbers[3] = 4; // setup the name name[0] = &amp;#39;Z&amp;#39;; name[1] = &amp;#39;e&amp;#39;; name[2] = &amp;#39;d&amp;#39;; name[3] = &amp;#39;\0&amp;#39;; // then print them out initialized printf(&amp;#34;numbers: %d %d %d %d\n&amp;#34;, numbers[0], numbers[1], numbers[2], numbers[3]); printf(&amp;#34;name each: %c %c %c %c\n&amp;#34;, name[0], name[1], name[2], name[3]); // print the name like a string printf(&amp;#34;name: %s\n&amp;#34;, name); // another way to use name char *another = &amp;#34;Zed&amp;#34;; printf(&amp;#34;another: %s\n&amp;#34;, another); printf(&amp;#34;another each: %c %c %c %c\n&amp;#34;, another[0], another[1], another[2], another[3]); return 0; } 在这段代码中，我们创建了一些数组，并对数组元素赋值。在numbers中我们设置了一些数字，然而在names中我们实际上手动构造了一个字符串。</description>
+    </item>
+    
+    <item>
+      <title>练习10：字符串数组和循环</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex10/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex10/</guid>
+      <description>原文：Exercise 10: Arrays Of Strings, Looping
+译者：飞龙
+你现在可以创建不同类型的数组，并且也知道了“字符串”和“字节数组”是相同的东西。接下来，我们要更进一步，创建一个包含字符串的数组。我也会介绍第一个循环结构，for循环来帮我们打印出这一新的数据结构。
+这一章的有趣之处就是你的程序中已经有一个现成的字符串数组，main函数参数中的char *argv[]。下面这段代码打印出了所有你传入的命令行参数：
+#include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { int i = 0; // go through each string in argv // why am I skipping argv[0]? for(i = 1; i &amp;lt; argc; i&amp;#43;&amp;#43;) { printf(&amp;#34;arg %d: %s\n&amp;#34;, i, argv[i]); } // let&amp;#39;s make our own array of strings char *states[] = { &amp;#34;California&amp;#34;, &amp;#34;Oregon&amp;#34;, &amp;#34;Washington&amp;#34;, &amp;#34;Texas&amp;#34; }; int num_states = 4; for(i = 0; i &amp;lt; num_states; i&amp;#43;&amp;#43;) { printf(&amp;#34;state %d: %s\n&amp;#34;, i, states[i]); } return 0; } for循环的格式是这样的：</description>
+    </item>
+    
+    <item>
+      <title>练习11：While循环和布尔表达式</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex11/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex11/</guid>
+      <description>原文：Exercise 11: While-Loop And Boolean Expressions
+译者：飞龙
+你已经初步了解C语言如何处理循环，但是你可能不是很清楚布尔表达式i &amp;lt; argc是什么。在学习while循环之前，让我先来对布尔表达式做一些解释。
+在C语言中，实际上没有真正的“布尔”类型，而是用一个整数来代替，0代表false，其它值代表true。上一个练习中表达式i &amp;lt; argc实际上值为1或者0，并不像Python是显式的Ture或者False。这是C语言更接近计算机工作方式的另一个例子，因为计算机只把值当成数字。
+现在用while循环来实现和上一个练习相同的函数。这会让你使用两种循环，来观察两种循环是什么关系。
+#include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { // go through each string in argv int i = 0; while(i &amp;lt; argc) { printf(&amp;#34;arg %d: %s\n&amp;#34;, i, argv[i]); i&amp;#43;&amp;#43;; } // let&amp;#39;s make our own array of strings char *states[] = { &amp;#34;California&amp;#34;, &amp;#34;Oregon&amp;#34;, &amp;#34;Washington&amp;#34;, &amp;#34;Texas&amp;#34; }; int num_states = 4; i = 0; // watch for this while(i &amp;lt; num_states) { printf(&amp;#34;state %d: %s\n&amp;#34;, i, states[i]); i&amp;#43;&amp;#43;; } return 0; } 你可以看到while循环的语法更加简单：</description>
+    </item>
+    
+    <item>
+      <title>练习12：If，Else If，Else</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex12/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex12/</guid>
+      <description>原文：Exercise 12: If, Else-If, Else
+译者：飞龙
+if语句是每个编程语言中共有的特性，包括C语言。下面是一段代码，使用了if语句来确保只传入了一个或两个命令行参数：
+#include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { int i = 0; if(argc == 1) { printf(&amp;#34;You only have one argument. You suck.\n&amp;#34;); } else if(argc &amp;gt; 1 &amp;amp;&amp;amp; argc &amp;lt; 4) { printf(&amp;#34;Here&amp;#39;s your arguments:\n&amp;#34;); for(i = 0; i &amp;lt; argc; i&amp;#43;&amp;#43;) { printf(&amp;#34;%s &amp;#34;, argv[i]); } printf(&amp;#34;\n&amp;#34;); } else { printf(&amp;#34;You have too many arguments. You suck.\n&amp;#34;); } return 0; } if语句的格式为：</description>
+    </item>
+    
+    <item>
+      <title>练习13：Switch语句</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex13/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex13/</guid>
+      <description>原文：Exercise 13: Switch Statement
+译者：飞龙
+在其它类似Ruby的语言中，switch语句可以处理任意类型的表达式。一些语言比如Python没有switch语句，因为带有布尔表达式的if语句可以做相同的事情。对于这些语言，switch语句比if语句更加灵活，然而内部的机制是一样的。
+C中的switch语句与它们不同，实际上是一个“跳转表”。你只能够放置结果为整数的表达式，而不是一些随机的布尔表达式，这些整数用于计算从swicth顶部到匹配部分的跳转。下面有一段代码，我要分解它来让你理解“跳转表”的概念：
+#include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { if(argc != 2) { printf(&amp;#34;ERROR: You need one argument.\n&amp;#34;); // this is how you abort a program return 1; } int i = 0; for(i = 0; argv[1][i] != &amp;#39;\0&amp;#39;; i&amp;#43;&amp;#43;) { char letter = argv[1][i]; switch(letter) { case &amp;#39;a&amp;#39;: case &amp;#39;A&amp;#39;: printf(&amp;#34;%d: &amp;#39;A&amp;#39;\n&amp;#34;, i); break; case &amp;#39;e&amp;#39;: case &amp;#39;E&amp;#39;: printf(&amp;#34;%d: &amp;#39;E&amp;#39;\n&amp;#34;, i); break; case &amp;#39;i&amp;#39;: case &amp;#39;I&amp;#39;: printf(&amp;#34;%d: &amp;#39;I&amp;#39;\n&amp;#34;, i); break; case &amp;#39;o&amp;#39;: case &amp;#39;O&amp;#39;: printf(&amp;#34;%d: &amp;#39;O&amp;#39;\n&amp;#34;, i); break; case &amp;#39;u&amp;#39;: case &amp;#39;U&amp;#39;: printf(&amp;#34;%d: &amp;#39;U&amp;#39;\n&amp;#34;, i); break; case &amp;#39;y&amp;#39;: case &amp;#39;Y&amp;#39;: if(i &amp;gt; 2) { // it&amp;#39;s only sometimes Y printf(&amp;#34;%d: &amp;#39;Y&amp;#39;\n&amp;#34;, i); } break; default: printf(&amp;#34;%d: %c is not a vowel\n&amp;#34;, i, letter); } } return 0; } 在这个程序中我们接受了单一的命令行参数，并且用一种极其复杂的方式打印出所有原因，来向你演示switch语句。下面是swicth语句的工作原理：</description>
+    </item>
+    
+    <item>
+      <title>练习14：编写并使用函数</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex14/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex14/</guid>
+      <description>原文：Exercise 14: Writing And Using Functions
+译者：飞龙
+到现在为止，你只使用了作为stdio.h头文件一部分的函数。在这个练习中你将要编写并使用自己的函数。
+#include &amp;lt;stdio.h&amp;gt; #include &amp;lt;ctype.h&amp;gt; // forward declarations int can_print_it(char ch); void print_letters(char arg[]); void print_arguments(int argc, char *argv[]) { int i = 0; for(i = 0; i &amp;lt; argc; i&amp;#43;&amp;#43;) { print_letters(argv[i]); } } void print_letters(char arg[]) { int i = 0; for(i = 0; arg[i] != &amp;#39;\0&amp;#39;; i&amp;#43;&amp;#43;) { char ch = arg[i]; if(can_print_it(ch)) { printf(&amp;#34;&amp;#39;%c&amp;#39; == %d &amp;#34;, ch, ch); } } printf(&amp;#34;\n&amp;#34;); } int can_print_it(char ch) { return isalpha(ch) || isblank(ch); } int main(int argc, char *argv[]) { print_arguments(argc, argv); return 0; } 在这个例子中你创建了函数来打印任何属于“字母”和“空白”的字符。下面是一个分解：</description>
+    </item>
+    
+    <item>
+      <title>练习15：指针，可怕的指针</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex15/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex15/</guid>
+      <description>原文：Exercise 15: Pointers Dreaded Pointers
+译者：飞龙
+指针是C中的一个著名的谜之特性，我会试着通过教授你一些用于处理它们的词汇，使之去神秘化。指针实际上并不复杂，只不过它们经常以一些奇怪的方式被滥用，这样使它们变得难以使用。如果你避免这些愚蠢的方法来使用指针，你会发现它们难以置信的简单。
+要想以一种我们可以谈论的方式来讲解指针，我会编写一个无意义的程序，它以三种方式打印了一组人的年龄：
+#include &amp;lt;stdio.h&amp;gt; int main(int argc, char *argv[]) { // create two arrays we care about int ages[] = {23, 43, 12, 89, 2}; char *names[] = { &amp;#34;Alan&amp;#34;, &amp;#34;Frank&amp;#34;, &amp;#34;Mary&amp;#34;, &amp;#34;John&amp;#34;, &amp;#34;Lisa&amp;#34; }; // safely get the size of ages int count = sizeof(ages) / sizeof(int); int i = 0; // first way using indexing for(i = 0; i &amp;lt; count; i&amp;#43;&amp;#43;) { printf(&amp;#34;%s has %d years alive.</description>
+    </item>
+    
+    <item>
+      <title>练习16：结构体和指向它们的指针</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex16/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex16/</guid>
+      <description>原文：Exercise 16: Structs And Pointers To Them
+译者：飞龙
+在这个练习中你将会学到如何创建struct，将一个指针指向它们，以及使用它们来理解内存的内部结构。我也会借助上一节课中的指针知识，并且让你使用malloc从原始内存中构造这些结构体。
+像往常一样，下面是我们将要讨论的程序，你应该把它打下来并且使它正常工作：
+#include &amp;lt;stdio.h&amp;gt; #include &amp;lt;assert.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;string.h&amp;gt; struct Person { char *name; int age; int height; int weight; }; struct Person *Person_create(char *name, int age, int height, int weight) { struct Person *who = malloc(sizeof(struct Person)); assert(who != NULL); who-&amp;gt;name = strdup(name); who-&amp;gt;age = age; who-&amp;gt;height = height; who-&amp;gt;weight = weight; return who; } void Person_destroy(struct Person *who) { assert(who !</description>
     </item>
     
     <item>
@@ -88,12 +401,240 @@ YOLOV5 ├── classes.txt ├── background_images # usually images that a
     </item>
     
     <item>
+      <title>练习17：堆和栈的内存分配</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex17/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex17/</guid>
+      <description>原文：Exercise 17: Heap And Stack Memory Allocation
+译者：飞龙
+在这个练习中，你会在难度上做一个大的跳跃，并且创建出用于管理数据库的完整的小型系统。这个数据库并不实用也存储不了太多东西，然而它展示了大多数到目前为止你学到的东西。它也以更加正规的方法介绍了内存分配，以及带领你熟悉文件处理。我们使用了一些文件IO函数，但是我并不想过多解释它们，你可以先试着自己理解。
+像通常一样，输入下面整个程序，并且使之正常工作，之后我们会进行讨论：
+#include &amp;lt;stdio.h&amp;gt; #include &amp;lt;assert.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;errno.h&amp;gt; #include &amp;lt;string.h&amp;gt; #define MAX_DATA 512 #define MAX_ROWS 100 struct Address { int id; int set; char name[MAX_DATA]; char email[MAX_DATA]; }; struct Database { struct Address rows[MAX_ROWS]; }; struct Connection { FILE *file; struct Database *db; }; void die(const char *message) { if(errno) { perror(message); } else { printf(&amp;#34;ERROR: %s\n&amp;#34;, message); } exit(1); } void Address_print(struct Address *addr) { printf(&amp;#34;%d %s %s\n&amp;#34;, addr-&amp;gt;id, addr-&amp;gt;name, addr-&amp;gt;email); } void Database_load(struct Connection *conn) { int rc = fread(conn-&amp;gt;db, sizeof(struct Database), 1, conn-&amp;gt;file); if(rc !</description>
+    </item>
+    
+    <item>
+      <title>练习18：函数指针</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex18/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex18/</guid>
+      <description>原文：Exercise 18: Pointers To Functions
+译者：飞龙
+函数在C中实际上只是指向程序中某一个代码存在位置的指针。就像你创建过的结构体指针、字符串和数组那样，你也可以创建指向函数的指针。函数指针的主要用途是向其他函数传递“回调”，或者模拟类和对象。在这个练习中我们会创建一些回调，并且下一节我们会制作一个简单的对象系统。
+函数指针的格式类似这样：
+int (*POINTER_NAME)(int a, int b) 记住如何编写它的一个方法是：
+编写一个普通的函数声明：int callme(int a, int b) 将函数用指针语法包装：int (*callme)(int a, int b) 将名称改成指针名称：int (*compare_cb)(int a, int b) 这个方法的关键是，当你完成这些之后，指针的变量名称为compare_cb，而你可以将它用作函数。这类似于指向数组的指针可以表示所指向的数组。指向函数的指针也可以用作表示所指向的函数，只不过是不同的名字。
+int (*tester)(int a, int b) = sorted_order; printf(&amp;#34;TEST: %d is same as %d\n&amp;#34;, tester(2, 3), sorted_order(2, 3)); 即使是对于返回指针的函数指针，上述方法依然有效：
+编写：char *make_coolness(int awesome_levels) 包装：char *(*make_coolness)(int awesome_levels) 重命名：char *(*coolness_cb)(int awesome_levels) 需要解决的下一个问题是使用函数指针向其它函数提供参数比较困难，比如当你打算向其它函数传递回调函数的时候。解决方法是使用typedef，它是C的一个关键字，可以给其它更复杂的类型起个新的名字。你需要记住的事情是，将typedef添加到相同的指针语法之前，然后你就可以将那个名字用作类型了。我使用下面的代码来演示这一特性：
+#include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;errno.h&amp;gt; #include &amp;lt;string.h&amp;gt; /** Our old friend die from ex17.</description>
+    </item>
+    
+    <item>
+      <title>练习19：一个简单的对象系统</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex19/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex19/</guid>
+      <description>原文：Exercise 19: A Simple Object System
+译者：飞龙
+我在学习面向对象编程之前学了C，所以它有助于我在C中构建面向对象系统，来理解OOP的基本含义。你可能在学习C之前就学了OOP语言，所以这章也可能会起到一种衔接作用。这个联系中，你将会构建一个简单的对象系统，但是也会了解更多关于C预处理器的事情。
+这个练习会构建一个简单的游戏，在游戏中你会在一个小型的城堡中杀死弥诺陶洛斯，并没有任何神奇之处，只是四个房间和一个坏家伙。这个练习同时是一个多文件的项目，并且比起之前的一些程序看起来更像一个真正的C程序。我在这里介绍C预处理器的原因，是你需要它来在你自己的程序中创建多个文件。
+C预处理器如何工作 linkC预处理器是个模板处理系统，它主要的用途是让C代码的编程更加容易，但是它通过一个语法感知的模板机制来实现。以前人们主要使用C预处理器来储存常量，以及创建“宏”来简化复杂的代码。在现代C语言中你会实际上使用它作为代码生成器来创建模板化的代码片段。
+C预处理器的工作原理是，如果你给它一个文件，比如.c文件，它会处理以#（井号）字符开头的各种文本。当它遇到一个这样的文本时，它会对输入文件中的文本做特定的替换。C预处理器的主要优点是他可以包含其他文件，并且基于该文件的内容对它的宏列表进行扩展。
+一个快速查看预处理器所做事情的方法，是对上个练习中的代码执行下列命令：
+cpp ex18.c | less 这会产生大量输出，但是如果你滚动它，会看到你使用#include包含的其他文件的内容。在原始的代码中向下滚动，你可以看到cpp如何基于头文件中不同的#define宏来转换代码。
+C编译器与cpp的集成十分紧密，这个例子只是向你展示它是如何在背后工作的。在现代C语言中，cpp系统也集成到C的函数中，你或许可以将它当做C语言的一部分。
+在剩余的章节中，我们会使用更多预处理器的语法，并且像往常一样解释它们。
+原型对象系统 link我们所创建的OOP系统是一个简单的“原型”风格的对象系统，很像JavaScript。你将以设置为字段的原型来开始，而不是类，接着将他们用作创建其它对象实例的基础。这个“没有类”的设计比起传统的基于类的对象系统更加易于实现和使用。
+Object头文件 link我打算将数据类型和函数声明放在一个单独的头文件中，叫做object.h。这个是一个标准的C技巧，可以让你集成二进制库，但其它程序员任然需要编译。在这个文件中，我使用了多个高级的C预处理器技巧，我接下来准备简略地描述它们，并且你会在后续的步骤中看到。
+#ifndef _object_h #define _object_h typedef enum { NORTH, SOUTH, EAST, WEST } Direction; typedef struct { char *description; int (*init)(void *self); void (*describe)(void *self); void (*destroy)(void *self); void *(*move)(void *self, Direction direction); int (*attack)(void *self, int damage); } Object; int Object_init(void *self); void Object_destroy(void *self); void Object_describe(void *self); void *Object_move(void *self, Direction direction); int Object_attack(void *self, int damage); void *Object_new(size_t size, Object proto, char *description); #define NEW(T, N) Object_new(sizeof(T), T##Proto, N) #define _(N) proto.</description>
+    </item>
+    
+    <item>
+      <title>练习20：Zed的强大的调试宏</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex20/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex20/</guid>
+      <description>原文：Exercise 20: Zed&amp;rsquo;s Awesome Debug Macros
+译者：飞龙
+在C中有一个永恒的问题，它伴随了你很长时间，然而在这个练习我打算使用一系列我开发的宏来解决它。到现在为止你都不知道它们的强大之处，所以你必须使用它们，总有一天你会来找我说，“Zed，这些调试宏真是太伟大了，我应该把我的第一个孩子的出生归功于你，因为你治好了我十年的心脏病，并且打消了我数次想要自杀的念头。真是要谢谢你这样一个好人，这里有一百万美元，和Leo Fender设计的Snakehead Telecaster电吉他的原型。”
+是的，它们的确很强大。
+C的错误处理问题 link几乎每个编程语言中，错误处理都非常难。有些语言尽可能试图避免错误这个概念，而另一些语言发明了复杂了控制结构，比如异常来传递错误状态。当然的错误大多是因为程序员假定错误不会发生，并且这一乐观的思想影响了他们所用和所创造的语言。
+C通过返回错误码或设置全局的errno值来解决这些问题，并且你需要检查这些值。这种机制可以检查现存的复杂代码中，你执行的东西是否发生错误。当你编写更多的C代码时，你应该按照下列模式：
+调用函数。 如果返回值出现错误（每次都必须检查）。 清理创建的所有资源。 打印出所有可能有帮助的错误信息。 这意味着对于每一个函数调用（是的，每个函数）你都可能需要多编写3~4行代码来确保它正常功能。这些还不包括清理你到目前创建的所有垃圾。如果你有10个不同的结构体，3个方式。和一个数据库链接，当你发现错误时你应该写额外的14行。
+之前这并不是个问题，因为发生错误时，C程序会像你以前做的那样直接退出。你不需要清理任何东西，因为OS会为你自动去做。然而现在很多C程序需要持续运行数周、数月或者数年，并且需要优雅地处理来自于多种资源的错误。你并不能仅仅让你的服务器在首次运行就退出，你也不能让你写的库使使用它的程序退出。这非常糟糕。
+其它语言通过异常来解决这个问题，但是这些问题也会在C中出现（其它语言也一样）。在C中你只能够返回一个值，但是异常是基于栈的返回系统，可以返回任意值。C语言中，尝试在栈上模拟异常非常困难，并且其它库也不会兼容。
+调试宏 link我使用的解决方案是，使用一系列“调试宏”，它们在C中实现了基本的调试和错误处理系统。这个系统非常易于理解，兼容于每个库，并且使C代码更加健壮和简洁。
+它通过实现一系列转换来处理错误，任何时候发生了错误，你的函数都会跳到执行清理和返回错误代码的“error:”区域。你可以使用check宏来检查错误代码，打印错误信息，然后跳到清理区域。你也可以使用一系列日志函数来打印出有用的调试信息。
+我现在会向你展示你目前所见过的，最强大且卓越的代码的全部内容。
+#ifndef __dbg_h__ #define __dbg_h__ #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;errno.h&amp;gt; #include &amp;lt;string.h&amp;gt; #ifdef NDEBUG #define debug(M, ...) #else #define debug(M, ...) fprintf(stderr, &amp;#34;DEBUG %s:%d: &amp;#34; M &amp;#34;\n&amp;#34;, __FILE__, __LINE__, ##__VA_ARGS__) #endif #define clean_errno() (errno == 0 ? &amp;#34;None&amp;#34; : strerror(errno)) #define log_err(M, ...) fprintf(stderr, &amp;#34;[ERROR] (%s:%d: errno: %s) &amp;#34; M &amp;#34;\n&amp;#34;, __FILE__, __LINE__, clean_errno(), ##__VA_ARGS__) #define log_warn(M, .</description>
+    </item>
+    
+    <item>
+      <title>练习21：高级数据类型和控制结构</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex21/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex21/</guid>
+      <description>原文：Exercise 21: Advanced Data Types And Flow Control
+译者：飞龙
+这个练习是C语言中所有可用的数据类型和控制结构的摘要。它也可以作为一份参考在补完你的知识，并且不含有任何代码。我会通过创建教学卡片的方式，让你记住一些信息，所以你会在脑子里记住所有重要的概念。
+这个练习非常有用，你应该花至少一周的时间来巩固内容并且补全这里所没有的元素。你应学出每个元素是什么意思，以及编写程序来验证你得出的结论。
+可用的数据类型 linkint
+储存普通的整数，默认为32位大小。
+译者注：int在32或64位环境下为32位，但它不应该被看作平台无关的。如果需要用到平台无关的定长整数，请使用int(n)_t。
+double
+储存稍大的浮点数。
+float
+储存稍小的浮点数。
+char
+储存单字节字符。
+void
+表示“无类型”，用于声明不返回任何东西的函数，或者所指类型不明的指针，例如void *thing。
+enum
+枚举类型，类似于整数，也可转换为整数，但是通过符号化的名称访问或设置。当switch语句中没有覆盖到所有枚举的元素时，一些编译器会发出警告。
+类型修饰符 linkunsigned
+修改类型，使它不包含任何负数，同时上界变高。
+signed
+可以储存正数和负数，但是上界会变为（大约）一半，下界变为和上界（大约）等长。
+译者注：符号修饰符只对char和*** int有效。*** int默认为signed，而char根据具体实现，可以默认为signed，也可以为unsigned。
+long
+对该类型使用较大的空间，使它能存下更大的数，通常使当前大小加倍。
+short
+对该类型使用较小的空间，使它储存能力变小，但是占据空间也变成一半。
+类型限定符 linkconst
+表示变量在初始化后不能改变。
+volatile
+表示会做最坏的打算，编译器不会对它做任何优化。通常仅在对变量做一些奇怪的事情时，才会用到它。
+register
+强制让编译器将这个变量保存在寄存器中，并且也可以无视它。目前的编译器更善于处理在哪里存放变量，所以应该只在确定这样会提升性能时使用它。
+类型转换 linkC使用了一种“阶梯形类型提升”的机制，它会观察运算符两边的变量，并且在运算之前将较小边的变量转换为较大边。这个过程按照如下顺序：
+long double double float long long long int (short, char) 译者注：short和char会在运算之前转换成int。同种类型的unsigned和signed运算，signed保持字节不变转换成unsigned。
+类型大小 linkstdint.h为定长的整数类型定义了一些typedef，同时也有一些用于这些类型的宏。这比老的limits.h更加易于使用，因为它是不变的。这些类型如下：
+int8_t
+8位符号整数。
+uint8_t
+8位无符号整数。
+int16_t
+16位符号整数。
+uint16_t
+16位无符号整数。
+int32_t</description>
+    </item>
+    
+    <item>
+      <title>练习22：栈、作用域和全局</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex22/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex22/</guid>
+      <description>原文：Exercise 22: The Stack, Scope, And Globals
+译者：飞龙
+许多人在开始编程时，对“作用域”这个概念都不是很清楚。起初它来源于系统栈的使用方式（在之前提到过一些），以及它用于临时变量储存的方式。这个练习中，我们会通过学习栈数据结构如何工作来了解作用域，然后再来看看现代C语言处理作用域的方式。
+这个练习的真正目的是了解一些比较麻烦的东西在C中如何存储。当一个人没有掌握作用域的概念时，它几乎也不能理解变量在哪里被创建，存在以及销毁。一旦你知道了这些，作用域的概念会变得易于理解。
+这个练习需要如下三个文件：
+ex22.h
+用于创建一些外部变量和一些函数的头文件。
+ex22.c
+它并不像通常一样，是包含main的源文件，而是含有一些ex22.h中声明的函数和变量，并且会变成ex22.o。
+ex22_main.c
+main函数实际所在的文件，它会包含另外两个文件，并演示了它们包含的东西以及其它作用域概念。
+ex22.h 和 ex22.c link你的第一步是创建你自己的ex22.h头文件，其中定义了所需的函数和“导出”变量。
+#ifndef _ex22_h #define _ex22_h // makes THE_SIZE in ex22.c available to other .c files extern int THE_SIZE; // gets and sets an internal static variable in ex22.c int get_age(); void set_age(int age); // updates a static variable that&amp;#39;s inside update_ratio double update_ratio(double ratio); void print_size(); #endif 最重要的事情是extern int THE_SIZE的用法，我将会在你创建完ex22.</description>
+    </item>
+    
+    <item>
+      <title>练习23：认识达夫设备</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex23/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex23/</guid>
+      <description>原文：Exercise 23: Meet Duff&amp;rsquo;s Device
+译者：飞龙
+这个练习是一个脑筋急转弯，我会向你介绍最著名的C语言黑魔法之一，叫做“达夫设备”，以“发明者”汤姆·达夫的名字命名。这一强大（或邪恶？）的代码中，几乎你学过的任何东西都被包装在一个小的结构中。弄清它的工作机制也是一个好玩的谜题。
+注
+C的一部分乐趣来源于这种神奇的黑魔法，但这也是使C难以使用的地方。你最好能够了解这些技巧，因为他会带给你关于C语言和你计算机的深入理解。但是，你应该永远都不要使用它们，并总是追求简单易读的代码。
+达夫设备由汤姆·达夫“发现”（或创造），它是一个C编译器的小技巧，本来不应该能够正常工作。我并不想告诉你做了什么，因为这是一个谜题，等着你来思考并尝试解决。你需要运行这段代码，之后尝试弄清它做了什么，以及为什么可以这样做。
+#include &amp;lt;stdio.h&amp;gt; #include &amp;lt;string.h&amp;gt; #include &amp;#34;dbg.h&amp;#34; int normal_copy(char *from, char *to, int count) { int i = 0; for(i = 0; i &amp;lt; count; i&amp;#43;&amp;#43;) { to[i] = from[i]; } return i; } int duffs_device(char *from, char *to, int count) { { int n = (count &amp;#43; 7) / 8; switch(count % 8) { case 0: do { *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 7: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 6: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 5: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 4: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 3: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 2: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 1: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; } while(--n &amp;gt; 0); } } return count; } int zeds_device(char *from, char *to, int count) { { int n = (count &amp;#43; 7) / 8; switch(count % 8) { case 0: again: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 7: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 6: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 5: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 4: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 3: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 2: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; case 1: *to&amp;#43;&amp;#43; = *from&amp;#43;&amp;#43;; if(--n &amp;gt; 0) goto again; } } return count; } int valid_copy(char *data, int count, char expects) { int i = 0; for(i = 0; i &amp;lt; count; i&amp;#43;&amp;#43;) { if(data[i] !</description>
+    </item>
+    
+    <item>
+      <title>练习24：输入输出和文件</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex24/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex24/</guid>
+      <description>原文：Exercise 24: Input, Output, Files
+译者：飞龙
+你已经学会了使用printf来打印变量，这非常不错，但是还需要学习更多。这个练习中你会用到fscanf和fgets在结构体中构建关于一个人的信息。在这个关于读取输入的简介之后，你会得到C语言IO函数的完整列表。其中一些你已经见过并且使用过了，所以这个练习也是一个记忆练习。
+#include &amp;lt;stdio.h&amp;gt; #include &amp;#34;dbg.h&amp;#34; #define MAX_DATA 100 typedef enum EyeColor { BLUE_EYES, GREEN_EYES, BROWN_EYES, BLACK_EYES, OTHER_EYES } EyeColor; const char *EYE_COLOR_NAMES[] = { &amp;#34;Blue&amp;#34;, &amp;#34;Green&amp;#34;, &amp;#34;Brown&amp;#34;, &amp;#34;Black&amp;#34;, &amp;#34;Other&amp;#34; }; typedef struct Person { int age; char first_name[MAX_DATA]; char last_name[MAX_DATA]; EyeColor eyes; float income; } Person; int main(int argc, char *argv[]) { Person you = {.age = 0}; int i = 0; char *in = NULL; printf(&amp;#34;What&amp;#39;s your First Name?</description>
+    </item>
+    
+    <item>
+      <title>练习25：变参函数</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex25/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex25/</guid>
+      <description>原文：Exercise 25: Variable Argument Functions
+译者：飞龙
+在C语言中，你可以通过创建“变参函数”来创建你自己的printf或者scanf版本。这些函数使用stdarg.h头，它们可以让你为你的库创建更加便利的接口。它们对于创建特定类型的“构建”函数、格式化函数和任何用到可变参数的函数都非常实用。
+理解“变参函数”对于C语言编程并不必要，我在编程生涯中也只有大约20次用到它。但是，理解变参函数如何工作有助于你对它的调试，并且让你更加了解计算机。
+/** WARNING: This code is fresh and potentially isn&amp;#39;t correct yet. */ #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdarg.h&amp;gt; #include &amp;#34;dbg.h&amp;#34; #define MAX_DATA 100 int read_string(char **out_string, int max_buffer) { *out_string = calloc(1, max_buffer &amp;#43; 1); check_mem(*out_string); char *result = fgets(*out_string, max_buffer, stdin); check(result != NULL, &amp;#34;Input error.&amp;#34;); return 0; error: if(*out_string) free(*out_string); *out_string = NULL; return -1; } int read_int(int *out_int) { char *input = NULL; int rc = read_string(&amp;amp;input, MAX_DATA); check(rc == 0, &amp;#34;Failed to read number.</description>
+    </item>
+    
+    <item>
+      <title>练习26：编写第一个真正的程序</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex26/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex26/</guid>
+      <description>原文：Exercise 26: Write A First Real Program
+译者：飞龙
+这本书你已经完成一半了，所以你需要做一个期中检测。期中检测中你需要重新构建一个我特地为本书编写的软件，叫做devpkg。随后你需要以一些方式扩展它，并且通过编写一些单元测试来改进代码。
+注
+我在一些你需要完成的练习之前编写了这个练习。如果你现在尝试这个练习，记住软件可能会含有一些bug，你可能由于我的错误会产生一些问题，也可能不知道需要什么来完成它。如果这样的话，通过help@learncodethehardway.org来告诉我，之后等待我写完其它练习。
+什么是devpkg？ linkdevpkg是一个简单的C程序，可以用于安装其它软件。我特地为本书编写了它，作为一种方式来教你真正的软件是如何构建的，以及如何复用他人的库。它使用了一个叫做Apache可移植运行时（APR）的库，其中含有许多工作跨平台的便利的C函数，包括Windows。此外，它只是从互联网（或本地文件）抓取代码，并且执行通常的./configure ; make ; make install命令，每个程序员都用到过。
+这个练习中，你的目标是从源码构建devpkg，完成我提供的每个挑战，并且使用源码来理解devpkg做了什么和为什么这样做。
+我们打算创建什么 link我们打算创建一个具有三个命令的工具：
+devpkg -S
+在电脑上安装新的软件。
+devpkg -I
+从URL安装软件。
+devpkg -L
+列出安装的所有软件。
+devpkg -F
+为手动构建抓取源代码。
+devpkg -B
+构建所抓取的源码代码并且安装它，即使它已经安装了。
+我们想让devpkg能够接受几乎任何URL，判断项目的类型，下载，安装，以及注册已经安装的软件。我们也希望它能够处理一个简单的依赖列表，以便它能够安装项目所需的所有软件。
+设计 link为了完成这一目标，devpkg具有非常简单的设计：
+使用外部命令
+大多数工作都是通过类似于curl、git和tar的外部命令完成的。这样减少了devpkg所需的代码量。
+简单的文件数据库
+你可以轻易使它变得很复杂，但是一开始你需要完成一个简单的文件数据库，位于/usr/local/.devpkg/db，来跟踪已安装的软件。
+/usr/local
+同样你可以使它更高级，但是对于初学者来说，假设项目始终位于/usr/local中，它是大多数Unix软件的标准安装目录。
+configure; make; make install
+假设大多数软件可以通过configure; make; make install来安装，也许configure是可选的。如果软件不能通过这种方式安装，要么提供某种方式来修改命令，要么devpkg就可以无视它。
+用户可以root
+我们假设用于可以使用sudo来提升至root权限，除非他们直到最后才想root。
+这会使我们的程序像当初设想的一样简单，并且对于它的功能来说已经足够了。之后你可以进一步修改它。
+Apache 可移植运行时 link你需要做的另外一件事情就是使用Apache可移植运行时（APR）来未完成这个练习获得一个可移植的工具集。APR并不是必要的，你也可以不用它，但是你需要写的代码就会非常多。我现在强制你使用APR，使你能够熟悉链接和使用其他的库。最后，APR也能在Windows上工作，所以你可以把它迁移到许多其它平台上。
+你应该获取apr-1.4.5和apr-util-1.3的库，以及浏览在apr.apache.org主站上的文档。
+下面是一个ShellScript，用于安装所需的所有库。你应该手动将它写到一个文件中，之后运行它直到APR安装好并且没有任何错误。
+set -e cd /tmp curl -L -O http://archive.apache.org/dist/apr/apr-1.4.6.tar.gz tar -xzvf apr-1.</description>
+    </item>
+    
+    <item>
       <title>前言</title>
       <link>https://cuterwrite.top/TechDocs/docs/overview/</link>
       <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/overview/</guid>
-      <description>前言 link这是一个计算机的技术资料库。</description>
+      <description>这是一个计算机的技术资料库。</description>
     </item>
     
     <item>
@@ -108,6 +649,202 @@ yolov5_yaml_to_coco --yaml_path dataset/YOLOV5_yaml/sample.yaml </description>
     </item>
     
     <item>
+      <title>练习27：创造性和防御性编程</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex27/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex27/</guid>
+      <description>原文：Exercise 27: Creative And Defensive Programming
+译者：飞龙
+你已经学到了大多数C语言的基础，并且准备好开始成为一个更严谨的程序员了。这里就是从初学者走向专家的地方，不仅仅对于C，更对于核心的计算机科学概念。我将会教给你一些核心的数据结构和算法，它们是每个程序员都要懂的，还有一些我在真实程序中所使用的一些非常有趣的东西。
+在我开始之前，我需要教给你一些基本的技巧和观念，它们能帮助你编写更好的软件。练习27到31会教给你高级的概念和特性，而不是谈论编程，但是这些之后你将会应用它们来编写核心库或有用的数据结构。
+编写更好的C代码（实际上是所有语言）的第一步是，学习一种新的观念叫做“防御性编程”。防御性编程假设你可能会制造出很多错误，之后尝试在每一步尽可能预防它们。这个练习中我打算教给你如何以防御性的思维来思考编程。
+创造性编程思维 link在这个简单的练习中要告诉你如何做到创造性是不可能的，但是我会告诉你一些涉及到任务风险和开放思维的创造力。恐惧会快速地扼杀创造力，所以我采用，并且许多程序员也采用的这种思维方式使我不会惧怕风险，并且看上去像个傻瓜。
+我不会犯错误。 人们所想的并不重要。 我脑子里面诞生的想法才是最好的。 我只是暂时接受了这种思维，并且在应用中用了一些小技巧。为了这样做我会提出一些想法，寻找创造性的解决方案，开一些奇奇怪怪的脑洞，并且不会害怕发明一些古怪的东西。在这种思维方式下，我通常会编写出第一个版本的糟糕代码，用于将想法描述出来。
+然而，当我完成我的创造性原型时，我会将它扔掉，并且将它变得严谨和可考。其它人在这里常犯的一个错误就是将创造性思维引入它们的实现阶段。这样会产生一种非常不同的破坏性思维，它是创造性思维的阴暗面：
+编写完美的软件是可行的。 我的大脑告诉我了真相，它不会发现任何错误，所以我写了完美的软件。 我的代码就是我自己，批判它的人也在批判我。 这些都是错误的。你经常会碰到一些程序员，它们对自己创造的软件具有强烈的荣誉感。这很正常，但是这种荣誉感会成为客观上改进作品的阻力。由于这种荣誉感和它们对作品的依恋，它们会一直相信它们编写的东西是完美的。只要它们忽视其它人的对这些代码的观点，它们就可以保护它们的玻璃心，并且永远不会改进。
+同时具有创造性思维和编写可靠软件的技巧是，采用防御性编程的思维。
+防御性编程思维 link在你做出创造性原型，并且对你的想法感觉良好之后，就应该切换到防御性思维了。防御性思维的程序员大致上会否定你的代码，并且相信下面这些事情：
+软件中存在错误。 你并不是你的软件，但你需要为错误负责。 你永远不可能消除所有错误，只能降低它们的可能性。 这种思维方式让你诚实地对待你的代码，并且为改进批判地分析它。注意上面并没有说你充满了错误，只是说你的代码充满错误。这是一个需要理解的关键，因为它给了你编写下一个实现的客观力量。
+就像创造性思维，防御性编程思维也有阴暗面。防御性程序员是一个惧怕任何事情的偏执狂，这种恐惧使他们远离可能的错误或避免犯错误。当你尝试做到严格一致或正确时这很好，但是它是创造力和专注的杀手。
+八个防御性编程策略 link一旦你接受了这一思维，你可以重新编写你的原型，并且遵循下面的八个策略，它们被我用于尽可能把代码变得可靠。当我编写代码的“实际”版本，我会严格按照下面的策略，并且尝试消除尽可能多的错误，以一些会破坏我软件的人的方式思考。
+永远不要信任输入
+永远不要提供的输入，并总是校验它。
+避免错误
+如果错误可能发生，不管可能性多低都要避免它。
+过早暴露错误
+过早暴露错误，并且评估发生了什么、在哪里发生以及如何修复。
+记录假设
+清楚地记录所有先决条件，后置条件以及不变量。
+防止过多的文档
+不要在实现阶段就编写文档，它们可以在代码完成时编写。
+使一切自动化
+使一切自动化，尤其是测试。
+简单化和清晰化
+永远简化你的代码，在没有牺牲安全性的同时变得最小和最整洁。
+质疑权威
+不要盲目遵循或拒绝规则。
+这些并不是全部，仅仅是一些核心的东西，我认为程序员应该在编程可靠的代码时专注于它们。要注意我并没有真正说明如何具体做到这些，我接下来会更细致地讲解每一条，并且会布置一些覆盖它们的练习。
+应用这八条策略 link这些观点都是一些流行心理学的陈词滥调，但是你如何把它们应用到实际编程中呢？我现在打算向你展示这本书中的一些代码所做的事情，这些代码用具体的例子展示每一条策略。这八条策略并不止于这些例子，你应该使用它们作为指导，使你的代码更可靠。
+永远不要信任输入 link让我们来看一个坏设计和“更好”的设计的例子。我并不想称之为好设计，因为它可以做得更好。看一看这两个函数，它们都复制字符串，main函数用于测试哪个更好。
+undef NDEBUG #include &amp;#34;dbg.h&amp;#34; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;assert.h&amp;gt; /* * Naive copy that assumes all inputs are always valid * taken from K&amp;amp;R C and cleaned up a bit.</description>
+    </item>
+    
+    <item>
+      <title>练习28：Makefile 进阶</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex28/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex28/</guid>
+      <description>原文：Exercise 28: Intermediate Makefiles
+译者：飞龙
+在下面的三个练习中你会创建一个项目的目录框架，用于构建之后的C程序。这个目录框架会在这本书中剩余的章节中使用，并且这个练习中我会涉及到Makefile便于你理解它。
+这个结构的目的是，在不凭借配置工具的情况下，使构建中等规模的程序变得容易。如果完成了它，你会学到很多GNU make和一些小型shell脚本方面的东西。
+基本的项目结构 link首先要做的事情是创建一个C的目录框架，并且放置一些多续项目都拥有的，基本的文件和目录。这是我的目录：
+$ mkdir c-skeleton $ cd c-skeleton/ $ touch LICENSE README.md Makefile $ mkdir bin src tests $ cp dbg.h src/ # this is from Ex20 $ ls -l total 8 -rw-r--r-- 1 zedshaw staff 0 Mar 31 16:38 LICENSE -rw-r--r-- 1 zedshaw staff 1168 Apr 1 17:00 Makefile -rw-r--r-- 1 zedshaw staff 0 Mar 31 16:38 README.md drwxr-xr-x 2 zedshaw staff 68 Mar 31 16:38 bin drwxr-xr-x 2 zedshaw staff 68 Apr 1 10:07 build drwxr-xr-x 3 zedshaw staff 102 Apr 3 16:28 src drwxr-xr-x 2 zedshaw staff 68 Mar 31 16:38 tests $ ls -l src total 8 -rw-r--r-- 1 zedshaw staff 982 Apr 3 16:28 dbg.</description>
+    </item>
+    
+    <item>
+      <title>练习29：库和链接</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex29/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex29/</guid>
+      <description>原文：Exercise 29: Libraries And Linking
+译者：飞龙
+C语言编程的核心能力之一就是链接OS所提供的库。链接是一种为你的程序添加额外特性的方法，这些特性由其它人在系统中创建并打包。你已经使用了一些自动包含的标准库，但是我打算对库的不同类型和它们的作用做个解释。
+首先，库在每个语言中都没有良好的设计。我不知道为什么，但是似乎语言的设计者都将链接视为不是特别重要的东西。它们通常令人混乱，难以使用，不能正确进行版本控制，并以不同的方式链接到各种地方。
+C没有什么不同，但是C中的库和链接是Unix操作系统的组件，并且可执行的格式在很多年前就设计好了。学习C如何链接库有助于理解OS如何工作，以及它如何运行你的程序。
+C中的库有两种基本类型：
+静态
+你可以使用ar和ranlib来构建它，就像上个练习中的libYOUR_LIBRARY.a那样（Windows下后缀为.lib）。这种库可以当做一系列.o对象文件和函数的容器，以及当你构建程序时，可以当做是一个大型的.o文件。
+动态
+它们通常以.so（Linux）或.dll（Windows）结尾。在OSX中，差不多有一百万种后缀，取决于版本和编写它的人。严格来讲，OSX中的.dylib，.bundle和framework这三个之间没什么不同。这些文件都被构建好并且放置到指定的地方。当你运行程序时，OS会动态加载这些文件并且“凭空”链接到你的程序中。
+我倾向于对小型或中型项目使用静态的库，因为它们易于使用，并且工作在在更多操作系统上。我也喜欢将所有代码放入静态库中，之后链接它来执行单元测试，或者链接到所需的程序中。
+动态库适用于大型系统，它的空间十分有限，或者其中大量程序都使用相同的功能。这种情况下不应该为每个程序的共同特性静态链接所有代码，而是应该将它放到动态库中，这样它仅仅会为所有程序加载一份。
+在上一个练习中，我讲解了如何构建静态库（.a），我会在本书的剩余部分用到它。这个练习中我打算向你展示如何构建一个简单的.so库，并且如何使用Unix系统的dlopen动态加载它。我会手动执行它，以便你可以理解每件实际发生的事情。之后，附加题这部分会使用c项目框架来创建它。
+动态加载动态库 link我创建了两个源文件来完成它。一个用于构建libex29.so库，另一个是个叫做ex29的程序，它可以加载这个库并运行其中的程序：
+#include &amp;lt;stdio.h&amp;gt; #include &amp;lt;ctype.h&amp;gt; #include &amp;#34;dbg.h&amp;#34; int print_a_message(const char *msg) { printf(&amp;#34;A STRING: %s\n&amp;#34;, msg); return 0; } int uppercase(const char *msg) { int i = 0; // BUG: \0 termination problems for(i = 0; msg[i] != &amp;#39;\0&amp;#39;; i&amp;#43;&amp;#43;) { printf(&amp;#34;%c&amp;#34;, toupper(msg[i])); } printf(&amp;#34;\n&amp;#34;); return 0; } int lowercase(const char *msg) { int i = 0; // BUG: \0 termination problems for(i = 0; msg[i] !</description>
+    </item>
+    
+    <item>
+      <title>练习30：自动化测试</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex30/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex30/</guid>
+      <description>原文：Exercise 30: Automated Testing
+译者：飞龙
+自动化测试经常用于例如Python和Ruby的其它语言，但是很少用于C。一部分原因是自动化加载和测试C的代码片段具有较高的难度。这一章中，我们会创建一个非常小型的测试“框架”，并且使用你的框架目录构建测试用例的示例。
+我接下来打算使用，并且你会包含进框架目录的框架，叫做“minunit”，它以Jera Design所编写的一小段代码作为开始，之后我扩展了它，就像这样：
+#undef NDEBUG #ifndef _minunit_h #define _minunit_h #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;dbg.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #define mu_suite_start() char *message = NULL #define mu_assert(test, message) if (!(test)) { log_err(message); return message; } #define mu_run_test(test) debug(&amp;#34;\n-----%s&amp;#34;, &amp;#34; &amp;#34; #test); \ message = test(); tests_run&amp;#43;&amp;#43;; if (message) return message; #define RUN_TESTS(name) int main(int argc, char *argv[]) {\ argc = 1; \ debug(&amp;#34;----- RUNNING: %s&amp;#34;, argv[0]);\ printf(&amp;#34;----\nRUNNING: %s\n&amp;#34;, argv[0]);\ char *result = name();\ if (result !</description>
+    </item>
+    
+    <item>
+      <title>练习31：代码调试</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex31/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex31/</guid>
+      <description>原文：Exercise 31: Debugging Code
+译者：飞龙
+我已经教给你一些关于我的强大的调试宏的技巧，并且你已经开始用它们了。当我调试代码时，我使用debug()宏，分析发生了什么以及跟踪问题。在这个练习中我打算教给你一些使用gdb的技巧，用于监视一个不会退出的简单程序。你会学到如何使用gdb附加到运行中的进程，并挂起它来观察发生了什么。在此之后我会给你一些用于gdb的小提示和小技巧。
+调试输出、GDB或Valgrind link我主要按照一种“科学方法”的方式来调试，我会提出可能的所有原因，之后排除它们或证明它们导致了缺陷。许多程序员拥有的问题是它们对解决bug的恐慌和急躁使他们觉得这种方法会“拖慢”他们。它们并没有注意到，它们已经失败了，并且在收集无用的信息。我发现日志（调试输出）会强迫我科学地解决bug，并且在更多情况下易于收集信息。
+此外，使用调试输出来作为我的首要调试工具的理由如下：
+你可以使用变量的调试输出，来看到程序执行的整个轨迹，它让你跟踪变量是如何产生错误的。使用gdb的话，你必须为每个变量放置查看和调试语句，并且难以获得执行的实际轨迹。 调试输出存在于代码中，当你需要它们是你可以重新编译使它们回来。使用gdb的话，你每次调试都需要重新配置相同的信息。 当服务器工作不正常时，它的调试日志功能易于打开，并且在它运行中可以监视日志来查看哪里不对。系统管理员知道如何处理日志，他们不知道如何使用gdb。 打印信息更加容易。调试器通常由于它奇特的UI和前后矛盾显得难用且古怪。debug(&amp;quot;Yo, dis right? %d&amp;quot;, my_stuff);就没有那么麻烦。 编写调试输出来发现缺陷，强迫你实际分析代码，并且使用科学方法。你可以认为它是，“我假设这里的代码是错误的”，你可以运行它来验证你的假设，如果这里没有错误那么你可以移动到其它地方。这看起来需要更长时间，但是实际上更快，因为你经历了“鉴别诊断”的过程，并排除所有可能的原因，直到你找到它。 调试输入更适于和单元测试一起运行。你可以实际上总是编译调试语句，单元测试时可以随时查看日志。如果你用gdb，你需要在gdb中重复运行单元测试，并跟踪他来查看发生了什么。 使用Valgrind可以得到和调试输出等价的内存相关的错误，所以你并不需要使用类似gdb的东西来寻找缺陷。 尽管所有原因显示我更倾向于debug而不是gdb，我还是在少数情况下回用到gdb，并且我认为你应该选择有助于你完成工作的工具。有时，你只能够连接到一个崩溃的程序并且四处转悠。或者，你得到了一个会崩溃的服务器，你只能够获得一些核心文件来一探究竟。这些货少数其它情况中，gdb是很好的办法。你最好准备尽可能多的工具来解决问题。
+接下来我会通过对比gdb、调试输出和Valgrind来详细分析，像这样：
+Valgrind用于捕获所有内存错误。如果Valgrind中含有错误或Valgrind会严重拖慢程序，我会使用gdb。 调试输出用于诊断或修复有关逻辑或使用上的缺陷。在你使用Valgrind之前，这些共计90%的缺陷。 使用gdb解决剩下的“谜之bug”，或如要收集信息的紧急情况。如果Valgrind不起作用，并且我不能打印出所需信息，我就会使用gdb开始四处搜索。这里我仅仅使用gdb来收集信息。一旦我弄清发生了什么，我会回来编程单元测试来引发缺陷，之后编程打印语句来查找原因。 调试策略 link这一过程适用于你打算使用任何调试技巧，无论是Valgrind、调试输出，或者使用调试器。我打算以使用gdb的形式来描述他，因为似乎人们在使用调试器是会跳过它。但是应当对每个bug使用它，直到你只需要在非常困难的bug上用到。
+创建一个小型文本文件叫做notes.txt，并且将它用作记录想法、bug和问题的“实验记录”。 在你使用gdb之前，写下你打算修复的bug，以及可能的产生原因。 对于每个原因，写下你所认为的，问题来源的函数或文件，或者仅仅写下你不知道。 现在启动gdb并且使用file:function挑选最可能的因素，之后在那里设置断点。 使用gdb运行程序，并且确认它是否是真正原因。查明它的最好方式就是看看你是否可以使用set命令，简单修复问题或者重现错误。 如果它不是真正原因，则在notes.txt中标记它不是，以及理由。移到下一个可能的原因，并且使最易于调试的，之后记录你收集到的信息。 这里你并没有注意到，它是最基本的科学方法。你写下一些假设，之后调试来证明或证伪它们。这让你洞察到更多可能的因素，最终使你找到他。这个过程有助于你避免重复步入同一个可能的因素，即使你发现它们并不可能。
+你也可以使用调试输出来执行这个过程。唯一的不同就是你实际在源码中编写假设来推测问题所在，而不是notes.txt中。某种程度上，调试输出强制你科学地解决bug，因为你需要将假写为打印语句。
+使用 GDB link我将在这个练习中调试下面这个程序，它只有一个不会正常终止的while循环。我在里面放置了一个usleep调用，使它循环起来更加有趣。
+#include &amp;lt;unistd.h&amp;gt; int main(int argc, char *argv[]) { int i = 0; while(i &amp;lt; 100) { usleep(3000); } return 0; } 像往常一样编译，并且在gdb下启动它，例如：gdb ./ex31。
+一旦它运行之后，我打算让你使用这些gdb命令和它交互，并且观察它们的作用以及如何使用它们。
+help COMMAND
+获得COMMAND的简单帮助。
+break file.c:(line|function)
+在你希望暂停之星的地方设置断点。你可以提供行号或者函数名称，来在文件中的那个地方暂停。
+run ARGS</description>
+    </item>
+    
+    <item>
+      <title>练习32：双向链表</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex32/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex32/</guid>
+      <description>原文：Exercise 32: Double Linked Lists
+译者：飞龙
+这本书的目的是教给你计算机实际上如何工作，这也包括多种数据结构和算法函数。计算机自己其实并没有太大用处。为了让它们做一些有用的事情，你需要构建数据，之后在这些结构上组织处理。其它编程语言带有实现所有这些结构的库，或者带有直接的语法来创建它们。C需要你手动实现所有数据结构，这使它成为最“完美”的语言，让你知道它们的工作原理。
+我的目标是交给你这些数据结构，以及相关算法的知识，来帮助你完成下面这三件事：
+理解Python、Ruby或JavaScript的data = {&amp;quot;name&amp;quot;: &amp;quot;Zed&amp;quot;}到底做了什么。 使用数据结构来解决问题，使你成为更好的C程序员。 学习数据结构和算法的核心部分，让你知道在特定条件下哪个最好。 数据结构是什么。 link“数据结构”这个名称自己就能够解释。它是具有特性模型的数据组织方法。这一模型可能设计用于以新的方法处理数据，也可能只是用于将它们更高效地储存在磁盘上。这本书中我会遵循一些简单的模式来构建可用的数据结构：
+定义一个结构的主要“外部结构”。 定义一个结构的内容，通常是带有链接的节点。 创建函数操作它们的函数。 C中还有其它样式的数据结构，但是这个模式效果很好，并且对于你创建的大部分数据结构都适用。
+构建库 link对于这本书的剩余部分，当你完成这本书之后，你将会创建一个可用的库。这个库会包含下列元素：
+为每个数据结构编写的头文件.h。 为算法编写的实现文件.c。 用于测试它们确保有效的单元测试。 从头文件自动生成的文档。 你已经实现了c-skeleton（项目框架目录），使用它来创建一个liblcthw项目：
+$ cp -r c-skeleton liblcthw $ cd liblcthw/ $ ls LICENSE Makefile README.md bin build src tests $ vim Makefile $ ls src/ dbg.h libex29.c libex29.o $ mkdir src/lcthw $ mv src/dbg.h src/lcthw $ vim tests/minunit.h $ rm src/libex29.* tests/libex29* $ make clean rm -rf build tests/libex29_tests rm -f tests/tests.</description>
+    </item>
+    
+    <item>
+      <title>练习33：链表算法</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex33/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex33/</guid>
+      <description>原文：Exercise 33: Linked List Algorithms
+译者：飞龙
+我将想你介绍涉及到排序的两个算法，你可以用它们操作链表。我首先要警告你，如果你打算对数据排序，不要使用链表，它们对于排序十分麻烦，并且有更好的数据结构作为替代。我向你介绍这两种算法只是因为它们难以在链表上完成，并且让你思考如何高效操作它们。
+为了编写这本书，我打算将算法放在两个不同的文件中，list_algos.h和list_algos.c，之后在list_algos_test.c中编写测试。现在你要按照我的结构，因为它足以把事情做好，但是如果你使用其它的库要记住这并不是通用的结构。
+这个练习中我打算给你一些额外的挑战，并且希望你不要作弊。我打算先给你单元测试，并且让你打下来。之后让你基于它们在维基百科中的描述，尝试实现这个两个算法，之后看看你的代码是否和我的类似。
+冒泡排序和归并排序 link互联网的强大之处，就是我可以仅仅给你冒泡排序和归并排序的链接，来让你学习它们。是的，这省了我很多字。现在我要告诉你如何使用它们的伪代码来实现它们。你可以像这样来实现算法：
+阅读描述，并且观察任何可视化的图表。 使用方框和线条在纸上画出算法，或者使用一些带有数字的卡片（比如扑克牌），尝试手动执行算法。这会向你形象地展示算法的执行过程。 在list_algos.c文案总创建函数的主干，并且创建list_algos.h文件，之后创建测试代码。 编写第一个测试并且编译所有东西。 回到维基百科页面，复制粘贴伪代码到你创建的函数中（不是C代码）。 将伪代码翻译成良好的C代码，就像我教你的那样，使用你的单元测试来保证它有效。 为边界情况补充一些测试，例如空链表，排序号的链表，以及其它。 对下一个算法重复这些过程并测试。 我只是告诉你理解大多数算法的秘密，直到你碰到一些更加麻烦的算法。这里你只是按照维基百科来实现冒泡排序和归并排序，它们是一个好的起始。
+单元测试 link下面是你应该通过的单元测试：
+#include &amp;#34;minunit.h&amp;#34; #include &amp;lt;lcthw/list_algos.h&amp;gt; #include &amp;lt;assert.h&amp;gt; #include &amp;lt;string.h&amp;gt; char *values[] = {&amp;#34;XXXX&amp;#34;, &amp;#34;1234&amp;#34;, &amp;#34;abcd&amp;#34;, &amp;#34;xjvef&amp;#34;, &amp;#34;NDSS&amp;#34;}; #define NUM_VALUES 5 List *create_words() { int i = 0; List *words = List_create(); for(i = 0; i &amp;lt; NUM_VALUES; i&amp;#43;&amp;#43;) { List_push(words, values[i]); } return words; } int is_sorted(List *words) { LIST_FOREACH(words, first, next, cur) { if(cur-&amp;gt;next &amp;amp;&amp;amp; strcmp(cur-&amp;gt;value, cur-&amp;gt;next-&amp;gt;value) &amp;gt; 0) { debug(&amp;#34;%s %s&amp;#34;, (char *)cur-&amp;gt;value, (char *)cur-&amp;gt;next-&amp;gt;value); return 0; } } return 1; } char *test_bubble_sort() { List *words = create_words(); // should work on a list that needs sorting int rc = List_bubble_sort(words, (List_compare)strcmp); mu_assert(rc == 0, &amp;#34;Bubble sort failed.</description>
+    </item>
+    
+    <item>
+      <title>练习34：动态数组</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex34/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex34/</guid>
+      <description>原文：Exercise 34: Dynamic Array
+译者：飞龙
+动态数组是自增长的数组，它与链表有很多相同的特性。它通常占据更少的空间，跑得更快，还有一些其它的优势属性。这个练习会涉及到它的一些缺点，比如从开头移除元素会很慢，并给出解决方案（只从末尾移除）。
+动态数组简单地实现为void **指针的数组，它是预分配内存的，并且指向数据。在链表中你创建了完整的结构体来储存void *value指针，但是动态数组中你只需要一个储存它们的单个数组。也就是说，你并不需要创建任何其它的指针储存上一个或下一个元素。它们可以直接索引。
+我会给你头文件作为起始，你需要为实现打下它们：
+#ifndef _DArray_h #define _DArray_h #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;assert.h&amp;gt; #include &amp;lt;lcthw/dbg.h&amp;gt; typedef struct DArray { int end; int max; size_t element_size; size_t expand_rate; void **contents; } DArray; DArray *DArray_create(size_t element_size, size_t initial_max); void DArray_destroy(DArray *array); void DArray_clear(DArray *array); int DArray_expand(DArray *array); int DArray_contract(DArray *array); int DArray_push(DArray *array, void *el); void *DArray_pop(DArray *array); void DArray_clear_destroy(DArray *array); #define DArray_last(A) ((A)-&amp;gt;contents[(A)-&amp;gt;end - 1]) #define DArray_first(A) ((A)-&amp;gt;contents[0]) #define DArray_end(A) ((A)-&amp;gt;end) #define DArray_count(A) DArray_end(A) #define DArray_max(A) ((A)-&amp;gt;max) #define DEFAULT_EXPAND_RATE 300 static inline void DArray_set(DArray *array, int i, void *el) { check(i &amp;lt; array-&amp;gt;max, &amp;#34;darray attempt to set past max&amp;#34;); if(i &amp;gt; array-&amp;gt;end) array-&amp;gt;end = i; array-&amp;gt;contents[i] = el; error: return; } static inline void *DArray_get(DArray *array, int i) { check(i &amp;lt; array-&amp;gt;max, &amp;#34;darray attempt to get past max&amp;#34;); return array-&amp;gt;contents[i]; error: return NULL; } static inline void *DArray_remove(DArray *array, int i) { void *el = array-&amp;gt;contents[i]; array-&amp;gt;contents[i] = NULL; return el; } static inline void *DArray_new(DArray *array) { check(array-&amp;gt;element_size &amp;gt; 0, &amp;#34;Can&amp;#39;t use DArray_new on 0 size darrays.</description>
+    </item>
+    
+    <item>
+      <title>练习35：排序和搜索</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex35/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex35/</guid>
+      <description>原文：Exercise 35: Sorting And Searching
+译者：飞龙
+这个练习中我打算涉及到四个排序算法和一个搜索算法。排序算法是快速排序、堆排序、归并排序和基数排序。之后在你完成基数排序之后，我打算想你展示二分搜索。
+然而，我是一个懒人，大多数C标准库都实现了堆排序、快速排序和归并排序算法，你可以直接使用它们：
+#include &amp;lt;lcthw/darray_algos.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; int DArray_qsort(DArray *array, DArray_compare cmp) { qsort(array-&amp;gt;contents, DArray_count(array), sizeof(void *), cmp); return 0; } int DArray_heapsort(DArray *array, DArray_compare cmp) { return heapsort(array-&amp;gt;contents, DArray_count(array), sizeof(void *), cmp); } int DArray_mergesort(DArray *array, DArray_compare cmp) { return mergesort(array-&amp;gt;contents, DArray_count(array), sizeof(void *), cmp); } 这就是darray_algos.c文件的整个实现，它在大多数现代Unix系统上都能运行。它们的每一个都使用DArray_compare对contents中储存的无类型指针进行排序。我也要向你展示这个头文件：
+#ifndef darray_algos_h #define darray_algos_h #include &amp;lt;lcthw/darray.h&amp;gt; typedef int (*DArray_compare)(const void *a, const void *b); int DArray_qsort(DArray *array, DArray_compare cmp); int DArray_heapsort(DArray *array, DArray_compare cmp); int DArray_mergesort(DArray *array, DArray_compare cmp); #endif 大小几乎一样，你也应该能预料到。接下来你可以了解单元测试中这三个函数如何使用：</description>
+    </item>
+    
+    <item>
+      <title>练习36：更安全的字符串</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex36/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex36/</guid>
+      <description>原文：Exercise 36: Safer Strings
+译者：飞龙
+我已经在练习26中，构建devpkg的时候介绍了Better String库。这个练习让你从现在开始熟悉bstring库，并且明白C风格字符串为什么十分糟糕。之后你需要修改liblcthw的代码来使用bstring。
+为什么C风格字符串十分糟糕 link当人们谈论C的问题时，“字符串”的概念永远是首要缺陷之一。你已经用过它们，并且我也谈论过它们的种种缺陷，但是对为什么C字符串拥有缺陷，以及为什么一直是这样没有明确的解释。我会试着现在做出解释，部分原因是C风格字符串经过数十年的使用，有足够的证据表明它们是个非常糟糕的东西。
+对于给定的任何C风格字符串，都不可能验证它是否有效。
+以&#39;\0&#39;结尾的C字符串是有效的。 任何处理无效C字符串的循环都是无限的（或者造成缓冲区溢出）。 C字符串没有确定的长度，所以检查它们的唯一方法就是遍历它来观察循环是否正确终止。 所以，不通过有限的循环就不可能验证C字符串。 这个逻辑非常简单。你不能编写一个循环来验证C字符串是否有效，因为无效的字符串导致循环永远不会停止。就是这样，唯一的解决方案就是包含大小。一旦你知道了大小，你可以避免无限循环问题。如果你观察练习27中我向你展示的两个函数：
+译者注：检验C风格字符串是否有效等价于“停机问题”，这是一个非常著名的不可解问题。
+void copy(char to[], char from[]) { int i = 0; // while loop will not end if from isn&amp;#39;t &amp;#39;\0&amp;#39; terminated while((to[i] = from[i]) != &amp;#39;\0&amp;#39;) { &amp;#43;&amp;#43;i; } } int safercopy(int from_len, char *from, int to_len, char *to) { int i = 0; int max = from_len &amp;gt; to_len - 1 ? to_len - 1 : from_len; // to_len must have at least 1 byte if(from_len &amp;lt; 0 || to_len &amp;lt;= 0) return -1; for(i = 0; i &amp;lt; max; i&amp;#43;&amp;#43;) { to[i] = from[i]; } to[to_len - 1] = &amp;#39;\0&amp;#39;; return i; } 想象你想要向copy函数添加检查来确保from字符串有效。你该怎么做呢？你编写了一个循环来检查字符串是否已&#39;\0&#39;结尾。哦，等一下，如果字符串不以&#39;\0&#39;结尾，那它怎么让循环停下？不可能停下，所以无解。</description>
+    </item>
+    
+    <item>
       <title>darknet → COCO</title>
       <link>https://cuterwrite.top/TechDocs/docs/supportconversions/darknet_to_coco/</link>
       <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
@@ -117,12 +854,225 @@ yolov5_yaml_to_coco --yaml_path dataset/YOLOV5_yaml/sample.yaml </description>
     </item>
     
     <item>
+      <title>练习37：哈希表</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex37/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex37/</guid>
+      <description>原文：Exercise 37: Hashmaps
+译者：飞龙
+哈希表（HashMap、HashTable以及Dictionary）广泛用于许多动态编程语言来储存键值对的数据。哈希表通过在键上执行“哈希”运算产生整数，之后使用它来寻找相应的桶来获取或储存值。它是非常快速的使用数据结构，因为它适用于任何数据并且易于实现。
+下面是哈希表（也叫作字典）的一个使用示例：
+fruit_weights = {&amp;#39;Apples&amp;#39;: 10, &amp;#39;Oranges&amp;#39;: 100, &amp;#39;Grapes&amp;#39;: 1.0} for key, value in fruit_weights.items(): print key, &amp;#34;=&amp;#34;, value 几乎所有现代语言都具备这种特性，所以许多人写完代码都不知道它实际上如何工作。通过在C中创建Hashmap数据结构，我会向你展示它的工作原理。我会从头文件开始，来谈论整个数据结构。
+#ifndef _lcthw_Hashmap_h #define _lcthw_Hashmap_h #include &amp;lt;stdint.h&amp;gt; #include &amp;lt;lcthw/darray.h&amp;gt; #define DEFAULT_NUMBER_OF_BUCKETS 100 typedef int (*Hashmap_compare)(void *a, void *b); typedef uint32_t (*Hashmap_hash)(void *key); typedef struct Hashmap { DArray *buckets; Hashmap_compare compare; Hashmap_hash hash; } Hashmap; typedef struct HashmapNode { void *key; void *data; uint32_t hash; } HashmapNode; typedef int (*Hashmap_traverse_cb)(HashmapNode *node); Hashmap *Hashmap_create(Hashmap_compare compare, Hashmap_hash); void Hashmap_destroy(Hashmap *map); int Hashmap_set(Hashmap *map, void *key, void *data); void *Hashmap_get(Hashmap *map, void *key); int Hashmap_traverse(Hashmap *map, Hashmap_traverse_cb traverse_cb); void *Hashmap_delete(Hashmap *map, void *key); #endif 这个结构就是Hashmap，含有许多HashmapNode节点。观察Hashmap你会看到它类似这样：</description>
+    </item>
+    
+    <item>
+      <title>练习38：哈希算法</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex38/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex38/</guid>
+      <description>原文：Exercise 38: Hashmap Algorithms
+译者：飞龙
+你需要在这个练习中实现下面这三个哈希函数：
+FNV-1a
+以创造者Glenn Fowler、Phong Vo 和 Landon Curt Noll的名字命名。这个算法产生合理的数值并且相当快。
+Adler-32
+以Mark Adler命名。一个比较糟糕的算法，但是由来已久并且适于学习。
+DJB Hash
+由Dan J. Bernstein (DJB)发明的哈希算法，但是难以找到这个算法的讨论。它非常快，但是结果不是很好。
+你应该看到我使用了Jenkins hash作为Hashmap数据结构的默认哈希函数，所以这个练习的重点会放在这三个新的函数上。它们的代码通常来说不多，并且没有任何优化。像往常一样我会放慢速度来让你理解。
+头文件非常简单，所以我以它开始：
+#ifndef hashmap_algos_h #define hashmap_algos_h #include &amp;lt;stdint.h&amp;gt; uint32_t Hashmap_fnv1a_hash(void *data); uint32_t Hashmap_adler32_hash(void *data); uint32_t Hashmap_djb_hash(void *data); #endif 我只是声明了三个函数，我会在hashmap_algos.c文件中实现它们：
+#include &amp;lt;lcthw/hashmap_algos.h&amp;gt; #include &amp;lt;lcthw/bstrlib.h&amp;gt; // settings taken from // http://www.isthe.com/chongo/tech/comp/fnv/index.html#FNV-param const uint32_t FNV_PRIME = 16777619; const uint32_t FNV_OFFSET_BASIS = 2166136261; uint32_t Hashmap_fnv1a_hash(void *data) { bstring s = (bstring)data; uint32_t hash = FNV_OFFSET_BASIS; int i = 0; for(i = 0; i &amp;lt; blength(s); i&amp;#43;&amp;#43;) { hash ^= bchare(s, i, 0); hash *= FNV_PRIME; } return hash; } const int MOD_ADLER = 65521; uint32_t Hashmap_adler32_hash(void *data) { bstring s = (bstring)data; uint32_t a = 1, b = 0; int i = 0; for (i = 0; i &amp;lt; blength(s); i&amp;#43;&amp;#43;) { a = (a &amp;#43; bchare(s, i, 0)) % MOD_ADLER; b = (b &amp;#43; a) % MOD_ADLER; } return (b &amp;lt;&amp;lt; 16) | a; } uint32_t Hashmap_djb_hash(void *data) { bstring s = (bstring)data; uint32_t hash = 5381; int i = 0; for(i = 0; i &amp;lt; blength(s); i&amp;#43;&amp;#43;) { hash = ((hash &amp;lt;&amp;lt; 5) &amp;#43; hash) &amp;#43; bchare(s, i, 0); /* hash * 33 &amp;#43; c */ } return hash; } 这个文件中有三个哈希函数。你应该注意到我默认使用bstring作为键，并且使用了bchare函数从字符串获取字符，然而如果字符超出了字符串的长度会返回0。</description>
+    </item>
+    
+    <item>
+      <title>练习39：字符串算法</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex39/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex39/</guid>
+      <description>原文：Exercise 39: String Algorithms
+译者：飞龙
+这个练习中，我会向你展示可能是最快的字符串搜索算法之一，并且将它与bstrlib.c中现有的binstr比较。binstr的文档说它仅仅使用了“暴力搜索”的字符串算法来寻找第一个实例。我所实现的函数使用Boyer-Moore-Horspool（BMH）算法，如果你分析理论时间的话，一般认为它会更快。你也会看到，如果我的实现没有任何缺陷，BMH的实际时间会比binstr简单的暴力搜索更糟。
+这个练习的要点并不是真正解释算法本身，因为你可以直接去Boyer-Moore-Horspool 的维基百科页面去阅读它。这个算法的要点就是它会计算出“跳跃字符列表”作为第一步操作，之后它使用这个列表来快速扫描整个字符串。它应当比暴力搜索更快，所以让我们在文件里写出代码来看看吧。
+首先，创建头文件：
+#ifndef string_algos_h #define string_algos_h #include &amp;lt;lcthw/bstrlib.h&amp;gt; #include &amp;lt;lcthw/darray.h&amp;gt; typedef struct StringScanner { bstring in; const unsigned char *haystack; ssize_t hlen; const unsigned char *needle; ssize_t nlen; size_t skip_chars[UCHAR_MAX &amp;#43; 1]; } StringScanner; int String_find(bstring in, bstring what); StringScanner *StringScanner_create(bstring in); int StringScanner_scan(StringScanner *scan, bstring tofind); void StringScanner_destroy(StringScanner *scan); #endif 为了观察“跳跃字符列表”的效果，我打算创建这个算法的两种版本：
+String_find
+只是在一个字符串中，寻找另一个字符串的首个实例，以一个动作执行整个算法。
+StringScanner_scan
+使用StringScanner状态结构，将跳跃列表的构建和实际的查找操作分开。这让我能看到什么影响了性能。这个模型有另一个优点，就是我可以在一个字符串中逐步搜索，并且快速地找到所有实例。
+一旦你完成了头文件，下面就是实现了：
+#include &amp;lt;lcthw/string_algos.h&amp;gt; #include &amp;lt;limits.h&amp;gt; static inline void String_setup_skip_chars( size_t *skip_chars, const unsigned char *needle, ssize_t nlen) { size_t i = 0; size_t last = nlen - 1; for(i = 0; i &amp;lt; UCHAR_MAX &amp;#43; 1; i&amp;#43;&amp;#43;) { skip_chars[i] = nlen; } for (i = 0; i &amp;lt; last; i&amp;#43;&amp;#43;) { skip_chars[needle[i]] = last - i; } } static inline const unsigned char *String_base_search( const unsigned char *haystack, ssize_t hlen, const unsigned char *needle, ssize_t nlen, size_t *skip_chars) { size_t i = 0; size_t last = nlen - 1; assert(haystack !</description>
+    </item>
+    
+    <item>
+      <title>练习40：二叉搜索树</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex40/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex40/</guid>
+      <description>原文：Exercise 40: Binary Search Trees
+译者：飞龙
+二叉树是最简单的树形数据结构，虽然它在许多语言中被哈希表取代，但仍旧对于一些应用很实用。二叉树的各种变体可用于一些非常实用东西，比如数据库的索引、搜索算法结构、以及图像处理。
+我把我的二叉树叫做BSTree，描述它的最佳方法就是它是另一种Hashmap形式的键值对储存容器。它们的差异在于，哈希表为键计算哈希值来寻找位置，而二叉树将键与树中的节点进行对比，之后深入树中找到储存它的最佳位置，基于它与其它节点的关系。
+在我真正解释它的工作原理之前，让我向你展示bstree.h头文件，便于你看到数据结构，之后我会用它来解释如何构建。
+#ifndef _lcthw_BSTree_h #define _lcthw_BSTree_h typedef int (*BSTree_compare)(void *a, void *b); typedef struct BSTreeNode { void *key; void *data; struct BSTreeNode *left; struct BSTreeNode *right; struct BSTreeNode *parent; } BSTreeNode; typedef struct BSTree { int count; BSTree_compare compare; BSTreeNode *root; } BSTree; typedef int (*BSTree_traverse_cb)(BSTreeNode *node); BSTree *BSTree_create(BSTree_compare compare); void BSTree_destroy(BSTree *map); int BSTree_set(BSTree *map, void *key, void *data); void *BSTree_get(BSTree *map, void *key); int BSTree_traverse(BSTree *map, BSTree_traverse_cb traverse_cb); void *BSTree_delete(BSTree *map, void *key); #endif 这遵循了我之前用过的相同模式，我创建了一个基容器叫做BSTree，它含有叫做BSTreeNode的节点，组成实际内容。厌倦了吗？是的，这种结构也没有什么高明之处。</description>
+    </item>
+    
+    <item>
+      <title>练习41：将 Cachegrind 和 Callgrind 用于性能调优</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex41/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex41/</guid>
+      <description>原文：Exercise 41: Using Cachegrind And Callgrind For Performance Tuning
+译者：飞龙
+这个练习中，我打算上一节速成课，内容是使用Valgrind的两个工具callgrind和cachegrind。这两个工具会分析你程序的执行，并且告诉你哪一部分运行缓慢。这些结果非常精确，因为Valgrind的工作方式有助于你解决一些问题，比如执行过多的代码行，热点，内容访问问题，甚至是CPU的缓存未命中。
+为了做这个练习，我打算使用bstree_tests单元测试，你之前用于寻找能提升算法的地方。你需要确保你这些程序的版本没有任何valgrind错误，并且和我的代码非常相似，因为我会使用我的代码的转储来谈论cachegrind和callgrind如何工作。
+运行 Callgrind link为了运行Callgrind，你需要向valgrind传入--tool=callgrind选项，之后它会产生callgrind.out.PID文件（其中PID为所运行程序的进程PID）。一旦你这样运行了，你就可以使用一个叫做callgrind_annotate的工具分析callgrind.out文件，它会告诉你哪个函数运行中使用了最多的指令。下面是个例子，我在bstree_tests上运行了callgrind，之后得到了这个信息：
+$ valgrind --dsymutil=yes --tool=callgrind tests/bstree_tests ... $ callgrind_annotate callgrind.out.1232 -------------------------------------------------------------------------------- Profile data file &amp;#39;callgrind.out.1232&amp;#39; (creator: callgrind-3.7.0.SVN) -------------------------------------------------------------------------------- I1 cache: D1 cache: LL cache: Timerange: Basic block 0 - 1098689 Trigger: Program termination Profiled target: tests/bstree_tests (PID 1232, part 1) Events recorded: Ir Events shown: Ir Event sort order: Ir Thresholds: 99 Include dirs: User annotated: Auto-annotation: off -------------------------------------------------------------------------------- Ir -------------------------------------------------------------------------------- 4,605,808 PROGRAM TOTALS -------------------------------------------------------------------------------- Ir file:function -------------------------------------------------------------------------------- 670,486 src/lcthw/bstrlib.</description>
+    </item>
+    
+    <item>
+      <title>练习42：栈和队列</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex42/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex42/</guid>
+      <description>原文：Exercise 42: Stacks and Queues
+译者：飞龙
+到现在为止，你已经知道了大多数用于构建其它数据结构的数据结构。如果你拥有一些List、DArray、Hashmap 和 Tree，你就能用他们构造出大多数其它的任何结构。你碰到的其它任何结构要么可以用它们实现，要么是它们的变体。如果不是的话，它可能是外来的数据结构，你可能不需要它。
+Stack和Queue是非常简单的数据结构，它们是List的变体。它们是List的弱化或者转换形式，因为你只需要在List的一端放置元素。对于Stack，你只能能够在一段压入和弹出元素。而对于Queue，你只能够在开头压入元素，并在末尾弹出（或者反过来）。
+我能够只通过C预处理器和两个头文件来实现这两个数据结构。我的头文件只有21行的长度，并且实现了所有Stack和Queue的操作，不带有任何神奇的定义。
+我将会向你展示单元测试，你需要实现头文件来让它们正常工作。你不能创建stack.c 或 queue.c实现文件来通过测试，只能使用stack.h 和 queue.h来使测试运行。
+#include &amp;#34;minunit.h&amp;#34; #include &amp;lt;lcthw/stack.h&amp;gt; #include &amp;lt;assert.h&amp;gt; static Stack *stack = NULL; char *tests[] = {&amp;#34;test1 data&amp;#34;, &amp;#34;test2 data&amp;#34;, &amp;#34;test3 data&amp;#34;}; #define NUM_TESTS 3 char *test_create() { stack = Stack_create(); mu_assert(stack != NULL, &amp;#34;Failed to create stack.&amp;#34;); return NULL; } char *test_destroy() { mu_assert(stack != NULL, &amp;#34;Failed to make stack #2&amp;#34;); Stack_destroy(stack); return NULL; } char *test_push_pop() { int i = 0; for(i = 0; i &amp;lt; NUM_TESTS; i&amp;#43;&amp;#43;) { Stack_push(stack, tests[i]); mu_assert(Stack_peek(stack) == tests[i], &amp;#34;Wrong next value.</description>
+    </item>
+    
+    <item>
+      <title>练习43：一个简单的统计引擎</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex43/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex43/</guid>
+      <description>原文：Exercise 43: A Simple Statistics Engine
+译者：飞龙
+这是一个简单的算法，我将其用于“联机”（不储存任何样本）收集概要统计。我在任何需要执行一些统计，比如均值、标准差和求和中使用它，但是其中我并不会储存所需的全部样本。我只需要储存计算出的结果，它们仅仅含有5个数值。
+计算标准差和均值 link首先你需要一系列样本。它可以使任何事情，比如完成一个任务所需的时间，某人访问某个东西的次数，或者甚至是网站的评分。是什么并不重要，只要你能得到一些数字，并且你想要知道它们的下列概要统计值：
+sum
+对所有数字求和。
+sumsq（平方和）
+对所有数字求平方和。
+count(n)
+求出样本数量。
+min
+求出样本最小值。
+max
+求出样本最大值。
+mean
+求出样本的均值。它类似于但又不是中位数，但可作为中位数的估计。
+stddev
+使用$sqrt(sumsq - (sum * mean) / (n - 1) )来计算标准差，其中sqrt为math.h头文件中的平方根。
+我将会使用R来验证这些计算，因为我知道R能够计算正确。
+&amp;gt; s &amp;lt;- runif(n=10, max=10) &amp;gt; s [1] 6.1061334 9.6783204 1.2747090 8.2395131 0.3333483 6.9755066 1.0626275 [8] 7.6587523 4.9382973 9.5788115 &amp;gt; summary(s) Min. 1st Qu. Median Mean 3rd Qu. Max. 0.3333 2.1910 6.5410 5.5850 8.0940 9.6780 &amp;gt; sd(s) [1] 3.</description>
+    </item>
+    
+    <item>
+      <title>练习44：环形缓冲区</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex44/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex44/</guid>
+      <description>原文：Exercise 44: Ring Buffer
+译者：飞龙
+环形缓冲区在处理异步IO时非常实用。它们可以在一端接收随机长度和区间的数据，在另一端以相同长度和区间提供密致的数据块。它们是Queue数据结构的变体，但是它针对于字节块而不是一系列指针。这个练习中我打算向你展示RingBuffer的代码，并且之后你需要对它执行完整的单元测试。
+#ifndef _lcthw_RingBuffer_h #define _lcthw_RingBuffer_h #include &amp;lt;lcthw/bstrlib.h&amp;gt; typedef struct { char *buffer; int length; int start; int end; } RingBuffer; RingBuffer *RingBuffer_create(int length); void RingBuffer_destroy(RingBuffer *buffer); int RingBuffer_read(RingBuffer *buffer, char *target, int amount); int RingBuffer_write(RingBuffer *buffer, char *data, int length); int RingBuffer_empty(RingBuffer *buffer); int RingBuffer_full(RingBuffer *buffer); int RingBuffer_available_data(RingBuffer *buffer); int RingBuffer_available_space(RingBuffer *buffer); bstring RingBuffer_gets(RingBuffer *buffer, int amount); #define RingBuffer_available_data(B) (((B)-&amp;gt;end &amp;#43; 1) % (B)-&amp;gt;length - (B)-&amp;gt;start - 1) #define RingBuffer_available_space(B) ((B)-&amp;gt;length - (B)-&amp;gt;end - 1) #define RingBuffer_full(B) (RingBuffer_available_data((B)) - (B)-&amp;gt;length == 0) #define RingBuffer_empty(B) (RingBuffer_available_data((B)) == 0) #define RingBuffer_puts(B, D) RingBuffer_write((B), bdata((D)), blength((D))) #define RingBuffer_get_all(B) RingBuffer_gets((B), RingBuffer_available_data((B))) #define RingBuffer_starts_at(B) ((B)-&amp;gt;buffer &amp;#43; (B)-&amp;gt;start) #define RingBuffer_ends_at(B) ((B)-&amp;gt;buffer &amp;#43; (B)-&amp;gt;end) #define RingBuffer_commit_read(B, A) ((B)-&amp;gt;start = ((B)-&amp;gt;start &amp;#43; (A)) % (B)-&amp;gt;length) #define RingBuffer_commit_write(B, A) ((B)-&amp;gt;end = ((B)-&amp;gt;end &amp;#43; (A)) % (B)-&amp;gt;length) #endif 观察这个数据结构，你会看到它含有buffer、start 和 end。RingBuffer的所做的事情只是在buffer中移动start和end，所以当数据到达缓冲区末尾时还可以继续“循环”。这样就会给人一种在固定空间内无限读取的“幻觉”。接下来我创建了一些宏来基于它执行各种计算。</description>
+    </item>
+    
+    <item>
+      <title>练习45：一个简单的TCP/IP客户端</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex45/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex45/</guid>
+      <description>原文：Exercise 45: A Simple TCP/IP Client
+译者：飞龙
+我打算使用RingBuffer来创建一个非常简单的小型网络测试工具，叫做netclient。为此我需要向Makefile添加一些工具，来处理bin/目录下的小程序。
+扩展Makefile link首先，为程序添加一些变量，就像单元测试的TESTS和TEST_SRC变量：
+PROGRAMS_SRC=$(wildcard bin/*.c) PROGRAMS=$(patsubst %.c,%,$(PROGRAMS_SRC)) 之后你可能想要添加PROGRAMS到所有目标中：
+all: $(TARGET) $(SO_TARGET) tests $(PROGRAMS) 之后在clean目标中向rm那一行添加PROGRAMS：
+rm -rf build $(OBJECTS) $(TESTS) $(PROGRAMS) 最后你还需要在最后添加一个目标来构建它们：
+$(PROGRAMS): CFLAGS &amp;#43;= $(TARGET) 做了这些修改你就能够将.c文件扔到bin中，并且编译它们以及为其链接库文件，就像测试那样。
+netclient 代码 linknetclient的代码是这样的：
+#undef NDEBUG #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;sys/select.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;lcthw/ringbuffer.h&amp;gt; #include &amp;lt;lcthw/dbg.h&amp;gt; #include &amp;lt;sys/socket.h&amp;gt; #include &amp;lt;sys/types.h&amp;gt; #include &amp;lt;sys/uio.h&amp;gt; #include &amp;lt;arpa/inet.h&amp;gt; #include &amp;lt;netdb.h&amp;gt; #include &amp;lt;unistd.h&amp;gt; #include &amp;lt;fcntl.h&amp;gt; struct tagbstring NL = bsStatic(&amp;#34;\n&amp;#34;); struct tagbstring CRLF = bsStatic(&amp;#34;\r\n&amp;#34;); int nonblock(int fd) { int flags = fcntl(fd, F_GETFL, 0); check(flags &amp;gt;= 0, &amp;#34;Invalid flags on nonblock.</description>
+    </item>
+    
+    <item>
+      <title>练习46：三叉搜索树</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex46/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex46/</guid>
+      <description>原文：Exercise 46: Ternary Search Tree
+译者：飞龙
+我打算向你介绍的最后一种数据结构就是三叉搜索树（TSTree），它和BSTree很像，除了它有三个分支，low、equal和high。它的用法和BStree以及Hashmap基本相同，用于储存键值对的数据，但是它通过键中的独立字符来控制。这使得TSTree具有一些BStree和Hashmap不具备的功能。
+TSTree的工作方式是，每个键都是字符串，根据字符串中字符的等性，通过构建或者遍历一棵树来进行插入。首先由根节点开始，观察每个节点的字符，如果小于、等于或大于则去往相应的方向。你可以参考这个头文件：
+#ifndef _lcthw_TSTree_h #define _lctwh_TSTree_h #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;lcthw/darray.h&amp;gt; typedef struct TSTree { char splitchar; struct TSTree *low; struct TSTree *equal; struct TSTree *high; void *value; } TSTree; void *TSTree_search(TSTree *root, const char *key, size_t len); void *TSTree_search_prefix(TSTree *root, const char *key, size_t len); typedef void (*TSTree_traverse_cb)(void *value, void *data); TSTree *TSTree_insert(TSTree *node, const char *key, size_t len, void *value); void TSTree_traverse(TSTree *node, TSTree_traverse_cb cb, void *data); void TSTree_destroy(TSTree *root); #endif TSTree拥有下列成员：</description>
+    </item>
+    
+    <item>
       <title>Visualize COCO image</title>
       <link>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_visual/</link>
       <pubDate>Fri, 30 Sep 2022 05:33:22 +0100</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_visual/</guid>
       <description> coco_visual --vis_num 1 \ --json_path dataset/YOLOV5_COCO_format/annotations/instances_train2017.json \ --img_dir dataset/YOLOV5_COCO_format/train2017 --vis_num: specify the index of the image to be viewed --json_path: path to the json file of the image to view --img_dir: view the directory where the image is located </description>
+    </item>
+    
+    <item>
+      <title>练习47：一个快速的URL路由</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/ex47/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/ex47/</guid>
+      <description>原文：Exercise 47: A Fast URL Router
+译者：飞龙
+我现在打算向你展示使用TSTree来创建服务器中的快速URL路由。它适用于应用中的简单的URL匹配，而不是在许多Web应用框架中的更复杂（一些情况下也不必要）的路由发现功能。
+我打算编程一个小型命令行工具和路由交互，他叫做urlor，读取简单的路由文件，之后提示用户输入要检索的URL。
+#include &amp;lt;lcthw/tstree.h&amp;gt; #include &amp;lt;lcthw/bstrlib.h&amp;gt; TSTree *add_route_data(TSTree *routes, bstring line) { struct bstrList *data = bsplit(line, &amp;#39; &amp;#39;); check(data-&amp;gt;qty == 2, &amp;#34;Line &amp;#39;%s&amp;#39; does not have 2 columns&amp;#34;, bdata(line)); routes = TSTree_insert(routes, bdata(data-&amp;gt;entry[0]), blength(data-&amp;gt;entry[0]), bstrcpy(data-&amp;gt;entry[1])); bstrListDestroy(data); return routes; error: return NULL; } TSTree *load_routes(const char *file) { TSTree *routes = NULL; bstring line = NULL; FILE *routes_map = NULL; routes_map = fopen(file, &amp;#34;r&amp;#34;); check(routes_map !</description>
+    </item>
+    
+    <item>
+      <title>“解构 K&amp;R C” 已死</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/postscript/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/postscript/</guid>
+      <description>原文：Deconstructing K&amp;amp;RC Is Dead
+译者：飞龙
+我彻底失败了。我放弃了多年以来尝试理清C语言如何编写的想法，因为它的发明是有缺陷的。起初，我的书中有一章叫做“解构 K&amp;amp;R C”。这一章的目的是告诉人们永远不要假设它们的代码是正确的，或者对于任何人的代码，不管它有多出名，也不能避免缺陷。这看起来似乎并不是革命性的想法，并且对我来说它只是分析代码缺陷和编写更好更可靠代码的一部分。
+多年以来，我在写这本书的这一块时收到重挫，并且收到了比任何其它事情更多的批评和侮辱。不仅如此，而且书中这部分的批评以这些话而结束，“你是对的，但是你认为他们的代码很烂这件事是错的。”我不能理解，有一群被认为很聪明的人，他们的大脑中充满理性，却坚持“我可以是错的，但是同时也可以是对的”的观点。我不得不与这些学究在C IRC channels、邮件列表、评论上斗争，这包括每一个它们提出一些怪异的、迂腐的刻薄意见的情况，需要我对我的文章进行更多的逻辑性修改来说服他们。
+有趣的一点是，在我写这部分之前，我收到了本书许多正面的评论。当时本书还在写作中，所以我觉得确实需要改进。我甚至设置了一些奖金让人们帮助改进。但可悲的是，一旦他们被自己的英雄蒙蔽，所崇拜的基调就发生了翻天覆地的变化。我变得十分令人讨厌，只不过是尝试教人们如何安全使用一个极易出错的垃圾语言，比如C语言。这是我很擅长的东西。
+这些批评者向我承认，他们不写C代码也不教授它，他们只是死记硬背标准库来“帮助”其它人，这对我来说并不重要。我以一个开放的心态试图解决问题，甚至设置奖金给那些有助于修复它的人，这也不重要。这可以使更多的人爱上C语言，并且使其它人入门编程，这更不重要。重要的是我“侮辱”了他们的英雄，这意味着我所说的话永远地完蛋了，没有人会再次相信我。
+坦率地说，这是编程文化极为的黑暗、丑陋、邪恶的一面。他们整天在说，“我与你们同在”，但是如果你不屈服于大师们海量的学识，以及乞求他们准许你质疑他们所信奉的东西，你突然就会变成敌人。程序员费尽心机地把自己放在权力的宝座上，来要求别人赞许他们高超的记忆能力，或者对一些微不足道的琐事的熟知，并且会尽全力消灭那些胆敢质疑的人。
+这非常恶心，我对此也没什么能做的。我对老程序员无能为力。但他们注定会失败。它们通过标准化记忆所积累的学识，也会在咸鱼的下一次翻身中蒸发掉。它们对考虑如何事物的运作方式，以及如何改进它们，或者将它们的手艺传授给他人毫无兴趣，除非这里面涉及到大量的阿谀奉承并让他们觉得很爽。老程序员总会完蛋的。
+他们向现在的年轻程序员施压，我对此并不能做任何事情。我不能阻止无能程序员的诽谤，他们甚至根本不像专业的C程序员那样。然而，我宁愿使本书有助于那些想要学习C语言以及如何编写可靠的软件的人，而不是和那些思维闭锁的保守派做斗争。它们贪图安逸的行为给人一种感觉，就是他们知道更多迂腐的、可怜的小话题，就比如未定义行为。
+因此，我删除了书中的K&amp;amp;R C部分，并且找到了新的主题。我打算重写这本书，但是并不知道如何去做。我犹如在地狱中，因为我自己非常执着于我觉得很重要的一些事情，但我不知道如何推进。我现在算是明白了这是错的，因为它阻碍我将一些与C不相关的重要技巧教给许多新的程序员，包括编程规范、代码分析、缺陷和安全漏洞的检测，以及学习其它编程语言的方法。
+现在我明白了，我将为这本书制作一些课程，关于编写最安全的C代码，以及将C语言代码打破为一种学习C和编程规范的方式。我会卑微地说我的书只是一个桥梁，所有人应该去读K&amp;amp;R C来迎合这些学究，并且在这些黄金法则的脚下顶礼膜拜。我要澄清我的C版本限制于一个固定的目的之中，因为这让我的代码更安全。我一定会提到所有迂腐的东西，比如每个书呆子式的，关于20世纪60年代的PDP-11电脑上空指针的要求。
+之后，我会告诉人们不要再去写别的C程序。这不会很明显，完全不会，但我的目标是将人们从C带到能更好地编程的其它语言中。Go、Rust或者Swift，是我能想到的能处理C语言主要任务新型语言，所以我推荐人们学习它们。我会告诉他们，他们的技能在于发现缺陷，并且对C代码的严格分析将会对所有语言都有巨大的好处，以及使其它语言更易于学习。
+但是C呢？C已经死了，它是为想要争论A.6.2章第四段的指针未定义行为的老程序员准备的。谢天谢地，我打算去学习Go（或者Rust，或者Swift，或者其它任何东西）了。</description>
+    </item>
+    
+    <item>
+      <title>捐赠名单</title>
+      <link>https://cuterwrite.top/TechDocs/docs/c-guide/donors/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/c-guide/donors/</guid>
+      <description>感谢以下童鞋的捐助，你们的慷慨是我继续的动力：
+donor value jxdwinter 6.00 贾**@悠云.com 20.00 Mr.Moon 2.00 </description>
     </item>
     
     <item>
