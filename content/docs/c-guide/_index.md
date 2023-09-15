@@ -1,5 +1,5 @@
 ---
-weight: 44
+weight: 1000
 title: "笨方法学C"
 description: ""
 icon: menu_book

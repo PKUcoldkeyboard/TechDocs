@@ -1,5 +1,5 @@
 ---
-weight: 40
+weight: 2
 date: "2023-09-15"
 draft: false
 author: "cuterwrite"

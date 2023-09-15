@@ -77,7 +77,7 @@ def modify_md_files(directory):
             title = ""
 
         # 计算weight
-        weight = 10 + index
+        weight = 1001 + index
 
         # 添加描述语言
         description = "---\nweight: {}\ndate: \"2023-09-15T02:21:15+00:00\"\ndraft: false\nauthor: \"cuterwrite\"\ntitle: \"{}\"\nicon: \"circle\"\ntoc: true\ndescription: \"\"\npublishdate: \"2023-09-15T02:21:15+00:00\"\n---\n\n".format(weight, title)
@@ -97,3 +97,4 @@ if __name__ == "__main__":
 
     directory = sys.argv[1]
     modify_md_files(directory)
+    print("修改完成！")
