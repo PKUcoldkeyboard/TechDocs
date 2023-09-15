@@ -10,7 +10,7 @@ description: ""
 publishdate: "2023-09-15T02:21:15+00:00"
 ---
 
-![The Little Redis Book cn, By Karl Seguin, Translate By Jason Lai](title.png)\
+![The Little Redis Book cn, By Karl Seguin, Translate By Jason Lai](title.png)
 
 ## 关于此书
 
