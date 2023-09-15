@@ -58,7 +58,9 @@ https://github.com/Denver-Pilphis/taichi_dem/tree/question/PKU_HPC_Competition
 
 最终的测试采用第6个 Example: 斯坦福兔子自由落体撞击水平表面 (快速计算版)。程序运行结束后，抽取 `output.p4p` 和 `output.p4c` 中任意若干个存档时间点，校验颗粒与接触信息 (均为双精度浮点数) 与原始代码运行结果是否一致。双精度浮点数一致的判据如下：
 
-abs(x′−x)<tol=10−12
+```
+abs(x′−x)<tol=10e−12
+```
 
 式中x′为优化后代码输出的双精度浮点数，x为原始代码输出的双精度浮点数，tol为双精度浮点容差。
 
