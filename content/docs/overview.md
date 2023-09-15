@@ -12,7 +12,4 @@ tags: ["Beginners"]
 categories: [""]
 ---
 
-
-## 前言
-
 这是一个计算机的技术资料库。

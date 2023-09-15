@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 1
 title: "CS技术文档"
 description: ""
 icon: menu_book

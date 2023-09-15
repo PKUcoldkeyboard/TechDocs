@@ -1,8 +1,8 @@
 ---
-weight: 10
+weight: 13
 date: "2023-09-15T02:21:15+00:00"
 draft: false
-author: "SWHL"
+author: "cuterwrite"
 title: "导言：C的笛卡尔之梦"
 icon: "circle"
 toc: true
@@ -10,7 +10,7 @@ description: ""
 publishdate: "2023-09-15T02:21:15+00:00"
 ---
 
-# 导言：C的笛卡尔之梦
+
 
 > 原文：[Introduction: The Cartesian Dream Of C](http://c.learncodethehardway.org/book/introduction.html)
 
