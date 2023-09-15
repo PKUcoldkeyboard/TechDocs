@@ -15,7 +15,7 @@
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2a/</guid>
       <description>题目 link小明对高等数学感到头疼。今天，他的作业里有一道计算积分的题目。他不知道自己的答案正不正确。他希望你能写一个程序，计算得越准确越好。由于他对于精度的要求非常高，又不希望等待程序运行花费太多时间，所以他将会把程序运行于超算上。你需要使得你编写的程序支持多线程处理从而提升处理速度。
 小明遇到的题目转化为离散形式是这样的：
-给定函数$f(x)$, 正整数 $N$, 计算 $I_N(f)$, 其中
+给定函数 $f(x)$ , 正整数 $N$ , 计算 $I_N(f)$ , 其中
 $$ \int_0^1 f(x)\approx I_N(f)=\frac{1}{N}\sum_{i=1}^Nf(\frac{x^i}{N})， x_i=i-\frac{1}{2} $$
 小明听说有个叫 OpenMP 的东西，能方便地帮助你编写并行的应用程序。你决定试一试。
 输入格式 link文件引用 rhs.h，该头文件定义了：
@@ -38,7 +38,7 @@ void rhs(double &amp;amp;x, double &amp;amp;value); 即为提供的 f(x)。其�
 给定矩阵 A,B, 满足 A 列数与 B 行数相等, 计算 AB.
 小明再次向你介绍有个叫 OpenMP 的东西，能方便地帮助你编写并行的应用程序。你向他表明你在帮助他完成数学分析作业的时候，已经熟练运用了 OpenMP，并希望他下次能问你一些物理问题。
 输入格式 link文件引用 rhs.h，该头文件定义了：
-void matA(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); void matB(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); 设矩阵 A 为 ${a_{ij}​}$ ，矩阵 B 为 ${b_{ij}​}$，那么调用这两个函数将分别给出矩阵 A 和 B 第 i 行第 j 列的元素的值。函数将把值放入 value。
+void matA(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); void matB(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); 设矩阵 A 为 ${a_{ij}​}$ ，矩阵 B 为 ${b_{ij}​}$ ，那么调用这两个函数将分别给出矩阵 A 和 B 第 i 行第 j 列的元素的值。函数将把值放入 value。
 程序需要接收三个命令行参数，即为 N1, N2, N3，表示矩阵 A 是 N1*N2 维的，矩阵 B 是 N2*N3 维的。
 输出格式 link向文件 output.dat 中输出结果矩阵，每行一个浮点数，按如下方式排布：（以 3x3 矩阵为例）</description>
     </item>
@@ -50,16 +50,15 @@ void matA(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;valu
       
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2c/</guid>
       <description>题目 link小明这回的确问了个“物理”些的问题。虽然依旧是一个数学问题。他还是希望你能编写一个程序，帮他解决这个问题。他依旧想把你的程序运行在超算上，并要求你的程序是并行的。
-给定函数 $f(x,y)$, 正整数 $N$, 在 $N×N$ 均匀网格上用五点格式求解 Poisson 方程
+给定函数 $f(x,y)$ , 正整数 $N$ , 在 $N×N$ 均匀网格上用五点格式求解 Poisson 方程
 $$ \begin{cases} &amp;amp; -\Delta u(x,y)=f(x,y),(x,y)\in \Omega = (0,1)^2 \ &amp;amp; u(x,y)=0,(x,y)\in \partial \Omega \end{cases} $$
-记 $U_{i,j}$​ 为 $u(x_i,y_j​)$的近似值, 离散格式为
+记 $U_{i,j}$​ 为 $u(x_i,y_j​)$ 的近似值, 离散格式为
 $$ \begin{aligned} &amp;amp;4U_{i,j}-U_{i-1,j}-U{i+1,j}-U_{i,j-1}-U{i,j+1}=\frac{1}{N^2}f(x_i,y_i),x_i=\frac{i}{N},y_i=\frac{j}{N}\ &amp;amp; U_{i,j}=0,(i=0)\lor(i=N)\lor(j=0)\lor(j=N) \end{aligned} $$
 用 Gauss-Seidel 迭代求解上述线性方程组。
 小明定义了一个量，名叫 EPS（各分量绝对值差最大值）。他希望你的程序能在 EPS 小于 10−15 后输出结果。
 你看着题目苦笑了一下。如你所料，小明总是念念不忘他的 OpenMP。
 输入格式 link文件引用 rhs.h，该头文件定义了：
-void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数即为 f(x,y)。传入 x, y, value, 那么 f(x,y) 就会被保存到 value 内。
-程序需要接收一个命令行参数，即为 N。</description>
+void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数即为 f(x,y)。传入 x, y, value, 那么 f(x,y) 就会被保存到 value 内。</description>
     </item>
     
     <item>
@@ -82,19 +81,12 @@ void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数
       
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2e/</guid>
       <description>背景 link二维卷积是卷积神经网络的基础操作，可以提取数据特征，在图像识别领域应用广泛。卷积的复杂度导致训练困难，也是图像识别领域的重要瓶颈之一。
-对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的Deep Learning的第9章。我们只引用书中的一张图介绍卷积的计算。
-对于矩阵Input，我们使用一个比它规模小的多的Kernel进行运算。本题我们方法大概是这样：
-设Input是A∗B矩阵，Kernel是C∗D矩阵，对于每个位置(i, j)，如果可以取一个和Kernel大小一样的不越界矩阵(本题不考虑padding)，我们就把这个矩阵中与Kernel中对应元素乘起来并求和，结果放在Output(i,j)​中。
+对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的 Deep Learning 的第9章。我们只引用书中的一张图介绍卷积的计算。
+对于矩阵 Input，我们使用一个比它规模小的多的 Kernel 进行运算。本题我们方法大概是这样：
+设 Input 是A∗B矩阵，Kernel 是C∗D矩阵，对于每个位置 (i, j) ，如果可以取一个和 Kernel 大小一样的不越界矩阵(本题不考虑padding)，我们就把这个矩阵中与 Kernel 中对应元素乘起来并求和，结果放在 Output(i,j) ​中。
 $$ \begin{bmatrix} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j+D)} \ I_{(i+1,j)} &amp;amp; I_{(i+1,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+1,j+D)} \ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \ I_{(i+C,j)} &amp;amp; I_{(i+C,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+C,j+D)} \ \end{bmatrix} $$
-计算完所有可算的i, j，我们就得到了卷积的输出。
-$$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{(p,q)} $$
-下图引自Ian Goodfellow 等人著作Deep Learning`，很形象地表现了这一过程。因为元素运算是可向量化的，我们试图在CPU上使用SIMD（单指令多数据）的方法，优化二维卷积运算。
-要怎么做才好呢 link要不，问问chatGPT？
-他说的确实对，向量化的思路没错，但是我们不打算给你太多的核心，所以你得让每一条指令都能操作多个数据。
-硬件条件 link评测平台的CPU是Intel® Xeon® Platinum 8358，关闭超线程。
-每次评测分配1CPU核心，4G内存。
-CPU相关参数如下：
-32K数据L1缓存，1.25MB L2缓存。</description>
+计算完所有可算的 i, j ，我们就得到了卷积的输出。
+$$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{(p,q)} $$</description>
     </item>
     
     <item>
@@ -103,14 +95,16 @@ CPU相关参数如下：
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</guid>
-      <description>MPI 算个 PI link前情提要 link本题是简单题，不想读背景的大佬请直接跳到题目要求。
+      <description>前情提要 link本题是简单题，不想读背景的大佬请直接跳到题目要求。
 背景 link几乎从人类数学诞生以来，一代代数学家就在试图提高圆周率π的数值精度。从五千年前的1位精度提升到当下世界纪录的100万亿位，π的计算方法从粗略估计、测量估算，再到公式逼近、机器演算，我们可以从中看到人类科技的发展史。
 &lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; standalone=&#34;no&#34;?&gt; &lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt; Record pi approximations Produced by GNUPLOT 4.6 patchlevel 0 1 100 104 106 108 1010 1012 1014 2000 BCE 250 BCE 480 1400 1450 1500 1550 1600 1650 1700 1750 1800 1850 1900 1950 2000 Number of decimal digits Year Record approximations of pi gnuplot_plot_1 当下，π的计算还是衡量高性能计算集群性能和算法优越性的重要量度，问题的维度从单纯的计算，拓展到了储存、通信、内存瓶颈等方方面面，各路超算纷纷借此机会大秀肌肉。
 但是在这一系列浩浩汤汤的计算过程中，有一小群人，在个人电脑刚刚普及的年代，却凭借着合作的力量，通过众包计算的方法，也达到了可喜的成就。其中一个项目是，通过分布式的方法，计算出了π中特殊位置数字的PiHex。在个人算力不足的年代，这可谓是工程学奇迹。
 现在我们假设你有一些算力不是很强的机器，来模拟这个场景。
 题目要求 link你有5个物理节点，每个的节点2个核心。你需要写一个MPI程序，计算π的近似值，精确到1∗10−14（15位有效数字）。
 因为MPI开销比较大，本题时间限制为30秒，不考察效率。（其实就是想让大家试一试MPI)
-请注意，我们的平台关闭了超线程，但是直接由MPI生成的线程数可能会是打开超线程后的。</description>
+请注意，我们的平台关闭了超线程，但是直接由MPI生成的线程数可能会是打开超线程后的。
+输入输出 link输入：无
+输出：一个双精度浮点数，保留15位有效数字。输出到output.txt即可。如果只有13位有效数字，则得一半分。</description>
     </item>
     
   </channel>

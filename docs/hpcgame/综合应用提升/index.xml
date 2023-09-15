@@ -27,7 +27,7 @@ Channel create_channel(void); 请使用此函数创建一个用于和 game serv
     </item>
     
     <item>
-      <title>AI算子优化</title>
+      <title>B. AI算子优化</title>
       <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
@@ -41,7 +41,7 @@ If you want to test the operator yourself, you can run this</description>
     </item>
     
     <item>
-      <title>RDMA就是快</title>
+      <title>C. RDMA就是快</title>
       <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       

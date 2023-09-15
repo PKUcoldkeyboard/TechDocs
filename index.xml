@@ -1125,7 +1125,7 @@ g&amp;#43;&amp;#43; -o solution solution.cpp -O1 -fopenmp -std=c&amp;#43;&amp;#4
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2a/</guid>
       <description>题目 link小明对高等数学感到头疼。今天，他的作业里有一道计算积分的题目。他不知道自己的答案正不正确。他希望你能写一个程序，计算得越准确越好。由于他对于精度的要求非常高，又不希望等待程序运行花费太多时间，所以他将会把程序运行于超算上。你需要使得你编写的程序支持多线程处理从而提升处理速度。
 小明遇到的题目转化为离散形式是这样的：
-给定函数$f(x)$, 正整数 $N$, 计算 $I_N(f)$, 其中
+给定函数 $f(x)$ , 正整数 $N$ , 计算 $I_N(f)$ , 其中
 $$ \int_0^1 f(x)\approx I_N(f)=\frac{1}{N}\sum_{i=1}^Nf(\frac{x^i}{N})， x_i=i-\frac{1}{2} $$
 小明听说有个叫 OpenMP 的东西，能方便地帮助你编写并行的应用程序。你决定试一试。
 输入格式 link文件引用 rhs.h，该头文件定义了：
@@ -1148,7 +1148,7 @@ void rhs(double &amp;amp;x, double &amp;amp;value); 即为提供的 f(x)。其�
 给定矩阵 A,B, 满足 A 列数与 B 行数相等, 计算 AB.
 小明再次向你介绍有个叫 OpenMP 的东西，能方便地帮助你编写并行的应用程序。你向他表明你在帮助他完成数学分析作业的时候，已经熟练运用了 OpenMP，并希望他下次能问你一些物理问题。
 输入格式 link文件引用 rhs.h，该头文件定义了：
-void matA(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); void matB(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); 设矩阵 A 为 ${a_{ij}​}$ ，矩阵 B 为 ${b_{ij}​}$，那么调用这两个函数将分别给出矩阵 A 和 B 第 i 行第 j 列的元素的值。函数将把值放入 value。
+void matA(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); void matB(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;value); 设矩阵 A 为 ${a_{ij}​}$ ，矩阵 B 为 ${b_{ij}​}$ ，那么调用这两个函数将分别给出矩阵 A 和 B 第 i 行第 j 列的元素的值。函数将把值放入 value。
 程序需要接收三个命令行参数，即为 N1, N2, N3，表示矩阵 A 是 N1*N2 维的，矩阵 B 是 N2*N3 维的。
 输出格式 link向文件 output.dat 中输出结果矩阵，每行一个浮点数，按如下方式排布：（以 3x3 矩阵为例）</description>
     </item>
@@ -1160,16 +1160,15 @@ void matA(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;valu
       
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2c/</guid>
       <description>题目 link小明这回的确问了个“物理”些的问题。虽然依旧是一个数学问题。他还是希望你能编写一个程序，帮他解决这个问题。他依旧想把你的程序运行在超算上，并要求你的程序是并行的。
-给定函数 $f(x,y)$, 正整数 $N$, 在 $N×N$ 均匀网格上用五点格式求解 Poisson 方程
+给定函数 $f(x,y)$ , 正整数 $N$ , 在 $N×N$ 均匀网格上用五点格式求解 Poisson 方程
 $$ \begin{cases} &amp;amp; -\Delta u(x,y)=f(x,y),(x,y)\in \Omega = (0,1)^2 \ &amp;amp; u(x,y)=0,(x,y)\in \partial \Omega \end{cases} $$
-记 $U_{i,j}$​ 为 $u(x_i,y_j​)$的近似值, 离散格式为
+记 $U_{i,j}$​ 为 $u(x_i,y_j​)$ 的近似值, 离散格式为
 $$ \begin{aligned} &amp;amp;4U_{i,j}-U_{i-1,j}-U{i+1,j}-U_{i,j-1}-U{i,j+1}=\frac{1}{N^2}f(x_i,y_i),x_i=\frac{i}{N},y_i=\frac{j}{N}\ &amp;amp; U_{i,j}=0,(i=0)\lor(i=N)\lor(j=0)\lor(j=N) \end{aligned} $$
 用 Gauss-Seidel 迭代求解上述线性方程组。
 小明定义了一个量，名叫 EPS（各分量绝对值差最大值）。他希望你的程序能在 EPS 小于 10−15 后输出结果。
 你看着题目苦笑了一下。如你所料，小明总是念念不忘他的 OpenMP。
 输入格式 link文件引用 rhs.h，该头文件定义了：
-void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数即为 f(x,y)。传入 x, y, value, 那么 f(x,y) 就会被保存到 value 内。
-程序需要接收一个命令行参数，即为 N。</description>
+void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数即为 f(x,y)。传入 x, y, value, 那么 f(x,y) 就会被保存到 value 内。</description>
     </item>
     
     <item>
@@ -1192,19 +1191,12 @@ void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数
       
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2e/</guid>
       <description>背景 link二维卷积是卷积神经网络的基础操作，可以提取数据特征，在图像识别领域应用广泛。卷积的复杂度导致训练困难，也是图像识别领域的重要瓶颈之一。
-对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的Deep Learning的第9章。我们只引用书中的一张图介绍卷积的计算。
-对于矩阵Input，我们使用一个比它规模小的多的Kernel进行运算。本题我们方法大概是这样：
-设Input是A∗B矩阵，Kernel是C∗D矩阵，对于每个位置(i, j)，如果可以取一个和Kernel大小一样的不越界矩阵(本题不考虑padding)，我们就把这个矩阵中与Kernel中对应元素乘起来并求和，结果放在Output(i,j)​中。
+对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的 Deep Learning 的第9章。我们只引用书中的一张图介绍卷积的计算。
+对于矩阵 Input，我们使用一个比它规模小的多的 Kernel 进行运算。本题我们方法大概是这样：
+设 Input 是A∗B矩阵，Kernel 是C∗D矩阵，对于每个位置 (i, j) ，如果可以取一个和 Kernel 大小一样的不越界矩阵(本题不考虑padding)，我们就把这个矩阵中与 Kernel 中对应元素乘起来并求和，结果放在 Output(i,j) ​中。
 $$ \begin{bmatrix} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j+D)} \ I_{(i+1,j)} &amp;amp; I_{(i+1,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+1,j+D)} \ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \ I_{(i+C,j)} &amp;amp; I_{(i+C,j+2)} &amp;amp; \cdots &amp;amp; I_{(i+C,j+D)} \ \end{bmatrix} $$
-计算完所有可算的i, j，我们就得到了卷积的输出。
-$$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{(p,q)} $$
-下图引自Ian Goodfellow 等人著作Deep Learning`，很形象地表现了这一过程。因为元素运算是可向量化的，我们试图在CPU上使用SIMD（单指令多数据）的方法，优化二维卷积运算。
-要怎么做才好呢 link要不，问问chatGPT？
-他说的确实对，向量化的思路没错，但是我们不打算给你太多的核心，所以你得让每一条指令都能操作多个数据。
-硬件条件 link评测平台的CPU是Intel® Xeon® Platinum 8358，关闭超线程。
-每次评测分配1CPU核心，4G内存。
-CPU相关参数如下：
-32K数据L1缓存，1.25MB L2缓存。</description>
+计算完所有可算的 i, j ，我们就得到了卷积的输出。
+$$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{(p,q)} $$</description>
     </item>
     
     <item>
@@ -1213,14 +1205,16 @@ CPU相关参数如下：
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</guid>
-      <description>MPI 算个 PI link前情提要 link本题是简单题，不想读背景的大佬请直接跳到题目要求。
+      <description>前情提要 link本题是简单题，不想读背景的大佬请直接跳到题目要求。
 背景 link几乎从人类数学诞生以来，一代代数学家就在试图提高圆周率π的数值精度。从五千年前的1位精度提升到当下世界纪录的100万亿位，π的计算方法从粗略估计、测量估算，再到公式逼近、机器演算，我们可以从中看到人类科技的发展史。
 &lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; standalone=&#34;no&#34;?&gt; &lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt; Record pi approximations Produced by GNUPLOT 4.6 patchlevel 0 1 100 104 106 108 1010 1012 1014 2000 BCE 250 BCE 480 1400 1450 1500 1550 1600 1650 1700 1750 1800 1850 1900 1950 2000 Number of decimal digits Year Record approximations of pi gnuplot_plot_1 当下，π的计算还是衡量高性能计算集群性能和算法优越性的重要量度，问题的维度从单纯的计算，拓展到了储存、通信、内存瓶颈等方方面面，各路超算纷纷借此机会大秀肌肉。
 但是在这一系列浩浩汤汤的计算过程中，有一小群人，在个人电脑刚刚普及的年代，却凭借着合作的力量，通过众包计算的方法，也达到了可喜的成就。其中一个项目是，通过分布式的方法，计算出了π中特殊位置数字的PiHex。在个人算力不足的年代，这可谓是工程学奇迹。
 现在我们假设你有一些算力不是很强的机器，来模拟这个场景。
 题目要求 link你有5个物理节点，每个的节点2个核心。你需要写一个MPI程序，计算π的近似值，精确到1∗10−14（15位有效数字）。
 因为MPI开销比较大，本题时间限制为30秒，不考察效率。（其实就是想让大家试一试MPI)
-请注意，我们的平台关闭了超线程，但是直接由MPI生成的线程数可能会是打开超线程后的。</description>
+请注意，我们的平台关闭了超线程，但是直接由MPI生成的线程数可能会是打开超线程后的。
+输入输出 link输入：无
+输出：一个双精度浮点数，保留15位有效数字。输出到output.txt即可。如果只有13位有效数字，则得一半分。</description>
     </item>
     
     <item>
@@ -1264,15 +1258,14 @@ $$ f(t=\frac{\sqrt{x^2 + y ^2}}{r})=d * exp(-\frac{4t^2}{1-t^2}) $$
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3c/</guid>
-      <description>背景介绍 link密度泛函理论（Density Functional Theory，简称DFT）在材料计算，医药和分子化学等领域扮演着重要的角色，是微观世界建模的重要工具。在高性能计算技术与机器学习方法飞速发展的今天，理论计算有望更快速地突破科学边界，解决更多的实际问题。密度泛函理论兼具效率与精度，正在释放出巨大的潜力。
+      <description>背景介绍 link密度泛函理论（Density Functional Theory，简称 DFT ）在材料计算，医药和分子化学等领域扮演着重要的角色，是微观世界建模的重要工具。在高性能计算技术与机器学习方法飞速发展的今天，理论计算有望更快速地突破科学边界，解决更多的实际问题。密度泛函理论兼具效率与精度，正在释放出巨大的潜力。
 ABACUS作为积淀深厚的国产开源密度泛函计算软件，致力于结合高性能计算和机器学习方法，推动电子结构新算法的发展和普及，为更多科研人员、老师和学生们提供更方便易用的免费开源软件，为更多开发者提供一个框架清晰、方便上手的开发平台，努力将第一性原理方法打造成面向实际应用场景的解决方案。
-在ABACUS等DFT软件计算中有一个很重要的倒易空间到实空间的转换，涉及到快速傅里叶算法也就是FFT。不过这个转化和通常的FFT不同，它带有一定的稀疏性。我们可以将在倒易空间需要变换的数据视为是一个球体，这个球体位于一个三维的正立方体中，球体直径小于等于立方体边长的一半，立方体其他部分置零，然后将整个立方体输入到FFT中进行变换得到实空间数据。但受限于接口问题目前只能应用cuFFT或者FFTW等成熟的库，没法有效利用数据的稀疏性。在实际计算中，FFT的计算占比达30%以上，是一个相当大的计算瓶颈。我们以ABACUS为基础，将相关问题抽象出来，提供了一个物理意义无关的优化问题模型。
-赛题描述 link考虑立方体$D$，定义其边长为$c$，球$R$为$D$中的一个球体，球的半径为$r$，$r\leq c/4$。
-为简化起见，考虑$D$和$R$的中心重合位于原点处。注意：这里边长都是整数，格点位于每个整点处，若长度为$m$，则格点数为$m+1$。若边长为奇数，则原点分布于正中间，若边长为偶数，则自动扩充边长为变长+1。
+在ABACUS等DFT软件计算中有一个很重要的倒易空间到实空间的转换，涉及到快速傅里叶算法也就是FFT。不过这个转化和通常的 FFT 不同，它带有一定的稀疏性。我们可以将在倒易空间需要变换的数据视为是一个球体，这个球体位于一个三维的正立方体中，球体直径小于等于立方体边长的一半，立方体其他部分置零，然后将整个立方体输入到FFT中进行变换得到实空间数据。但受限于接口问题目前只能应用cuFFT或者FFTW等成熟的库，没法有效利用数据的稀疏性。在实际计算中，FFT的计算占比达30%以上，是一个相当大的计算瓶颈。我们以ABACUS为基础，将相关问题抽象出来，提供了一个物理意义无关的优化问题模型。
+赛题描述 link考虑立方体$D$，定义其边长为 $c$ ，球 $R$ 为 $D$ 中的一个球体，球的半径为 $r$ ， $r\leq c/4$ 。
+为简化起见，考虑 $D$ 和 $R$ 的中心重合位于原点处。注意：这里边长都是整数，格点位于每个整点处，若长度为 $m$ ，则格点数为 $m+1$ 。若边长为奇数，则原点分布于正中间，若边长为偶数，则自动扩充边长为变长 +1 。
 FFT输入数据示意图，仅有彩色球体为有效数据，其余部分置为零。
-输入 link 立方体边长$c$ 球体半径$r$ 三维复数数据$A$，$A$的大小为$c^3$，以一维数组形式连续存储。$A$的初始化说明如下： 遍历A中的数据元素P(x,y,z); 如果P到球心距离小于半径r，则P=random_complex; 否则P置零。 输出 link A经过逆傅里叶变化后的输出数组B。 其中，A是频域空间，B是时域空间。
-评测说明 link 初始代码中提供了一份使用cuFFT作为实现的代码，以下简称为Baseline版本。要求选手实现的版本以下简称为Acclerate版本。 Baseline提供了编译说明，可以在Github下载，Baseline相关问题可直接在仓库提交ISSUE讨论。 Acclerate的输出应该和Baseline一致（允许误差：1∗10−5）。 你可以在/data/software/tools/cufft找到评测用的输入数据
-评分标准 link 将在规定的硬件平台上运行选手的程序，分别对于如下大小的c和r进行10次运行，取平均耗时为最终耗时结果： c r 权重 次数 1 33 8 0.15 10 2 33 6 0.15 10 3 65 16 0.15 10 4 65 12 0.15 10 5 129 32 0.1 10 6 129 24 0.1 10 9 257 64 0.05 10 10 257 48 0.</description>
+输入 link 立方体边长 $c$ 球体半径 $r$ 三维复数数据 $A$ ， $A$ 的大小为 $c^3$ ，以一维数组形式连续存储。 $A$ 的初始化说明如下： 遍历 A 中的数据元素 P(x,y,z) ; 如果 P 到球心距离小于半径r，则 P=random_complex ; 否则 P 置零。 输出 link A经过逆傅里叶变化后的输出数组B。 其中，A是频域空间，B是时域空间。
+评测说明 link 初始代码中提供了一份使用cuFFT作为实现的代码，以下简称为Baseline版本。要求选手实现的版本以下简称为Acclerate版本。 Baseline提供了编译说明，可以在Github下载，Baseline相关问题可直接在仓库提交ISSUE讨论。 Acclerate的输出应该和Baseline一致（允许误差：1∗10−5）。 你可以在/data/software/tools/cufft找到评测用的输入数据</description>
     </item>
     
     <item>
@@ -1295,7 +1288,7 @@ Channel create_channel(void); 请使用此函数创建一个用于和 game serv
     </item>
     
     <item>
-      <title>AI算子优化</title>
+      <title>B. AI算子优化</title>
       <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
@@ -1309,7 +1302,7 @@ If you want to test the operator yourself, you can run this</description>
     </item>
     
     <item>
-      <title>RDMA就是快</title>
+      <title>C. RDMA就是快</title>
       <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
@@ -1340,17 +1333,13 @@ Size ZeroScoreSpeed(MiB/s) FullScoreSpeed(MiB/s) Score 64 104 1044 40 512 860 43
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</guid>
       <description>背景介绍 link在各类数值模拟计算问题中，求解线性方程是一个非常常见且重要的步骤。比如在流体数值计算（CFD）中，我们常常需要求解一个关于流体压力的泊松类型问题：
 $$ \frac{\delta t}{\rho}\nabla p = \nabla \cdot \vec {u} $$
-其中方程的左边是一个压力场$p$ 的二阶导数，而右边是速度场（矢量）的散度。通常我们想要在已知速度场的情况下，求解其对应的压力场 $p$，在特定的网格设定下，我们可以使用有限差分的方法我们可以将上面的微分方程转化为线性方程组。比如，下图演示了一个流体数值模拟中常用的，将压力存储在网格中心，将速度存储在网格界面上的离散形式：
+其中方程的左边是一个压力场$p$ 的二阶导数，而右边是速度场（矢量）的散度。通常我们想要在已知速度场的情况下，求解其对应的压力场 $p$ ，在特定的网格设定下，我们可以使用有限差分的方法我们可以将上面的微分方程转化为线性方程组。比如，下图演示了一个流体数值模拟中常用的，将压力存储在网格中心，将速度存储在网格界面上的离散形式：
 其对应的离散化方程式是：
 $$ \frac{\delta t}{\rho}\left[\frac{1}{dx}\cdot \left(\frac{p_{i+1,j}-p {i,j}}{dx} - \frac{p{i,j}-p_{i-1,j}}{dx} \right) + \frac{1}{dy} \cdot \left( \frac{p_{i,j+1}-p_{i,j}}{dy} - \frac{p_{i,j}-p_{i, j-1} }{dy} \right) \right] = \frac{u_{i,j}-u_{i-1,j}}{dx} + \frac{v_{i,j}- v_{i,j-1}}{dy} $$
-其中$i$和$j$都是 [1, n] 的整数，我们可以对整个计算区域的所有格子列出类似的方程共 $n×n$个。
-对上式稍作整理可以发现当格子大小$dx=dy $时，方程左边可以简化成
+其中 $i$ 和 $j$ 都是 [1, n] 的整数，我们可以对整个计算区域的所有格子列出类似的方程共 $n×n$个。
+对上式稍作整理可以发现当格子大小 $dx=dy$ 时，方程左边可以简化成
 $$ \frac{\delta t}{\rho dx^2}(4p_{i,j}-p_{i+1,j}-p_{i-1,j}-p_{i,j-1}- p_{i,j+1}) $$
-其中 $\frac{\delta t}{\rho dx^2}$是一个常数系数，为了简化问题我们可以直接将其省略。于是，我们可以将$p$ 的系数存入一个矩阵 $A$，而将$p$ 保存在一个向量中，上面的表达式就变成了如下的一个矩阵和向量的乘：
-于是这个问题就被转化为了求解线性方程组的问题。在各类数值仿真中，这样的例子还有很多很多。
-共轭梯度法（Conjugate-gradient，以下简称为 CG 方法）是一种求解系数矩阵为对称正定矩阵的线性方程组的迭代解法。假设我们要求解如下的线性系统：
-$Ax=b$
-其中$A$ 是一个对称且正定，大小为 $n×n$的实数矩阵，$x$ 为待求解的大小为 $n×1$的未知数向量。</description>
+其中 $\frac{\delta t}{\rho dx^2}$ 是一个常数系数，为了简化问题我们可以直接将其省略。于是，我们可以将 $p$ 的系数存入一个矩阵 $A$ ，而将 $p$ 保存在一个向量中，上面的表达式就变成了如下的一个矩阵和向量的乘：</description>
     </item>
     
     <item>
