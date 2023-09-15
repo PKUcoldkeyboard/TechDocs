@@ -1,6 +1,6 @@
-baseURL = 'https://pkucoldkeyboard.github.io/TechDocs/'
-languageCode = 'en-us'
-title = 'Label Convert Documentation'
+baseURL = 'https://cuterwrite/TechDocs'
+languageCode = 'zh-cn'
+title = 'CS技术文档'
 enableEmoji = true
 enableGitInfo = true # N.B. .GitInfo does not currently function with submodule content directories
 # googleAnalytics = "G-VXQVVP7V8K" # (or set via env variable HUGO_GOOGLEANALYTICS)
@@ -39,17 +39,17 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
   mono_font       = "Fira Code" # Default is System font
 
     [params.footer]
-        copyright = "© :YEAR: SWHL. Built with [**Lotus Docs**](https://github.com/colinwilson/lotusdocs)"
+        copyright = "© :YEAR: cuterwrite. Built with [**Lotus Docs**](https://github.com/colinwilson/lotusdocs)"
         version   = true # include git commit info in footer
 
     [params.social]
-        github = "RapidAI/LabelConvert" # github.com/YOUR_GITHUB_ID
-        twitter = "_SWHL"            # twitter.com/YOUR_TWITTER_ID
+        github = "github.com/PKUColdkeyboard" # github.com/YOUR_GITHUB_ID
+        # twitter = "_SWHL"            # twitter.com/YOUR_TWITTER_ID
         # instagram = "colinwilson"      # instagram.com/YOUR_INSTAGRAM_ID
         # rss = true                     # show rss icon with link
 
     [params.docs] # Parameters for the /docs 'template'
-        title           = "Label Convert Documentation"                        # default html title for documentation pages/sections
+        title           = "CS技术文档"                         # default html title for documentation pages/sections
 
         # pathName        = "docs"                            # path for documentation site | default "docs"
 
@@ -60,7 +60,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         prism           = true                                # enable syntax highlighting via Prism
 
         # gitinfo
-        repoURL         = "https://github.com/RapidAI/LabelConvert"  # Git repository URL for your site [support for GitHub, GitLab, and BitBucket]
+        repoURL         = "https://github.com/PKUColdkeyboard/TechDocs"  # Git repository URL for your site [support for GitHub, GitLab, and BitBucket]
         repoBranch      = "main"                              # Name of your Git repository branch
         editPage        = true                                # enable 'Edit this page' feature - default false
         lastMod         = true                                # enable 'Last modified' date on pages - default false
@@ -144,6 +144,6 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
 [[menu.primary]]
     name  = "Community"
-    url = "https://github.com/RapidAI/LabelConvert/discussions"
+    url = "https://github.com/PKUColdkeyboard/TechDocs/discussions"
     identifier = "community"
     weight = 30
