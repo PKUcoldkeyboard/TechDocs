@@ -1,4 +1,4 @@
-baseURL = 'https://cuterwrite/TechDocs'
+baseURL = 'https://cuterwrite.top/TechDocs'
 languageCode = 'zh-cn'
 title = 'CS技术文档'
 enableEmoji = true
