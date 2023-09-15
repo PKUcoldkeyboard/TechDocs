@@ -6,7 +6,7 @@
     <description>Recent content in Beginners on CS技术文档</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 08 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/tags/beginners/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/tags/beginners/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>COCO → labelImg yolo</title>
       <link>https://cuterwrite.top/TechDocs/docs/supportconversions/coco_to_labelimg/</link>
@@ -17,15 +17,12 @@
     </item>
     
     <item>
-      <title>Overview</title>
+      <title>前言</title>
       <link>https://cuterwrite.top/TechDocs/docs/overview/</link>
-      <pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/overview/</guid>
-      <description>Label Convert link A dataset format conversion tool for object detection and image segmentation, which supports mutual conversion between labelme, labelImg tools and YOLO, VOC, and COCO dataset formats.
-Installation link pip install label_convert Contributing linkPull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropriate.
-License linkApache 2.0</description>
+      <description>前言 link这是一个计算机的技术资料库。</description>
     </item>
     
   </channel>
