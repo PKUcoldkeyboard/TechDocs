@@ -108,7 +108,7 @@ googleAnalytics = "G-8Q4V90T15H" # (or set via env variable HUGO_GOOGLEANALYTICS
     [params.feedback]
         enabled = true
         emoticonTpl = true
-        eventDest = ["plausible", "google"]
+        eventDest = ["google"]
         emoticonEventName = "反馈"
         positiveEventName = "积极反馈"
         negativeEventName = "消极反馈"
