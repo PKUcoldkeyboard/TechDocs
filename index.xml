@@ -67,7 +67,7 @@ wget http://redis.googlecode.com/files/redis-2.4.6.tar.gz tar xzf redis-2.4.6.ta
     </item>
     
     <item>
-      <title></title>
+      <title>目录</title>
       <link>https://cuterwrite.top/TechDocs/docs/c-guide/summary/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
@@ -1053,10 +1053,10 @@ donor value jxdwinter 6.00 贾**@悠云.com 20.00 Mr.Moon 2.00 </description>
     
     <item>
       <title>A. 欢迎参赛</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1a/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1a/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1a/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1a/</guid>
       <description>欢迎参赛 link欢迎参加第零届北京大学高性能计算综合能力竞赛！
 点击题目列表上方“进入超算平台”按钮即可登入 SCOW 平台。我们为每位选手预充值了一些金额，以方便大家的使用。
 如果需要在线编写和调试程序，我们推荐使用在线 VSCode。您可以在 SCOW 平台上打开“交互式应用”，并创建一个 VSCode 应用，然后点击连接即可。请注意，默认情况下一小时后打开的实例会被自动销毁。在创建交互式应用时，保持页面的默认配置即可（分区：compute，核心数：1）。
@@ -1067,10 +1067,10 @@ donor value jxdwinter 6.00 贾**@悠云.com 20.00 Mr.Moon 2.00 </description>
     
     <item>
       <title>B. 实验室的新机器</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1b/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1b/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1b/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1b/</guid>
       <description>题面 link小北实验室最近新购置了几台服务器，供日常实验数据分析使用。为了让大家都能合理且方便地运用这些机器，你在它们上面安装了 slurm 和 SCOW，大家都使用得很开心。
 李华今年刚加入小北实验室。他的日常工作需要分析大量数据。李华撰写了一个程序，专门用于分析他的这些数据。他使用他的笔记本运行这个程序。但是，李华发现，随着研究的不断深入，他需要分析的数据也越来越复杂；终于有一天，李华的笔记本“罢工”了——它所使用的“火龙一号”处理器在持续不断的满负荷工作过程中产生了过量的热，导致自己处于被烧毁的边缘，触发了“罢工”的保护机制。
 于是，李华申请了实验室服务器账号，接下来他便可以把他的程序运行在实验室服务器上，他的笔记本也可以得到良好的休息。这将为他省下一大笔修理费用。
@@ -1083,27 +1083,26 @@ donor value jxdwinter 6.00 贾**@悠云.com 20.00 Mr.Moon 2.00 </description>
     
     <item>
       <title>C. 小北问答超速版</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1c/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1c/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1c/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1c/</guid>
       <description>背景 link小 A 热衷于小北问答。但是小 A 觉得手工判卷太慢了。于是小 A 学会了 YAML 并试图实现自动评分。小 A 把它称作“小北问答·超速版”。他想要测试自己编写的自动评分系统正不正确，于是出了一套题，让你来帮忙试一试。
 据你所知，“超速”的含义是小 A 把这套自动评分程序运行于超算上。
 小 A 的题目 link TOP500中能效最高的超算是哪一台？（回答一个单词）
 戈登贝尔奖是并行计算领域的最高奖项，戈登贝尔奖设立在哪一年？（回答一个数字）
 一般来说，服务器使用的 CPU 相比于同代同等级的游戏 CPU，核心更 （ ）（填多 / 少），多核性能更（ ）（填强 / 弱）
 一般来说，服务器使用的 CPU 相比于同代同等级的游戏 CPU，单核最高频率更 （ ）（填高 / 低），因此起单核性能更 （ ）（填强 / 弱）
-5~7 题：对如下实现的矩阵乘法CN×N​=CN×N​+AN×N​BN×N​, 假设单位内存是1：（均填写含 N 的表达式，可以使用 +-*/ 运算符、小括号和 pow(a, b)，sqrt(n) 函数，等价形式均可）
-内存写策略是直写，全相联（块大小是1），替换策略是LRU。
+5~7 题：对如下实现的矩阵乘法 C[M][N] = C[M][N] + A[M][K] * B[K][N] ​, 假设单位内存是1：（均填写含 N 的表达式，可以使用 +-*/ 运算符、小括号和 pow(a, b)，sqrt(n) 函数，等价形式均可），内存写策略是直写，全相联（块大小是1），替换策略是LRU。
 for m in [1, N]: for n in [1,N]: for k in [1, N]: C[m,n] = C[m,n] &amp;#43; A[m, k] * B[k, n] 对矩阵A, B, C均进行了（ ）次读，对C进行了（ ）次写。</description>
     </item>
     
     <item>
       <title>D. 简单题</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1d/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1d/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1d/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E9%AB%98%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/1d/</guid>
       <description>题面 linkHint: mmap写入空文件的处理方式：https://stackoverflow.com/questions/44553907/mmap-sigbus-error-and-initializing-the-file
 不要惊慌。你没有看错，这就是一道简单题。
 啊偶，虽然在某些比赛中，被标注为“简单题”的题目往往并不简单，但是在这场比赛中，我们确实试图提供一些简单题，以让大家能够更容易地获得更多分数。
@@ -1119,10 +1118,10 @@ g&amp;#43;&amp;#43; -o solution solution.cpp -O1 -fopenmp -std=c&amp;#43;&amp;#4
     
     <item>
       <title>A. 求积分！</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2a/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2a/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2a/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2a/</guid>
       <description>题目 link小明对高等数学感到头疼。今天，他的作业里有一道计算积分的题目。他不知道自己的答案正不正确。他希望你能写一个程序，计算得越准确越好。由于他对于精度的要求非常高，又不希望等待程序运行花费太多时间，所以他将会把程序运行于超算上。你需要使得你编写的程序支持多线程处理从而提升处理速度。
 小明遇到的题目转化为离散形式是这样的：
 给定函数 $f(x)$ , 正整数 $N$ , 计算 $I_N(f)$ , 其中
@@ -1139,10 +1138,10 @@ void rhs(double &amp;amp;x, double &amp;amp;value); 即为提供的 f(x)。其�
     
     <item>
       <title>B. 乘一乘！</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2b/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2b/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2b/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2b/</guid>
       <description>题目 link小明对线性代数也感到头疼。今天，他的作业里有一道计算矩阵乘法的题目。他不知道自己的答案正不正确。他希望你能写一个程序，计算得越准确越好。由于他对于精度的要求非常高，又不希望等待程序运行花费太多时间，所以他将会把程序运行于超算上。你需要使得你编写的程序支持多线程处理从而提升处理速度。
 小明遇到的题目是这样的：
 给定矩阵 A,B, 满足 A 列数与 B 行数相等, 计算 AB.
@@ -1155,10 +1154,10 @@ void matA(unsigned int &amp;amp;i, unsigned int &amp;amp;j, double &amp;amp;valu
     
     <item>
       <title>C. 解方程！</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2c/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2c/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2c/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2c/</guid>
       <description>题目 link小明这回的确问了个“物理”些的问题。虽然依旧是一个数学问题。他还是希望你能编写一个程序，帮他解决这个问题。他依旧想把你的程序运行在超算上，并要求你的程序是并行的。
 给定函数 $f(x,y)$ , 正整数 $N$ , 在 $N×N$ 均匀网格上用五点格式求解 Poisson 方程
 $$ \begin{cases} &amp;amp; -\Delta u(x,y)=f(x,y),(x,y)\in \Omega = (0,1)^2 \\ &amp;amp; u(x,y)=0,(x,y)\in \partial \Omega \end{cases} $$ 记 $U_{i,j}$​ 为 $u(x_i,y_j​)$ 的近似值, 离散格式为
@@ -1171,10 +1170,10 @@ void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数
     
     <item>
       <title>D. 道生一</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2d/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2d/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2d/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2d/</guid>
       <description>题面 link道生一，一生二，二生三，三生万物。
 我们给你选择了三个“魔力数字”genA, genB, genC，请你使用这三个数生成n个“随从数字”并排序，得到data数组。经过对data数组的计算，你会得到一个归一数，把这个数输出到标准输出即可。 （本题中的所有数字都是64位无符号整数。）
 输入 link从标准输入中读入四个数字，分别是genA, genB, genC,n 。
@@ -1184,10 +1183,10 @@ void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数
     
     <item>
       <title>E. 卷？寄！</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2e/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2e/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2e/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2e/</guid>
       <description>背景 link二维卷积是卷积神经网络的基础操作，可以提取数据特征，在图像识别领域应用广泛。卷积的复杂度导致训练困难，也是图像识别领域的重要瓶颈之一。
 对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的 Deep Learning 的第9章。我们只引用书中的一张图介绍卷积的计算。
 对于矩阵 Input，我们使用一个比它规模小的多的 Kernel 进行运算。本题我们方法大概是这样：
@@ -1198,10 +1197,10 @@ $$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{
     
     <item>
       <title>F. MPI算个PI</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</guid>
       <description>前情提要 link本题是简单题，不想读背景的大佬请直接跳到题目要求。
 背景 link几乎从人类数学诞生以来，一代代数学家就在试图提高圆周率π的数值精度。从五千年前的1位精度提升到当下世界纪录的100万亿位，π的计算方法从粗略估计、测量估算，再到公式逼近、机器演算，我们可以从中看到人类科技的发展史。
 &lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; standalone=&#34;no&#34;?&gt; &lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt; Record pi approximations Produced by GNUPLOT 4.6 patchlevel 0 1 100 104 106 108 1010 1012 1014 2000 BCE 250 BCE 480 1400 1450 1500 1550 1600 1650 1700 1750 1800 1850 1900 1950 2000 Number of decimal digits Year Record approximations of pi gnuplot_plot_1 当下，π的计算还是衡量高性能计算集群性能和算法优越性的重要量度，问题的维度从单纯的计算，拓展到了储存、通信、内存瓶颈等方方面面，各路超算纷纷借此机会大秀肌肉。
@@ -1216,20 +1215,20 @@ $$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{
     
     <item>
       <title>A. 从头开始造AI</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3a/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3a/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3a/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3a/</guid>
       <description>Section 1 Can you train a simple neural network using Pytorch? linkIn this section, you need to complete the code of Pytorch.ipynb. You can see more tutorials and details in the file. We will check the completion and correctness of your code in this section.
 Section 2 Can you differentiate a weed from a crop seedling? linkWith the network training experience, we can solve a lot of interesting problems and let&amp;rsquo;s try one of them in this section.</description>
     </item>
     
     <item>
       <title>B. 神奇的焦散</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3b/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3b/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3b/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3b/</guid>
       <description>任务背景 link焦散是光线经过透明物体后在某些位置汇聚形成的图案，因为其空间频率远高于单纯漫反射下的明暗，在渲染时需要较大的计算量。考虑一个简单的场景，一束方形截面的平行单色光经过若干方向玻璃板照在方形屏幕上。在这个场景中，只需要采样平行光最终到达屏幕的位置，即可得到焦散图案。
 物理模型 link这里我们假设玻璃板会让经过的光线发生不均匀的相位落后，从而向不同方向折射，为了简化计算，忽略玻璃板的厚度。相位落后由多个定义在半径为r的圆形区域内的，最大值为d的旋转对称模板函数相加。 模板函数具有如下形式
 $$ f(t=\frac{\sqrt{x^2 + y ^2}}{r})=d * exp(-\frac{4t^2}{1-t^2}) $$
@@ -1251,10 +1250,10 @@ $$ f(t=\frac{\sqrt{x^2 + y ^2}}{r})=d * exp(-\frac{4t^2}{1-t^2}) $$
     
     <item>
       <title>C. cuFFT并非不可战胜！</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3c/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3c/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3c/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/gpu%E4%B8%8A%E7%9A%84%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/3c/</guid>
       <description>背景介绍 link密度泛函理论（Density Functional Theory，简称 DFT ）在材料计算，医药和分子化学等领域扮演着重要的角色，是微观世界建模的重要工具。在高性能计算技术与机器学习方法飞速发展的今天，理论计算有望更快速地突破科学边界，解决更多的实际问题。密度泛函理论兼具效率与精度，正在释放出巨大的潜力。
 ABACUS作为积淀深厚的国产开源密度泛函计算软件，致力于结合高性能计算和机器学习方法，推动电子结构新算法的发展和普及，为更多科研人员、老师和学生们提供更方便易用的免费开源软件，为更多开发者提供一个框架清晰、方便上手的开发平台，努力将第一性原理方法打造成面向实际应用场景的解决方案。
 在ABACUS等DFT软件计算中有一个很重要的倒易空间到实空间的转换，涉及到快速傅里叶算法也就是FFT。不过这个转化和通常的 FFT 不同，它带有一定的稀疏性。我们可以将在倒易空间需要变换的数据视为是一个球体，这个球体位于一个三维的正立方体中，球体直径小于等于立方体边长的一半，立方体其他部分置零，然后将整个立方体输入到FFT中进行变换得到实空间数据。但受限于接口问题目前只能应用cuFFT或者FFTW等成熟的库，没法有效利用数据的稀疏性。在实际计算中，FFT的计算占比达30%以上，是一个相当大的计算瓶颈。我们以ABACUS为基础，将相关问题抽象出来，提供了一个物理意义无关的优化问题模型。
@@ -1267,10 +1266,10 @@ FFT输入数据示意图，仅有彩色球体为有效数据，其余部分置�
     
     <item>
       <title>A. 走，我们扫雷去</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4a/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4a/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4a/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4a/</guid>
       <description>题目背景 link你很喜欢玩扫雷。
 在游戏“扫雷”中，你面对的是一个由若干方格组成的矩阵，每个方格中可能有一颗地雷，也可能没有地雷。
 你的基本操作名叫“点开”。每一次，你可以选择一个格子并“点开”它，如果它是地雷，那么你的分数会被扣掉一些，如果它不是地雷，那么你会获得一分，并且会有一个数字显现在方格上，这个数字代表着周围的的八个方格（上、下、左、右、左上、左下、右上、右下）中一共有多少颗地雷（数字为 0 到 8）。如果点开的方格中的数字为 0（这代表这个方格周围的八个方格都不是地雷），那么它周围的方格也会被自动“点开”（这个过程可以递归，也即，如果新的方格中的数字也是 0，那么它周围的八个方格也会被自动“点开”。我们称其为“间接点开”，相对应的，被玩家直接点开的格子称为“直接点开”）。当玩家主动退出，或者时间耗尽后，游戏结束。
@@ -1286,10 +1285,10 @@ Channel create_channel(void); 请使用此函数创建一个用于和 game serv
     
     <item>
       <title>B. AI算子优化</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4b/</guid>
       <description>Problem linkYou&amp;rsquo;ve entered an AI laboratory in a university.
 There are many commonly used operators in the field of deep learning, and what you need to do today is to optimize three of them.
 The code of your project is included in problem attachments.
@@ -1300,10 +1299,10 @@ If you want to test the operator yourself, you can run this</description>
     
     <item>
       <title>C. RDMA就是快</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E6%8F%90%E5%8D%87/4c/</guid>
       <description>问题描述 linkTCP/IP 协议基于软件协议栈传输的这种方式已经无法适应高速数据传输的需求，成为网络性能进一步增长的瓶颈，特别是应用数据在用户态和内核态之间的拷贝带来ms级的延时，协议栈对数据包的解析、寻址、校验等操作需要消耗大量CPU资源。为此，RDMA技术替代了传统的TCP/IP软件协议栈的设计。RDMA的全称是远程直接内存访问（remote direct memory access），它在硬件上实现了kernel bypass技术，数据不需要经过软件协议栈，并且不需要CPU参与寻址、解析等操作，从而提供低延时、高带宽、低CPU使用的性能优势。
 然而，想要充分挖掘RDMA的性能优势并不是一个容易的任务。我们这里假设一个最简单的场景：有一个数据生产者producer与一个数据消费者consumer，生产者不断给consumer发送数据。我们在附件提供了一个样例程序。该样例程序包含了producer与consumer的实现。作为参赛者，你需要进一步优化该样例程序，以达到更大的传输性能。注意，参赛者的最终提交不能修改其中的farm_cons.cpp与farm_prod.cpp（改了也没用），其余文件都可以自由改动.。
 你可以做的事情包括但不限于: 对原有的ringbuffer进行常数优化；调整原有ringbuffer的参数；调整RDMA的传输参数与设置以适应应用场景；利用RDMA原语自由设计新的数据结构。
@@ -1324,10 +1323,10 @@ Size ZeroScoreSpeed(MiB/s) FullScoreSpeed(MiB/s) Score 64 104 1044 40 512 860 43
     
     <item>
       <title>A. 共轭梯度法</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finala/</guid>
       <description>背景介绍 link在各类数值模拟计算问题中，求解线性方程是一个非常常见且重要的步骤。比如在流体数值计算（CFD）中，我们常常需要求解一个关于流体压力的泊松类型问题：
 $$ \frac{\delta t}{\rho}\nabla p = \nabla \cdot \vec {u} $$
 其中方程的左边是一个压力场 $p$ 的二阶导数，而右边是速度场（矢量）的散度。通常我们想要在已知速度场的情况下，求解其对应的压力场 $p$ ，在特定的网格设定下，我们可以使用有限差分的方法我们可以将上面的微分方程转化为线性方程组。比如，下图演示了一个流体数值模拟中常用的，将压力存储在网格中心，将速度存储在网格界面上的离散形式：
@@ -1341,10 +1340,10 @@ $$ \frac{\delta t}{\rho dx^2}(4p_{i,j}-p_{i+1,j}-p_{i-1,j}-p_{i,j-1}- p_{i,j+1})
     
     <item>
       <title>B. 高性能存储阵列的软件开销优化</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalb/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalb/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalb/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalb/</guid>
       <description>一、背景介绍 link近些年来，SSD因其高带宽、低延迟、低能耗的特点，已经成为了高性能计算、数据中心、云服务等场景下的主要存储设备。但不幸的是，由于其自身的物理性质，相较于HDD，SSD通常更容易损坏，导致数据丢失。
 存储阵列（RAID）是解决这个问题的手段之一。通过条带化技术，RAID可以聚合多个SSD的性能，同时对外提供服务，以驱动高性能计算中大量I/O的场景；通过校验和技术，RAID可以保证存储阵列具有一定的容错性，即使其中的一个磁盘损坏，也能从剩余的磁盘中恢复数据。
 Linux software RAID（mdraid）是Linux内核中自带的RAID引擎，设计于二十多年前，因其高昂的软件开销，已不再适合用来创建和管理现有的高性能存储设备（如NVMe SSD）。如何优化mdraid，使得高性能SSD组成的存储阵列能够发挥出优异的性能，是现在学术界和工业界关注和研究的重点。
@@ -1363,10 +1362,10 @@ RAID类型 I/O Size No. of I/O threads No. of Worker threads IO depth 类别 指
     
     <item>
       <title>C. 工程精度离散单元法计算程序优化</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalc/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalc/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalc/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finalc/</guid>
       <description>一、题目背景 link离散单元法 (discrete element method, DEM) 由岩土工程学者 Cundall 和 Strack 于 1979 年提出，是一种数值仿真方法。它将世界抽象为若干细小颗粒 (particle) 的集合，将时间抽象为若干个细小的时间步 (time step)，在每个时间步内，分析颗粒之间的接触 (contact)，通过适当的接触模型 (contact model) 计算接触力 (矩)，利用牛顿第三定律 (Newton&amp;rsquo;s third law) 赋予颗粒上。归集每个颗粒所受的合力 (矩)，然后利用牛顿第二定律 (Newton&amp;rsquo;s second law) 求得颗粒 (角) 加速度，再对 (角) 加速度两次时间积分，得到颗粒位置 (方位) 的变动。重复以上过程，即可模拟时间的流逝和世界的演变。
 DEM 因为基本假设简单，适用范围广，限制少。相比有限单元法 (finite element method, FEM)，DEM 可以自然模拟开裂、破碎等大变形问题，显式 DEM 也没有迭代收敛问题。DEM 被广泛用于土木工程、化学工程、工业工程等领域，通过数值仿真预测产品性能或工艺效果，从而指导工程实践。DEM 具有数值仿真共同的低成本优势，能以相比实验更低的成本，创造显著的经济效益。
 然而，DEM 有一个显著的劣势——计算量大，计算速度慢。因此，高性能计算 (high performance computing, HPC) 对 DEM 仿真的加速必不可少，以保证 DEM 的计算时间处于可接受的范围内，确保生产效率。
@@ -1375,10 +1374,10 @@ DEM 因为基本假设简单，适用范围广，限制少。相比有限单元�
     
     <item>
       <title>D. Linkpack节点的选择程序优化</title>
-      <link>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finald/</link>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finald/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
-      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finald/</guid>
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%98%E7%9B%AE/finald/</guid>
       <description>赛题描述 link给定2个SPINE交换机下48个候选节点，要求在不超过3次Linpack计算的情况下，通过程序或脚本以全自动的方式选择16个节点，得到16节点的Linpack最优值。
 linpack的评测指标是gflops。
 输入 link无，选手可自行获取相关信息
@@ -1388,6 +1387,25 @@ linpack的评测指标是gflops。
 选手可以向linpack分区提交任务以测试。请注意，单次申请节点数不得超过4个，单次申请时间不得超过30分钟，否则将失去该节点申请资格。建议选手在compute节点进行编码，向linpack提交任务进行测试。
 申请节点时请加上--exclusive选项，以免受其他评测影响。
 提示 link1． 使用Intel OneAPI MKL函数库下的mp_linpack软件测试包用于Linpack测试（安装在/data/software/intel/mkl/）。我们的集群中，只有SCOW集群安装了该脚本，请 2． 建议编写dgemm测试程序用于筛选Linpack测试的NB值，以及筛选候选节点的双精度性能 3． 建议采用MPI pingpong测试的方式分析出候选节点的网络拓扑</description>
+    </item>
+    
+    <item>
+      <title>深度学习调优指南中文版</title>
+      <link>https://cuterwrite.top/TechDocs/docs/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/readme/</link>
+      <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/readme/</guid>
+      <description>这不是官方认证的 Google 产品。
+Varun Godbole † , George E. Dahl † , Justin Gilmer † , Christopher J. Shallue ‡ , Zachary Nado †
+† 谷歌研究，谷歌大脑团队
+‡ 哈佛大学
+目录 link 这份手册是为谁准备的？ 为什么需要这份调优手册？ 开始新项目的指南 选择模型架构 选择优化器 选择BatchSize 选择初始配置 提高模型性能的科学方法 增量调整策略 探索与利用 选择下一轮实验的目标 设计下一轮实验 确定是否采用此训练工作流更改或超参数配置 探索结束后 确定每次训练运行的步数 当训练不受计算限制时如何决定该训练多久 当训练受计算限制时如何决定该训练多久 关于训练工作流的额外补充 优化输入管道 评估模型性能 保存检查点并追溯选择最佳检查点 设置实验跟踪 BatchNorm的实现细节 多主机工作流的注意事项 常见问题的回答 致谢 引用 关于贡献 这份手册是为谁准备的？ link本文档适用于对最大化深度学习的性能感兴趣的工程师和研究人员（包括个人和团队）。我们假定您具备机器学习和深度学习概念的基本知识。
+我们的重点是超参数调优的过程，但我们还涉及深度学习学习的其他方面。例如工作流实施和优化，但这些方面并不详尽
+我们假设机器学习问题是监督学习或类似的东西（例如自监督学习）。但是，本文档中描述的技术也可能适用于其他类型的问题。
+为什么需要这份调优手册？ link目前，要使深度神经网络在实践中正常运行，需要付出大量的努力和猜测。更糟糕的是，目前很少有人记录下那些深度学习中获得良好结果的实际方法。一方面，通常，论文忽略了导致最终结果的过程，以呈现更清晰的原理。另一方面，处理商业问题的机器学习工程师很少有时间回顾并概括他们的调参过程。教科书也往往回避实用指南，而偏重于基本原理，即使它们的作者具有在应用工作中提供有用建议的经验。在准备创建此文档时，我们找不到任何系统性的资料来解释如何使用深度学习获得良好的结果. 相反，我们看到了博客文章和社交媒体上的建议片段、从研究论文附录中收集的技巧、特定项目或工作流的偶然案例研究，以及很多困惑。在深度学习领域，专家和新手用着表面上类似的方法，但所取得的结果之间存在着巨大的差距。与此同时，这些专家也很乐意承认他们所做的一些事情可能没有充分的理由。随着深度学习的成熟并对世界产生更大的影响，社区需要更多涵盖有用方法的资源，包括对于获得良好结果至关重要的所有实用细节。
+我们是一个由五名研究人员和工程师组成的团队，多年来一直致力于深度学习。我们已经将深度学习应用到从语音识别到天文学的方方面面，并在此过程中学到了很多东西。本文档源于我们自己训练神经网络、教授学生以及为我们的同事提供实践建议的经验。虽然深度学习已经从少数学术研究实验室中实践的机器学习方法发展成为为数十亿人使用的产品提供动力的技术，但深度学习在工程领域仍处于起步阶段，我们希望本文档能鼓励其他人也来帮助系统化该领域的实验细节。
+这份文件是在我们试图实现我们自己的深度学习方法时产生的，因此它只代表作者在撰写本文时的观点，而不是任何客观事实。它被特别强调是因为我们在调整超参数方面遇到了困难，但它也涵盖了我们在工作中遇到（或看到出错）的其他重要问题。我们希望这项工作成为一份活的文件，能随着我们理解的改变从而成长和演变。例如，一份关于如何调试和如何减少训练失败的文档在两年前是不可能写出来的，因为它这得基于最近的结果和正在进行的研究。不可避免地，我们的在此文档中一些建议也将需要更新以考虑新的结果和改进的工作流程。我们不知道最好的深度学习秘诀，但在大众开始记录它并讨论各个步骤之前，我们不能指望找到它。为此，我们鼓励发现我们的建议存在问题的读者提出替代建议以及令人信服的证据，以便我们更新建议。我们也希望看到可能有不同建议的替代指南和方式，以帮助大众追求最佳方法。最后，任何标有🤖表情符号的地方是我们要进一步调查的地方。只有在尝试编写这本 playbook 之后，我们才完全清楚在深度学习从业者的工作流程中可以找到多少有趣及被忽视的研究问题。
+开始新项目的指南 link在调优过程中的许多抉择，我们可以在项目开始时一次性做出决定。只有偶尔在情况发生变化时，才需要重新考虑。</description>
     </item>
     
   </channel>
