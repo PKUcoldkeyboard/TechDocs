@@ -1192,16 +1192,6 @@ mpirun -np 10 -machinefile slurm.hosts ./cpi</code>
                     'event_callback': success
                 }
             ),
-            plausible('反馈',
-                {
-                    callback: success,
-                    props:
-                    {
-                        rating: rating,
-                        message: message
-                    }
-                }
-            )
             } catch (err) {
             console.log(err);
             feedbackEmojiCta.remove();

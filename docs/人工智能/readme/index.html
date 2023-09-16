@@ -2359,16 +2359,6 @@ deep-learning-tuning-playbook [at] googlegroups.com发送邮件。 这些推荐�
                     'event_callback': success
                 }
             ),
-            plausible('反馈',
-                {
-                    callback: success,
-                    props:
-                    {
-                        rating: rating,
-                        message: message
-                    }
-                }
-            )
             } catch (err) {
             console.log(err);
             feedbackEmojiCta.remove();

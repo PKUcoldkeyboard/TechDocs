@@ -1111,16 +1111,6 @@ score = min(100, ceil(100.0/240*(correct_num * 1.1)))</code>
                     'event_callback': success
                 }
             ),
-            plausible('反馈',
-                {
-                    callback: success,
-                    props:
-                    {
-                        rating: rating,
-                        message: message
-                    }
-                }
-            )
             } catch (err) {
             console.log(err);
             feedbackEmojiCta.remove();

@@ -1253,16 +1253,6 @@ printf(&#34;\n&#34;);</code>
                     'event_callback': success
                 }
             ),
-            plausible('反馈',
-                {
-                    callback: success,
-                    props:
-                    {
-                        rating: rating,
-                        message: message
-                    }
-                }
-            )
             } catch (err) {
             console.log(err);
             feedbackEmojiCta.remove();

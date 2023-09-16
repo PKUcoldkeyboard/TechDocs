@@ -999,16 +999,6 @@ data_t get_res(data_t *a,data_t n){
                     'event_callback': success
                 }
             ),
-            plausible('反馈',
-                {
-                    callback: success,
-                    props:
-                    {
-                        rating: rating,
-                        message: message
-                    }
-                }
-            )
             } catch (err) {
             console.log(err);
             feedbackEmojiCta.remove();
