@@ -1,6 +1,6 @@
 ---
-weight: 2000
-title: "高性能计算竞赛存档"
+weight: 3000
+title: "人工智能"
 description: ""
 icon: menu_book
 lead: ""
