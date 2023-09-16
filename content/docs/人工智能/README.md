@@ -407,12 +407,9 @@ Batch norm 很复杂，一般来说，应该使用与计算梯度不同的 batch
     -   每次试验的验证目标值通常应该是它在训练期间达到的最佳值。
 
 <p align="center" id="figure-1">
-<img src="assets/bad_search_space.png" width="49%" alt="Example of bad search space boundaries">
-<img src="assets/good_search_space.png" width="49%" alt="Example of good search space boundaries">
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/bad_search_space-2023-09-17.png" width="49%" alt="Example of bad search space boundaries">
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/good_search_space-2023-09-17.png" width="49%" alt="Example of good search space boundaries">
 </p>
-
-
-
 
 <p align="center"><b>图 1：</b>不良的搜索空间边界和可接受的搜索空间边界示例。</p>
 
@@ -479,7 +476,7 @@ Batch norm 很复杂，一般来说，应该使用与计算梯度不同的 batch
 
 
 <p align="center" id="figure-2">
-<img src="assets/isolation_plot.png" width="49%" alt="Isolation plot that investigates the best value of weight decay for ResNet-50 trained on ImageNet.">
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/isolation_plot-2023-09-17.png" width="49%" alt="Isolation plot that investigates the best value of weight decay for ResNet-50 trained on ImageNet.">
 </p>
 
 
@@ -863,7 +860,7 @@ Batch norm 很复杂，一般来说，应该使用与计算梯度不同的 batch
 <br>
 
 <p align="center">
-<img src="assets/have_we_sampled_enough.png" width="49%" alt="A box plot showing the importance of sampling enough">
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/have_we_sampled_enough-2023-09-17.png" width="49%" alt="A box plot showing the importance of sampling enough">
 </p>
 
 <p align="center"><b>Figure 3:</b> ResNet-50 在 ImageNet 上进行了 100 次试验调整。 通过自举，模拟了不同数量的调整预算。 上面绘制了每个试验预算的最佳性能的箱线图。
@@ -882,7 +879,7 @@ Batch norm 很复杂，一般来说，应该使用与计算梯度不同的 batch
 ***总结***： *如果在优化模型时遇到困难，那么在尝试其他东西之前解决这些问题很重要。 诊断和纠正训练失败是一个活跃的研究领域。*
 
 <p align="center">
-<img src="assets/stride_instability.png" width="80%" alt="Changing the strides in a single residual block in a WideResnet results in training instability.">
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/stride_instability-2023-09-17.png" width="80%" alt="Changing the strides in a single residual block in a WideResnet results in training instability.">
 </p>
 
 
@@ -905,7 +902,7 @@ Batch norm 很复杂，一般来说，应该使用与计算梯度不同的 batch
 为了检查出这一问题，我们可以使用 `lr = 2 * current best` 来进行一次仅包含500次训练的计划，但每执行一次训练都要进行一次评估。
 
 <p align="center">
-<img src="assets/more_frequent_evals.png" width="80%" alt="Illustration of the value of more frequent evaluations at the start of
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/more_frequent_evals-2023-09-17.png" width="80%" alt="Illustration of the value of more frequent evaluations at the start of
 training.">
 </p>
 
@@ -930,7 +927,7 @@ training.">
 #### 学习率预热
 
 <p align="center">
-<img src="assets/instability_during_warmup.png" width="80%" alt="An example of instability during a warmup period (note the horizontal axis log
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/instability_during_warmup-2023-09-17.png" width="80%" alt="An example of instability during a warmup period (note the horizontal axis log
 scale).">
 </p>
 <p align="center"><b>Figure 6:</b> 预热期间不稳定的示例（注意横轴的刻度是以对数的形式展示）。 在这种情况下，成功训练需要4万次的预热。</p>
@@ -939,13 +936,13 @@ scale).">
 ##### 何时对学习率进行预热
 
 <p align="center">
-<img src="assets/axis_model_with_instability.png" width="49%" alt="Axis plot for model with instability">
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/axis_model_with_instability-2023-09-17.png" width="49%" alt="Axis plot for model with instability">
 </p>
 
 <p align="center"><b>Figure 7a:</b> 表现出训练不稳定性的模型的超参数轴图示例。 最佳学习率处于可行的边缘。 “不可行”试验被定义为产生 NaN 或异常高的损失值的试验。</p>
 
 <p align="center">
-<img src="assets/loss_model_with_instability.png" width="49%" alt="Loss curve for model with instability">
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/loss_model_with_instability-2023-09-17.png" width="49%" alt="Loss curve for model with instability">
 </p>
 
 <p align="center"><b>Figure 7b:</b> 模型训练损失中不稳定的学习率</p>
@@ -955,7 +952,7 @@ scale).">
 ##### 如何对学习率进行预热
 
 <p align="center">
-<img src="assets/beneficial_effect_warmup.png" width="80%" alt="Beneficial effect of warmup on training instabilities">
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/beneficial_effect_warmup-2023-09-17.png" width="80%" alt="Beneficial effect of warmup on training instabilities">
 </p>
 
 <p align="center"><b>Figure 8:</b> 学习率预热对解决训练不稳定性的有益影响</p>
@@ -979,7 +976,7 @@ scale).">
 #### 梯度截断
 
 <p align="center">
-<img src="assets/gradient_clipping.png" width="80%" alt="Gradient clipping on early training instabilities">
+<img src="https://cuterwrite-1302252842.file.myqcloud.com/img/gradient_clipping-2023-09-17.png" width="80%" alt="Gradient clipping on early training instabilities">
 </p>
 
 <p align="center"><b>Figure 9:</b> 梯度截断纠正早期训练不稳定性的图示。</p>
