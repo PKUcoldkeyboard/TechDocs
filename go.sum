@@ -4,6 +4,8 @@ github.com/colinwilson/lotusdocs v0.0.0-20230916035925-cc40b3ba9cb2 h1:2rYJUGyJm
 github.com/colinwilson/lotusdocs v0.0.0-20230916035925-cc40b3ba9cb2/go.mod h1:9zu2REJDi+zdPRcR5/bRYSUR7gkNF4NQLvV38SEoCP8=
 github.com/colinwilson/lotusdocs v0.0.0-20230916162839-e4dbd493b1d2 h1:mQWjq2S/84uZXtE3FYm9ihPKlBD+ihH0nIVNJKv0Ahk=
 github.com/colinwilson/lotusdocs v0.0.0-20230916162839-e4dbd493b1d2/go.mod h1:9zu2REJDi+zdPRcR5/bRYSUR7gkNF4NQLvV38SEoCP8=
+github.com/colinwilson/lotusdocs v0.0.0-20230916164925-62442d2389fa h1:+GFNJdAro4rJ+nbpKnC+Yg7pTFrDbpJTcNG6YHaUIKk=
+github.com/colinwilson/lotusdocs v0.0.0-20230916164925-62442d2389fa/go.mod h1:9zu2REJDi+zdPRcR5/bRYSUR7gkNF4NQLvV38SEoCP8=
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20003 h1:pt/JGVD5YYRsVVijOHPZI6YKTUvbR4e0hgV9B0S6rbI=
 github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20003/go.mod h1:mvM05r93HiefwoaxQTaYiJxtJAhTebwQtU1Xh/J+Okk=
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
