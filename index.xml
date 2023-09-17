@@ -1331,11 +1331,12 @@ Size ZeroScoreSpeed(MiB/s) FullScoreSpeed(MiB/s) Score 64 104 1044 40 512 860 43
 $$ \frac{\delta t}{\rho}\nabla p = \nabla \cdot \vec {u} $$
 其中方程的左边是一个压力场 $p$ 的二阶导数，而右边是速度场（矢量）的散度。通常我们想要在已知速度场的情况下，求解其对应的压力场 $p$ ，在特定的网格设定下，我们可以使用有限差分的方法我们可以将上面的微分方程转化为线性方程组。比如，下图演示了一个流体数值模拟中常用的，将压力存储在网格中心，将速度存储在网格界面上的离散形式：
 其对应的离散化方程式是：
-$$ \frac{\delta t}{\rho}\left[\frac{1}{dx}\cdot \left(\frac{p_{i+1,j}-p {i,j}}{dx} - \frac{p{i,j}-p_{i-1,j}}{dx} \right) + \frac{1}{dy} \cdot \left( \frac{p_{i,j+1}-p_{i,j}}{dy} - \frac{p_{i,j}-p_{i, j-1} }{dy} \right) \right] = \frac{u_{i,j}-u_{i-1,j}}{dx} + \frac{v_{i,j}- v_{i,j-1}}{dy} $$
+$$ \frac{\delta t}{\rho}\left[\frac{1}{dx}\cdot \left(\frac{p_{i+1,j}-p_{i,j}}{dx} - \frac{p_{i,j}-p_{i-1,j}}{dx} \right) + \frac{1}{dy} \cdot \left( \frac{p_{i,j+1}-p_{i,j}}{dy} - \frac{p_{i,j}-p_{i, j-1}}{dy} \right) \right] = \frac{u_{i,j}-u_{i-1,j}}{dx} + \frac{v_{i,j}-v_{i,j-1}}{dy} $$
 其中 $i$ 和 $j$ 都是 [1, n] 的整数，我们可以对整个计算区域的所有格子列出类似的方程共 $n×n$ 个。
 对上式稍作整理可以发现当格子大小 $dx=dy$ 时，方程左边可以简化成
-$$ \frac{\delta t}{\rho dx^2}(4p_{i,j}-p_{i+1,j}-p_{i-1,j}-p_{i,j-1}- p_{i,j+1}) $$
-其中 $\frac{\delta t}{\rho dx^2}$ 是一个常数系数，为了简化问题我们可以直接将其省略。于是，我们可以将 $p$ 的系数存入一个矩阵 $A$ ，而将 $p$ 保存在一个向量中，上面的表达式就变成了如下的一个矩阵和向量的乘：</description>
+$$ \frac{\delta t}{\rho dx^2}(4p_{i,j}-p_{i+1,j}-p_{i-1,j}-p_{i,j-1}-p_{i,j+1}) $$
+其中， $\frac{\delta t}{\rho dx^2}$ 是一个常数系数，为了简化问题我们可以直接将其省略。于是，我们可以将 $p$ 的系数存入一个矩阵 $A$ ，而将 $p$ 保存在一个向量中，上面的表达式就变成了如下的一个矩阵和向量的乘：
+于是这个问题就被转化为了求解线性方程组的问题。在各类数值仿真中，这样的例子还有很多很多。</description>
     </item>
     
     <item>
