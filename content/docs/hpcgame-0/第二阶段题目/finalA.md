@@ -8,6 +8,7 @@ icon: "circle"
 toc: true
 description: ""
 publishdate: "2023-09-15T02:21:15+00:00"
+katex: true
 ---
 
 ## 背景介绍
@@ -25,11 +26,7 @@ $$
 其对应的离散化方程式是：
 
 $$
-\frac{\delta t}{\rho}\left[\frac{1}{dx}\cdot \left(\frac{p_{i+1,j}-p
-_{i,j}}{dx} - \frac{p_{i,j}-p_{i-1,j}}{dx} \right) + \frac{1}{dy}
-\cdot \left( \frac{p_{i,j+1}-p_{i,j}}{dy} - \frac{p_{i,j}-p_{i, j-1}
-}{dy} \right) \right] = \frac{u_{i,j}-u_{i-1,j}}{dx} + \frac{v_{i,j}-
-v_{i,j-1}}{dy}
+\frac{\delta t}{\rho}\left[\frac{1}{dx}\cdot \left(\frac{p_{i+1,j}-p_{i,j}}{dx} - \frac{p_{i,j}-p_{i-1,j}}{dx} \right) + \frac{1}{dy} \cdot \left( \frac{p_{i,j+1}-p_{i,j}}{dy} - \frac{p_{i,j}-p_{i, j-1}}{dy} \right) \right] = \frac{u_{i,j}-u_{i-1,j}}{dx} + \frac{v_{i,j}-v_{i,j-1}}{dy}
 $$
 
 其中 $i$ 和 $j$ 都是 [1, n] 的整数，我们可以对整个计算区域的所有格子列出类似的方程共 $n×n$ 个。
@@ -37,11 +34,10 @@ $$
 对上式稍作整理可以发现当格子大小 $dx=dy$ 时，方程左边可以简化成
 
 $$
-\frac{\delta t}{\rho dx^2}(4p_{i,j}-p_{i+1,j}-p_{i-1,j}-p_{i,j-1}-
-p_{i,j+1})
+\frac{\delta t}{\rho dx^2}(4p_{i,j}-p_{i+1,j}-p_{i-1,j}-p_{i,j-1}-p_{i,j+1})
 $$
 
-其中 $\frac{\delta t}{\rho dx^2}$ 是一个常数系数，为了简化问题我们可以直接将其省略。于是，我们可以将 $p$ 的系数存入一个矩阵 $A$ ，而将 $p$ 保存在一个向量中，上面的表达式就变成了如下的一个矩阵和向量的乘：
+其中， $\frac{\delta t}{\rho dx^2}$ 是一个常数系数，为了简化问题我们可以直接将其省略。于是，我们可以将 $p$ 的系数存入一个矩阵 $A$ ，而将 $p$ 保存在一个向量中，上面的表达式就变成了如下的一个矩阵和向量的乘：
 
 ![](https://cuterwrite-1302252842.file.myqcloud.com/img/matrix.png)
 
@@ -53,33 +49,33 @@ $$
 Ax=b
 $$
 
-其中 $A$ 是一个对称且正定，大小为 $n×n$ 的实数矩阵，$x$ 为待求解的大小为 $n×1$ 的未知数向量。
+其中 $A$ 是一个对称且正定，大小为 $n×n$ 的实数矩阵, $x$ 为待求解的大小为 $n×1$ 的未知数向量。
 
 整个共轭梯度法的过程可以用伪代码简单描述如下：
 
 ![](https://cuterwrite-1302252842.file.myqcloud.com/img/algo.png)
 
-其中 $x_k$​ 是迭代求解过程中第 $k$ 个循环时的解，$r_k​$ 是求解过程中在第 $k$ 个迭代中的残差：
+其中 $x_k$​ 是迭代求解过程中第 $k$ 个循环时的解, $r_k​$ 是求解过程中在第 $k$ 个迭代中的残差：
 
 $$
-r_k​=b−Ax_k
-$​$
+r_k ​= b − Ax_k
+$$
 
-在循环迭代到 $r_k​$ 的模小于规定值时即认为求解完成。
+在循环迭代到 $r_k​$ 的模小于规定值时即认为求解完成。
 
 ## 输入输出
 
 ### 输入格式
 
-本题中，约定系数矩阵 $A$ 是一个对角线元素为 4.0，其余邻居对应元素为 -1.0 的五对角矩阵（five-diagonal matrices，除对角线和相邻元素外其他元素为0）。
+本题中，约定系数矩阵 $A$ 是一个对角线元素为 4.0，其余邻居对应元素为 -1.0 的五对角矩阵（five-diagonal matrices，除对角线和相邻元素外其他元素为0）。
 
-b对应的是一个 $n^2\times 1$ 的向量，共 20 组测试点，是二进制文件，小端法，储存着 $n\times n$ 个 float32（4Byte）。命名规则为`b_case_n_k.bin`，如`b_1_256_1.bin`，输入文件放置在程序运行的相同文件夹下。
+b对应的是一个 $n^2\times 1$ 的向量，共 20 组测试点，是二进制文件，小端法，储存着 $n\times n$ 个 float32（4Byte）。命名规则为 `b_case_n_k.bin` ，如 `b_1_256_1.bin` ，输入文件放置在程序运行的相同文件夹下。
 
 其中，case是后文评分标准中的测试点编号，k表示当前测试点的第k个数据点。程序运行时，需读入所有数据点，进行处理后输出。
 
 ### 输出格式
 
-输出结果到20个二进制文件，小端法。命名规则为`ans_case_n_k.bin`，数据类型为4byte浮点数。
+输出结果到20个二进制文件，小端法。命名规则为 `ans_case_n_k.bin` ，数据类型为 4byte 浮点数。
 
 ## 提交说明
 

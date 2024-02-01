@@ -3,7 +3,8 @@ languageCode = 'zh-cn'
 title = 'CS技术文档'
 enableEmoji = true
 enableGitInfo = true # N.B. .GitInfo does not currently function with submodule content directories
-# googleAnalytics = "G-8Q4V90T15H" # (or set via env variable HUGO_GOOGLEANALYTICS)
+googleAnalytics = "G-8Q4V90T15H" # (or set via env variable HUGO_GOOGLEANALYTICS)
+timeout = "60s"
 
 [build]
   noJSConfigInAssets = true
