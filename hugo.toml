@@ -3,7 +3,7 @@ languageCode = 'zh-cn'
 title = 'CS技术文档'
 enableEmoji = true
 enableGitInfo = true # N.B. .GitInfo does not currently function with submodule content directories
-googleAnalytics = "G-8Q4V90T15H" # (or set via env variable HUGO_GOOGLEANALYTICS)
+# googleAnalytics = "G-8Q4V90T15H" # (or set via env variable HUGO_GOOGLEANALYTICS)
 
 [build]
   noJSConfigInAssets = true
@@ -106,7 +106,7 @@ googleAnalytics = "G-8Q4V90T15H" # (or set via env variable HUGO_GOOGLEANALYTICS
         eventAPI   = "/docs/s/api/event/"       # optional - (or set via env variable HUGO_PARAMS_PLAUSIBLE_eventAPI)
 
     [params.feedback]
-        enabled = true
+        enabled = false
         emoticonTpl = true
         eventDest = ["google"]
         emoticonEventName = "反馈"
