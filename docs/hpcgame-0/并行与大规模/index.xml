@@ -79,29 +79,31 @@ void rhs(double &amp;amp;x, double &amp;amp;y, double &amp;amp;value); 该函数
       
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2e/</guid>
       <description>背景 link二维卷积是卷积神经网络的基础操作，可以提取数据特征，在图像识别领域应用广泛。卷积的复杂度导致训练困难，也是图像识别领域的重要瓶颈之一。
-对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的 Deep Learning 的第9章。我们只引用书中的一张图介绍卷积的计算。
+对卷积感兴趣的同学，可以去翻一翻 Ian Goodfellow 等人写的 Deep Learning 的第 9 章。我们只引用书中的一张图介绍卷积的计算。
 对于矩阵 Input，我们使用一个比它规模小的多的 Kernel 进行运算。本题我们方法大概是这样：
-设 Input 是A∗B矩阵，Kernel 是C∗D矩阵，对于每个位置 (i, j) ，如果可以取一个和 Kernel 大小一样的不越界矩阵(本题不考虑padding)，我们就把这个矩阵中与 Kernel 中对应元素乘起来并求和，结果放在 Output(i,j) ​中。
-$$ \left[ \begin{array}{cccc} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j&amp;#43;D)} \\\ I_{(i&amp;#43;1,j)} &amp;amp; I_{(i&amp;#43;1,j&amp;#43;2)} &amp;amp; \cdots &amp;amp; I_{(i&amp;#43;1,j&amp;#43;D)} \\\ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \\\ I_{(i&amp;#43;C,j)} &amp;amp; I_{(i&amp;#43;C,j&amp;#43;2)} &amp;amp; \cdots &amp;amp; I_{(i&amp;#43;C,j&amp;#43;D)} \\\ \end{array} \right] $$ 计算完所有可算的 i, j ，我们就得到了卷积的输出。
-$$ Output_{(i,j)}=\sum_{p=0}^{C-1} \sum_{q=0}^{D-1} Input_{(i+p,j+q)} * Kernel_{(p,q)} $$</description>
+设 Input 是 A∗B 矩阵，Kernel 是 C∗D 矩阵，对于每个位置 (i, j) ，如果可以取一个和 Kernel 大小一样的不越界矩阵(本题不考虑 padding)，我们就把这个矩阵中与 Kernel 中对应元素乘起来并求和，结果放在 Output(i,j) ​中。
+$$ \left[ \begin{array}{cccc} I_{(i,j)} &amp;amp; I_{(i,j)} &amp;amp; \cdots &amp;amp; I_{(i,j&amp;#43;D)} \\\ I_{(i&amp;#43;1,j)} &amp;amp; I_{(i&amp;#43;1,j&amp;#43;2)} &amp;amp; \cdots &amp;amp; I_{(i&amp;#43;1,j&amp;#43;D)} \\\ \cdots &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \cdots \\\ I_{(i&amp;#43;C,j)} &amp;amp; I_{(i&amp;#43;C,j&amp;#43;2)} &amp;amp; \cdots &amp;amp; I_{(i&amp;#43;C,j&amp;#43;D)} \\\ \end{array} \right] $$ 计算完所有可算的 i, j ，我们就得到了卷积的输出。</description>
     </item>
     
     <item>
-      <title>F. MPI算个PI</title>
+      <title>F. MPI 算个 PI</title>
       <link>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</link>
       <pubDate>Fri, 15 Sep 2023 02:21:15 +0000</pubDate>
       
       <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-0/%E5%B9%B6%E8%A1%8C%E4%B8%8E%E5%A4%A7%E8%A7%84%E6%A8%A1/2f/</guid>
       <description>前情提要 link本题是简单题，不想读背景的大佬请直接跳到题目要求。
-背景 link几乎从人类数学诞生以来，一代代数学家就在试图提高圆周率π的数值精度。从五千年前的1位精度提升到当下世界纪录的100万亿位，π的计算方法从粗略估计、测量估算，再到公式逼近、机器演算，我们可以从中看到人类科技的发展史。
-&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; standalone=&#34;no&#34;?&gt; &lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt; Record pi approximations Produced by GNUPLOT 4.6 patchlevel 0 1 100 104 106 108 1010 1012 1014 2000 BCE 250 BCE 480 1400 1450 1500 1550 1600 1650 1700 1750 1800 1850 1900 1950 2000 Number of decimal digits Year Record approximations of pi gnuplot_plot_1 当下，π的计算还是衡量高性能计算集群性能和算法优越性的重要量度，问题的维度从单纯的计算，拓展到了储存、通信、内存瓶颈等方方面面，各路超算纷纷借此机会大秀肌肉。
+背景 link几乎从人类数学诞生以来，一代代数学家就在试图提高圆周率π的数值精度。从五千年前的 1 位精度提升到当下世界纪录的 100 万亿位，π的计算方法从粗略估计、测量估算，再到公式逼近、机器演算，我们可以从中看到人类科技的发展史。
+当下，π的计算还是衡量高性能计算集群性能和算法优越性的重要量度，问题的维度从单纯的计算，拓展到了储存、通信、内存瓶颈等方方面面，各路超算纷纷借此机会大秀肌肉。
 但是在这一系列浩浩汤汤的计算过程中，有一小群人，在个人电脑刚刚普及的年代，却凭借着合作的力量，通过众包计算的方法，也达到了可喜的成就。其中一个项目是，通过分布式的方法，计算出了π中特殊位置数字的PiHex。在个人算力不足的年代，这可谓是工程学奇迹。
 现在我们假设你有一些算力不是很强的机器，来模拟这个场景。
-题目要求 link你有5个物理节点，每个的节点2个核心。你需要写一个MPI程序，计算π的近似值，精确到1∗10−14（15位有效数字）。
-因为MPI开销比较大，本题时间限制为30秒，不考察效率。（其实就是想让大家试一试MPI)
-请注意，我们的平台关闭了超线程，但是直接由MPI生成的线程数可能会是打开超线程后的。
+题目要求 link你有 5 个物理节点，每个的节点 2 个核心。你需要写一个MPI 程序，计算π的近似值，精确到 1∗10−14（15 位有效数字）。
+因为 MPI 开销比较大，本题时间限制为 30 秒，不考察效率。（其实就是想让大家试一试MPI)
+请注意，我们的平台关闭了超线程，但是直接由MPI 生成的线程数可能会是打开超线程后的。
 输入输出 link输入：无
-输出：一个双精度浮点数，保留15位有效数字。输出到output.txt即可。如果只有13位有效数字，则得一半分。</description>
+输出：一个双精度浮点数，保留 15 位有效数字。输出到output.txt 即可。如果只有 13 位有效数字，则得一半分。
+编译命令 link（运行 mpi.tar 中的 compile.sh 即可）
+module load mpi/2021.8.0 mpicc cpi.c -lm -o cpi 运行命令 link（运行 mpi.tar 中的 run.sh 即可）
+salloc -p compute -N5 --ntasks-per-node=2 -c 1 -q normal module load mpi/2021.8.0 srun -c 1 hostname -s | sort -n &amp;gt; slurm.</description>
     </item>
     
   </channel>

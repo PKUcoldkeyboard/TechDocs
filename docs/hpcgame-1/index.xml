@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>第一届高性能计算竞赛存档 on CS技术文档</title>
+    <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/</link>
+    <description>Recent content in 第一届高性能计算竞赛存档 on CS技术文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 30 Jan 2024 02:21:15 +0000</lastBuildDate><atom:link href="https://cuterwrite.top/TechDocs/docs/hpcgame-1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A. 欢迎参赛</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/a/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/a/</guid>
+      <description>分数：10 分
+关于本题 link为了确保每位选手都详细地阅读参赛须知，所以我们把创建集群账户这一步操作放在了这道题目中。当你完成了这道题目，您会在评测结果中收到登录 SCOW 平台（本次比赛选手与超算直接交互的平台）的地址和凭据。 请您往下阅读，即可获得通过此题的方法。
+请不要使用 https://scow.pku.edu.cn/ 的集群，比赛有专门的集群，在本题的评测结果中发放给您，请注意检查评测结果！集群由登录节点和计算节点两部分组成，SCOW 的 shell 进入的是登录节点。对于所有任务，请提交脚本交由计算节点进行计算，具体方式可以参考这个 slrum 使用说明。具体的，您需要关注 slurm 介绍、salloc 、sinfo 、squene 、sacct 和 scancel 命令的使用。
+特别地，教程中的 sbatch 是旧版，对于比赛集群使用的新版，--ntasks-per-node 只是每个节点上最多开的进程数，还需要指定 --ntasks 以确定总进程数。该版本的 slurm 也不需要像教程例子那样处理 hostfile 了。这里给出一个新版本跑 MPI 的例子：
+#!/bin/bash #SBATCH -o job.%j.out #SBATCH --partition=C064M0256G #SBATCH --qos=normal #SBATCH -J myFirstMPIJob #SBATCH --nodes=2 #SBATCH --ntasks=8 #SBATCH --ntasks-per-node=4 # 导入 MPI 运行环境 module load openmpi # 执行 MPI 并行计算程序 mpirun -n 8 hostname &amp;gt; log 如果登录到计算节点提示需要密码，请使用</description>
+    </item>
+    
+    <item>
+      <title>B. 流量席卷土豆</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/b/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/b/</guid>
+      <description>分数：80 分
+背景 linkAD 4202 年，在 Planet Potato 上，运行着 Potato Network。来自 Potato Kingdom University 的师生在 Potato Network 上联网，进行各项社交和研究工作。
+注：Potato Network 又名“土豆”网，能够以近乎无限的带宽和极低的延迟进行数据传输。唯一的缺陷似乎就是在凌晨时常出现稳定性问题，这似乎是由于它由一堆土豆电池供电。在 AD 4202 年，除了使用可控核聚变发电外，最常见的发电方法就是大规模的生物电池了。为了使得远古系统（例如运行在 Macrohard 2000 上的 tree.pku 服务）能够得以正常运行，Potato Network 在接口上与 Ethernet 和 TCP/IP 保持向下兼容。
+Potato Network 在某一个抽象层次是基于“数据包”的，设备接入 Potato Network 产生数据包的同时，可以把所有产生的数据包记录下来，并使用一种名叫 Potato Capture for All Packets (PCAP) 的格式存储。
+可怜的小土豆是新入职 Potato Kingdom University 的一名工程师。他的职责是运营和维护一个来自远古的庞然大物——他只知道过去人们把它称作“超级计算机”。这该死的大家伙早就该被随处可见的量子比特计算机替代了，只可惜有一些祖传的、使用一种叫做“方程式翻译”的古老语言写就的关键程式，已经没有人能读懂并修改了。维护这大家伙原本是个悠闲差事——古人制造的机器在这千百年来居然鲜有故障，但谁知在交接工作时前任工程师竟然没有告诉他这台机器的根账户密码。
+小土豆可以通过自己的账户名和密码登入这台机器，但是如果没有根账户密码，他就不能及时阻止一些问题程序的运行。他刚想求助前同事，却忽然想起了一件事：在这台庞然大物的“共享硬碟”中，留存有前几个月这台计算机接入 Potato Network 产生的所有数据包（packet）。这里面一定包括了前任管理员通过 Potato Network 登入超级计算机所产生的数据包！在 AD 4202， P=NP 已被证明，从数据包中截获并破译密码就是运行个程序的事儿！
+任务 link由于时空管理局的错误操作，误将 AD 2024 年的 Peking University 的超算与 AD 4202 年的 Potato Kingdom University 的超级计算机相连接。你惊奇地发现：你可以从本次比赛提供的超算集群（可以通过 SCOW 平台访问）直接访问 Potato Kingdom University 的超级计算机！好吧，你意识到或许在宇宙的哪个角落哈希算法被某个不负责任的家伙做成了简单的取缩写。你的朋友，小 X，在早些时候已经对这一集群开展了检查，他发现了几个不同寻常的地方，其中引发你的注意的是如下几点：</description>
+    </item>
+    
+    <item>
+      <title>C. 简单的编译</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/c/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/c/</guid>
+      <description>分数：40 分
+说明 link在本题中，你需要写一个简单的 Makefile 文件，和一个简单的 CMakeLists.txt 文件，来编译 Handout 中所提供的三个简单程序。
+其中，hello_cuda.cu 是一个简单的 cuda 程序，hello_mpi.cpp 是一个简单的 mpi 程序，hello_omp.cpp 是一个简单的 OpenMP 程序。它们都做了同一个简单的事情：从文件中读取一个向量并求和。
+你需要上传 Makefile 和 CMakeLists.txt 文件。我们会根据以下策略来评测你所写的配置文件的正确性。
+对于 Makefile 文件，我们会在项目根目录下执行 make 命令。然后在项目根目录下检查程序是否被生成，并运行以检测正确性。 对于 CMakeLists.txt 文件，我们会在项目根目录下执行 mkdir build; cd build; cmake ..; make 。然后我们会在 build 目录下检查程序是否被正确生成，并运行以检测正确性。 对于所有类型的文件，hello_cuda.cu 所编译出的文件名应为 hello_cuda ；hello_mpi.cpp 所编译出的文件名应为 hello_mpi ；hello_omp.cpp 所编译出的文件名应为hello_omp 。 评分标准 link评测机加载的 module 如下，评测将会在 GPU 节点进行，选手写题时请使用 GPU80G 分区。
+module load cuda gcc openmpi 测试点 文件 分值 1 Makefile 40% 2 CMakeLists.</description>
+    </item>
+    
+    <item>
+      <title>D. 小北问答 Classic</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/d/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/d/</guid>
+      <description> 分数：100 分
+背景 link经过深思熟虑，我们认为小北问答经过 极速版、超速版 的迭代后，应该回归传统。所以我们特别设计了这道 &amp;ldquo;小北问答 Classic&amp;rdquo;，让我们在 2024 年再次体验单纯、传统的答题快乐。
+我们想聪明的你一定会摸索出如何提交本题。往往 Classic 的设计，是最用户友好的 。
+题目 link注意：若题面和提交答案处不一致，则以题面为准
+［填空］ 根据 2023 年 11 月公布的 GREEN500 排行榜，能量效率最高的超级计算的能效达到了____（GFlops/watts）（保留小数点后 3 位） ［填空］ 根据 Amdahl 定律，在关键路径上，将占据程序运行时间 10% 的部分加速到 2 倍，则程序整体的加速比为____%；将占据程序运行时间 40%的部分加速到 1.2 倍，则程序整体的加速比为____%。（均保留两位小数，均假设加速前后程序的关键路径不变） ［单选］ 以下哪个工具的作用与其他选项的区别最大？ Meson Autoconf CMake GCC ［单选］ 从以下选项中选择正确答案依次填入空中（可多次选择）：MPI 提供的是___级别的并行；OpenMP 提供的是___级别的并行；两者相比，___级别的并行更加轻量。 线程 进程 ［混合］ AVX512 指令集是现代 x86_64 CPU 上常用的用于加速 SIMD 运算的指令集，使用 AVX512 指令集，一条指令可以对最多___（填空）个 64 位浮点数进行运算。各个厂商对 AVX512 指令集的实现有所不同，如 Intel（以 Ice Lake SP 为例）（选择），AMD（以 ZEN4 架构为例）（选择）。 在 CPU 中设计独立的 AVX512 运算单元，但有可能导致调用 AVX512 指令集时因功耗过大而降频 复用两个 AVX2 运算单元执行 AVX512 运算 ［单选］ 以下哪个不是专门用于在 GPU 上设计并行计算程序的？ OpenACC CUDA HIP OpenGL ［多选］ SIMD（Single Instruction, Multiple Data）和 SIMT（Single Instruction, Multiple Threads）是并行计算的两种模型。下面哪些描述是正确的？（示例回答方式：i,ii,iii,iv ） SIMD 和 SIMT 都是同一种并行计算模型，只是不同的命名。 SIMD 每个线程执行相同的指令，但处理不同的数据；SIMT 中每个线程可以执行不同的指令。 AVX512 指令集是 SIMD 模型的代表。 在 SIMT 模型中，线程协作执行相同的指令序列，但处理不同的数据。 ［单选］ 在高性能计算中，下列哪项技术不是用于节点间通信的？ InfiniBand Ethernet NVLink HBM ［单选］ 在高性能计算集群中，哪个工具通常用于作业调度和资源管理？ 微信群 Slurm Docker Swarm Apache Mesos ［单选］ 在处理矩阵乘法的并行化时，通常会使用分块矩阵乘法来减少______，从而提高并行效率。 缓存未命中 通信开销 浮点运算错误 硬盘 I/O 延迟 </description>
+    </item>
+    
+    <item>
+      <title>E. 齐心协力</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/e/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/e/</guid>
+      <description>分数：120 分
+重要：注：如果遇到 Cannot Connect to GCS 或类似报错的请在选手群内私聊管理提交链接重测，这是由 Ray 集群启动异常造成的。如果遇到 Actor Died 或类似报错，那是由于超出了内存限制，请自行研究解决，感谢！
+题目描述 link遥远的开爱大陆盛产毒药，这些毒药威力并不高，只是会让人痛苦不堪，乖乖地给开爱国王交上赎金获取解药。开爱国王富得流油，但人们对此苦不堪言。
+你和宿舍小伙伴们是拉玛大陆骑士学院的优秀学员，致力于推翻开爱国王对解药的垄断，于是踏上了寻找解药方法的路程。路上你们遇到了善良的开爱国公主，她告诉你们，每一种毒药都有 40000 种可能的原料，构成药物空间的一个 40000 维 32 位浮点向量。而对应的解药就是将这个向量进行变幻得到的另一种配方。
+经过对厚厚几万页配方书的阅读，你们最终发现，从毒药到解药的变换分四步，每一步都是先进行一个线性变换，然后对 0 取 Max（因为原料没有负数个）。这个线性变换类似于神经网络，具体描述如图。其中每个矩阵是的维度是(40000, 40000)。
+大家都听说你们掌握了破解毒药的方法，纷纷找你们帮忙。虽然你们可以手算解药变换，不过依然是太慢了。于是你们打算用高性能计算的思想，让电脑来算这件事。但是你们宿舍的电脑都只有 16G 内存，每一个矩阵就需要 12G 内存，在一台电脑上放不下，需要四个人齐心协力，共同计算。但是天上不会掉馅饼，怎么才能让四台电脑一起计算呢？你听说 Ray 最近很热，是基于 Python 的，编程比 MPI 更加自然，于是想要试一试。
+任务描述 link对于一百个(200, 40000)的矩阵 $x$ ，计算如下结果，其中 $A、B、C$ 和 $D$ 都是 (40000, 40000) 的矩阵。其中四个矩阵需要被放置在四个不同的节点上，每个节点有 4 个核心、16G 内存。你需要对于输入的每一个 $x$ ，计算得出最终的 $output$ 。
+$$ \begin{aligned} &amp;amp; y_1=ReLU(xA) \\ &amp;amp; y_2=ReLU(y_1B) \\ &amp;amp; y_3=ReLU(y_2C) \\ &amp;amp; output=ReLU(y_3D) \\ \end{aligned} $$ 输入输出约定 link输入 link在 inputs 文件夹中有 input_0.</description>
+    </item>
+    
+    <item>
+      <title>F. 高性能数据校验</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/f/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/f/</guid>
+      <description>分数：120 分
+背景 link由于网络波动等等不可控的因素，文件有可能在传输过程和存储过程中损坏，而文件损坏可能会对后续任务产生不可估量的后果和破坏。 校验码是用来检测这种现象的有效手段。但是，通常的校验码实现往往是单线程的，很难利用到现代计算机的多核特性以及并行文件系统的强悍能力。
+本题使用一种基于 SHA512 算法的可并行数据校验算法对数据进行分块校验。（SHA512 是一种高度安全的校验码实现，具体算法不需关心）
+算法的流程如下（对算法的具体解释见 baseline 代码）：
+对数据进行分块，每一块的大小为 M=1MB，记划分的块数为 n。如果文件剩余内容不足一块的大小，则补二进制 0 至一个块大小。 对于第 i 个块，在其末尾连接上第 i-1 个块的 SHA512 校验码的二进制值，将所得到的 M + 64 大小的数据进行 SHA512 校验，得到第 i 个块的校验码。（i 从 0 开始） 注，第 -1 个块的校验码为空文件的校验码 最后一个块的校验码，即为文件的校验码 注，大小为 0 的文件的校验码定义为空文件的 SHA512 校验码 输入 link选手的程序应当要能接收两个命令行参数。第一个命令行参数是输入文件，这个参数指定了待校验的文件路径。输入文件储存在我们的 lustre 并行文件系统上。
+输出 link程序的第二个参数是输出文件路径，程序应当将校验码输出到输出文件中。
+校验码的输出格式为 16 进制数的字符串表示，结尾 不需要换行 。例如：
+a777f78b580aa6f095e16415e35cf4ce414bf425c7b2441582c1b3e7f47f0741ca1da2213b06c36070db1428b24037380d96be51b3052ae0079dfe72c147d73b
+注意，所有来自 标准输出 的内容都会被忽略。测评程序只会检查输出文件中的结果。
+本题提供了使用 libcrypto 库的 baseline 代码（串行，引入 MPI 是为了兼容评测环境）。
+评测 link提交单个 C++ 代码文件，我们将会使用 OpenMPI + GCC 来编译你的代码（编译参数为 -lcrypto -O3 ）。 并且使用 mpirun -np 8 来运行你的程序。你的代码将会运行在两个节点，每台节点 4 个核心上，所以进程和核心是一一对应的。</description>
+    </item>
+    
+    <item>
+      <title>G. 3D 生命游戏</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/g/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/g/</guid>
+      <description>分数：200 分
+简介 link康威生命游戏（Conway&amp;rsquo;s Game of Life），是英国数学家约翰・何顿・康威在 1970 年发明的细胞自动机。
+在初始版本的生命游戏中，世界是一个二维的方格矩阵，其中，每个方格中居住着存活或者死亡的细胞。一个细胞在下一时刻的生死取决于相邻的八个方块中居住的存活或者死亡的细胞的数量，具体规则如下：
+当细胞为存活状态时 如果周围存活的细胞低于 2 个（不包含 2 个）时，细胞变为死亡状态 如果周围存活的细胞有 2 个或者 3 个，则细胞保持存活 如果周围存活的细胞超过 3 个（不包括 3 个）时，细胞变为死亡状态 当细胞为死亡状态时 如果周围有 3 个存活细胞时，该细胞变成存活状态 重复以上过程，康威生命游戏便可周而复始地进行。由于规则简单，又能产生一些有趣的现象，生命游戏的生命力经久不衰。你可以在 这个网站 玩到原版的生命游戏。默认的场景就是一个不断向外运输块的“太空船”，就好像人类发射火箭，探索太空一样。观察这些现象的时候，仿佛我们就是造物主，看着芸芸众生忙碌奔波。
+3D 版本康威生命游戏 link在本题中，你将研究拓展到三维版本的康威生命游戏。在三维版本中，每个细胞有 26 个邻居，状态转移规则如下：
+当细胞为存活状态时 如果周围存活的细胞低于 5 个（不包含 5 个）时，细胞变为死亡状态 如果周围存活的细胞有 5 到 7 个时（包含 5 和 7），则细胞保持存活 如果周围存活的细胞超过 7 个（不包括 7 个）时，细胞变为死亡状态 当细胞为死亡状态时 如果周围有 6 个存活细胞时，该细胞变成存活状态 同时我们希望研究无限空间大小下的生命游戏。但是，无限空间难以在计算机中表示，因此，我们采取一种”循环“的策略，来模拟无限空间。具体规则为：若有效信息的块的边长为 $M$ ，则无限空间中任意一点 $(x, y, z)$ 对应有效信息块中的位置为 $(x \mod M, y \mod M, z \mod M)$ 。</description>
+    </item>
+    
+    <item>
+      <title>H. 矩阵乘法</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/h/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/h/</guid>
+      <description>分数：200 分
+背景介绍 link矩阵乘法经常出现在实际代数运算中，被各种计算库（如 Eigen，MKL，OpenBLAS）集成，也经常用于基准测试中。在尺度较小时，数据量近似等于计算量；如果尺度翻倍，计算量变为原先的 8 倍，但数据量仅为原先的 4 倍；矩阵乘法存在随尺度增大的数据局域性。由于其独特的计算量和数据量增长关系，一个优秀的矩阵相乘算法必须充分利用各级存储资源。
+任务描述 link你需要从文件 conf.data 中读取两个矩阵 $M_1, M_2$ 并计算乘积 $M_3=M_1 \cdot M_2$ ，然后将结果写入文件 out.data 中。
+输入文件为一个二进制文件，定义如下：
+三个 64 位整数 $N_1,N_2,N_3$ ； 第一个矩阵 $M_1$ 的数据，矩阵有 $N_1$ 行、$N_2$ 列，以 64 位浮点的形式存储，顺序为行优先； 第二个矩阵 $M_2$ 的数据，矩阵有 $N_2$ 行、$N_3$ 列，以 64 位浮点的形式存储，顺序为行优先。 将矩阵 $M_3$ 直接写入输出文件中，以 64 位浮点的形式存储，顺序为行优先。
+输入输出文件均在内存盘上。我们提供了一组样例测试数据，可以从 附件 选项卡中下载。
+样例程序 link #include &amp;lt;iostream&amp;gt; #include &amp;lt;chrono&amp;gt; void mul(double* a, double* b, double* c, uint64_t n1, uint64_t n2, uint64_t n3) { for (int i = 0; i &amp;lt; n1; i&amp;#43;&amp;#43;) { for (int j = 0; j &amp;lt; n2; j&amp;#43;&amp;#43;) { for (int k = 0; k &amp;lt; n3; k&amp;#43;&amp;#43;) { c[i * n3 &amp;#43; k] &amp;#43;= a[i * n2 &amp;#43; j] * b[j * n3 &amp;#43; k]; } } } } int main() { uint64_t n1, n2, n3; FILE* fi; fi = fopen(&amp;#34;conf.</description>
+    </item>
+    
+    <item>
+      <title>I. LOGISTIC 方程</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/i/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/i/</guid>
+      <description>分数：100 分
+简介 link混沌系统因其对微扰的极度敏感性而让大家十分感兴趣，“亚马逊雨林的蝴蝶扇动翅膀，就可能在太平洋刮起飓风”便是混沌系统的有趣例子。我们这里介绍一种混沌系统，称为 logistic 方程。该方程描述种群在资源有限的情况下数量随时间的变化，数学形式如下：
+$$ \frac{dx}{dt} = rx(1-x) $$
+logistic 映射是与其相似的离散映射，具有如下形式。
+$$ x=rx(1-x) $$
+logistic 映射尽管形式简单，但作为混沌系统具有很多典型的特征，例如分叉和吸引子。
+当 $1&amp;lt;r&amp;lt;3$ 时，$x$ 会稳定在 $0~ 1 $ 区间内的某个值。一旦 $r&amp;gt;3$ ，会在两个数值中循环形成稳定的周期，随着 $r$ 增加，周期长度逐渐翻倍，直到在临界点 $(r 3.56995)$ 趋于无穷，意味着在这里没有任何的周期现象。
+如果统计 $r$ 取不同值时 $x$ 的分布，就会得到如下图案。
+logistic 映射的分叉图 在 $r$ 大于临界点的若干区间中，仍存在稳定的周期，并且有和临界点左侧相似的逐步分叉现象。这也是 logistic 映射有趣的地方。
+这里将使用 logistic 映射作为样例，初步了解向量化指令是如何加速数值计算的。
+任务 link你需要计算 $n$ 个 64 位浮点数的 itn 次 logistic 映射，所有浮点数会使用相同参数 $r$ 。$n$ 为 1024 的整数倍。
+从输入文件 conf.data 中依次读取如下内容：
+项目 类型 itn 64 位整数 r 64 位浮点 n 64 位整数 初始值 n 个 64 位浮点 将迭代 itn 次后的结果直接写入输出文件 out.</description>
+    </item>
+    
+    <item>
+      <title>J. H-66</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/j/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/j/</guid>
+      <description>分数：200 分
+（如果你急着做题，请跳到“任务描述”部分）
+背景 link室温超导在推动能量的无损传输、磁场应用以及人类在材料和能源方面的研究等方面有着非常重要的前景。H 星球上的居民将其视为通往无限能源时代最重要的钥匙。你的朋友小金对这个话题也非常感兴趣，每天都泡在实验室里，试图合成室温超导材料。
+有一天，小金通过某种奇妙的方法合成出了一种似乎有抗磁性的材料。他非常激动，向你炫耀这一成果，并表示，如果你投资 1 亿 H 币用来和他一起大规模生产这种材料，他会用你的名字小何命名这种材料，叫它“H-66”。
+作为理论物理的学渣，你当然不会按他的方法进行材料合成。不过小金给了你一份他测出来的样品的结构，你或许可以理论上算看看这个结构是否是超导体。你并不会什么复杂的方法，于是查资料找到了一种叫 Hubbard Model 的模型。这似乎是一种简单的方法，能帮你获取样品的一些性质。
+计算背景 linkHubbard Model 指的是固体物理学中的一种简化模型，用于研究电子在晶格中的行为，特别是在强电子关联系统中。这个模型最初是由物理学家 John Hubbard 在 20 世纪 60 年代提出的，主要用于理解固体中的磁性和超导性。
+在 Hubbard 模型中，电子可以在一个简化的原子格点系统中跃迁，同时受到两个主要因素的影响：
+跃迁项 ：描述电子从一个格点跃迁到另一个格点的能力，通常与电子的动能相关。 相互作用项 ：描述当两个电子占据同一格点时的库仑排斥能。 这个模型的重要之处在于其简单性和灵活性。虽然它是高度简化的，但仍然能够捕捉到复杂电子系统的一些关键特性，如绝缘体与金属的转变、磁性的形成，以及高温超导体的某些性质。
+例如，可以建立一个一维的哈伯德模型，并计算携带不同动量的电子（黑色）或空穴（白色）的激发谱，如下图所示。电子和空穴之间的能隙告诉我们它是一种绝缘体而非导体。
+Hubbard 在量子多粒子系统的理论和光谱测量的理论描述中，如角分辨光电子能谱（ARPES）和 X 射线吸收谱（XAS），常常会出现像 $\left \langle i | \frac{1}{\omega - H} | i \right \rangle$ 这样的表达式。ARPES 直接与单粒子激发的谱函数相关，它简要描述了电子结构。而 XAS 则涉及到核心层到价带的激发，并且对元素的价态和轨道占据敏感。现在我们关注一种特定类型的 $A(\omega)= -Im (\left \langle x | \frac{1}{\omega +i \Gamma - H} | x \right \rangle)$ ，其中 $H$ 是一个厄米算符。如果我们用常见的基来表示这个系统，向量 $x$ 和厄米矩阵 $H$ 的维数会非常大，以至于不能直接计算这个表达式。另一种方法是使用迭代方法为每个 $\omega$ 解线性方程，但这仍然太慢。一个更实用的方法是尝试将 $H$ 分解为几个特征值和特征向量，$H \approx \sum v_i e_i v^\prime_i$ ，那么 $A(\omega) \approx -Im (\sum \frac{1}{\omega +i \Gamma - H}) |v^\prime_i x|^2$ 。</description>
+    </item>
+    
+    <item>
+      <title>K. 光之游戏</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/k/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/k/</guid>
+      <description>分数：200 分
+背景 link小 C 很喜欢玩游戏。他最近在玩一款名为《光》的游戏，这是一款非常真实的游戏，游戏中的光照效果非常逼真。小 C 一直想知道这款游戏是如何实现的，于是他找到了游戏的开发者，想要了解一下游戏的实现原理。
+开发者说：
+辐照度是一种用于计算光照的方法，它的基本思想是将光照分解为一系列的光子，每个光子都有一个辐照度，光子之间的相互作用可以通过辐照度的传递来计算。
+下图展示的是一个典型的迭代过程，顶部的光源先照亮周围的墙壁和地面，地面和墙壁的散射再进一步照亮天花板和阴影。
+图：一个典型的迭代过程 任务 link本题提供一个利用辐照度方法渲染场景样例程序，你需要以此为基础进行优化。程序接受一个场景的描述，进行细分，然后计算出每个点的辐照度。场景由一系列的面组成，每个面都有一个辐照度，每个面都可以反射光；每个面都可以被其他面照亮，每个面都可以照亮其他面。辐照度的计算过程如下：
+顶部的光源照亮所有的面，每个面的辐照度为光源的辐照度。 每个面将自己的辐照度平均分配给所有照亮自己的面。 渲染场景，输出本轮迭代图像 重复步骤 2 若干次，直到所有面的辐照度都收敛。 输出最终图像。 本题提供 Baseline 和样例，请在“附件”选项卡中下载。
+输入输出函数在样例中已经给出，不需要改动。
+输入格式 link输入文件 conf.data 为一个二进制文件，定义如下：
+一个 64 位整数 $N$ ，表示平行四边形面的数量； $N$ 个面的数据，每个面的数据包含： double3 $pos$ ，表示面的一个顶点； double3 $a$ ，表示面的一条边； double3 $b$ ，表示面的另一条边； double3 $emission$ ，表示自发光； double3 $reflectance$ ，表示反射率。 输出格式 link输出文件为 6 个 BMP 图像。
+评测方式 link提交的代码会以最简单的方式编译并执行，编译选项为 -O3 -fopenmp -march=native -ffast-math -std=c++20 。如果需要链接特定系统或编译器自带库，请联系工作人员并说明理由，编译条件的更改会对所有选手可见。程序运行在 Intel Xeon 8358 机器中的 8 个核心上。</description>
+    </item>
+    
+    <item>
+      <title>L. 洪水 困兽</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/l/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/l/</guid>
+      <description>分数：80 分
+背景 link你是一名游戏开发者，正在开发一款名为《洪水 困兽》的游戏。在《洪水 困兽》的游戏中，玩家将被置于一个动态变化的环境中。这个环境由一系列的地形组成，包括山丘、森林、河流和洞穴。随着游戏的进行，洪水将逐渐淹没这些地形，玩家需要引导小狗在洪水到来之前找到安全的地方。
+小狗的移动速度会受到地形的影响。例如，在山丘上，小狗的移动速度会降低，但是可以获得更好的视野；在森林中，小狗可以躲避洪水，但是视野会受到限制；在河流中，小狗的移动速度会增加，但是方向控制会变得困难。此外，游戏中还有一些特殊的地形，如瀑布和漩涡，它们会对小狗的移动产生特殊的影响。玩家需要利用这些地形的特性，制定出逃离洪水的策略。
+游戏的目标是让小狗在洪水淹没整个环境之前逃离出来。每次成功逃离，游戏的难度将会增加，洪水的速度会变快，地形会变得更加复杂。玩家需要不断地挑战自己，提高自己的策略和操作技巧，才能在游戏中取得更高的分数。
+为了增加游戏的真实性，你决定在游戏中采用优越的粒子-网格混合方法进行流体模拟。这一过程大致如下图所示：
+你的游戏引擎中已经实现了流体模拟，但是由于流体模拟的计算量较大，导致游戏的帧率较低。你想着：一帧能玩五帧流畅，于是直接发布了游戏，并在最低运行需求中写下了：CPU: AMD EPYC 9654 。
+粒子-网格混合方法（PIC/FLIP, APIC）是计算机图形学流体仿真中十分流行的算法。纯粒子方法难以保证流体的不可压条件，纯网格方法难以精确表示和追踪流体的几何信息；而粒子-网格混合方法在一定程度上综合了二者的优点。
+PIC/FLIP 的算法流程可简化为以下步骤：
+粒子运动（advection） 粒子将速度转换到网格（particle2grid） 在网格上施加重力（external force） 在网格上求解流体不可压条件（projection）（bottleneck） 网格将速度转换到粒子（grid2particle） 从离散化速度场的角度，粒子方法用粒子存储速度，网格方法用格点存储速度，混合方法的关键步骤就是在两种存储速度的格式之间转换，即 particle2grid 和 grid2particle 。
+直到有一天你的玩家给你发了一张这个图片：
+你意识到你应当优化你的游戏，并把最低硬件要求降低至 CPU: Intel Xeon 8358 了。
+你强迫自己仔细阅读了游戏引擎的代码，发现其中实现了粒子-网格混合方法的 particle2grid 过程，但是它是单线程的；然而，这一步的计算量非常大，这使得游戏渲染时无法达到流畅的帧率。因此，你决定将 particle2grid 过程并行化，以进一步提高游戏性能。
+你计划使用多线程技术来实现这个目标。每个线程将负责处理一部分粒子，将它们的速度转换到网格上。这样，你可以在多个处理器核心上同时进行计算，大大减少了 particle2grid 过程的总计算时间。
+然而，多线程编程并不简单。你需要确保所有线程都能正确地访问和修改共享数据，而不会发生数据竞争或者其他并发问题。此外，你还需要使用一个有效的线程调度策略，以确保所有线程都能得到充分的计算资源。为了解决这些问题，你决定使用一些并行编程的工具和技术，例如 OpenMP 。
+你知道这将是一个挑战，但你也相信，只要你能成功实现这个并行化的 particle2grid 过程，你的游戏《洪水 困兽》就能达到流畅的帧率，给玩家带来更好的游戏体验。
+任务描述 link我们提供了一个 Handout，提供了串行版本代码和测试数据。你需要在 Handout 的基础上，使用 OpenMP 实现并行化的 particle2grid 过程。以下是对这一过程算法的详细介绍。
+背景网格 link流体模拟经常采用 Marker-And-Cell (MAC) 网格。对于二维的情况，速度总是存储在边中心。下图 $u$ 表示沿 $x$ 轴的横向速度，$v$ 表示沿 $y$ 轴的纵向速度；其余部分的速度使用插值得到；速度的 $x、y$ 轴分量分别从 $u$ 和 $v$ 两个不同的背景网格插值得到。</description>
+    </item>
+    
+    <item>
+      <title>M. RISC-V OPENBLAS</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/m/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/m/</guid>
+      <description>分数：50 分
+任务描述 linkRISC-V 是一种开放授权的精简指令集，目前在体系结构等领域广受欢迎。究其原因，有如下几点：
+开源开放：任何人都可以免费使用这套指令集来设计、制造和销售 RISC-V 芯片，不用支付授权费用。 可定制性和灵活性：RISC-V 允许设计者根据自己的需要添加或修改指令，并以指令集扩展的形式体现 促进创新：开放和灵活的特性使得 RISC-V 成为学术研究和创新实验的热门平台，学者和工程师可以自由地试验新的设计思路和优化方法 前几年，RISC-V 还是纸上谈兵，大部分的硬件都是模拟器或者小型开发板，并非能真实使用的物理硬件。但到目前，由于许多开源 RISC-V 实现如（香山、玄铁）的出现， 众多可用的 RISC-V 硬件也横空出世。特别是 SG2042 等高核心数，支持 DDR4 内存和 PCIE 等功能的“通用 RISC-V”主机出现，让我们看到了 RISC-V blob
+但同时，开源的坏处就是，没有人为此负责。RISC-V 的生态目前还是亟待解决的问题，特别是在高性能计算领域，毕竟很少有人想过 RISC-V 还能用来进行高性能计算。目前数值计算最重要的开源库之一 OpenBLAS 在节点上无法得到正确结果，这导致了很多麻烦的问题。
+本题的目标是，解决 OpenBLAS 在 RVV-0.7.1 向量扩展上的计算错误问题，附件为 baseline 代码
+题在排行榜总分中占 50 分，但本题参与 RISC-V 赛道的赛道奖励，权重为 50 %。同时，本题也是下一题的重要前提条件。
+评分标准 link机器环境 link在登录节点可访问，命令如下：
+rv_machine init 初始化 rv_machine start 开机 rv_machine shell 登录 系统为 RevyOS，CPU 数为 64
+编译运行 （20%） link提交打包的 OpenBLAS 后编译文件。由评测机运行，结果正确即得分，不要求带向量扩展编译。我们会使用官方测试点和 HPL 进行正确性测试，附件中有 HPL 的编译文件。</description>
+    </item>
+    
+    <item>
+      <title>N. RISC-V LLM</title>
+      <link>https://cuterwrite.top/TechDocs/docs/hpcgame-1/n/</link>
+      <pubDate>Tue, 30 Jan 2024 02:21:15 +0000</pubDate>
+      
+      <guid>https://cuterwrite.top/TechDocs/docs/hpcgame-1/n/</guid>
+      <description>分数：50 分
+题目说明 link请先阅读 RISC-V OpenBLAS 的题目说明。建议在有可以正确执行的 OpenBLAS 的前提下完成本题。
+LLM 自出现就成为了日益重要的工具，也成为了软硬件体系性能的重要测试场景。本题要求选手运行 4bit 量化过的 ChatGLM2 ，进行性能测试。
+本题在总分中占比为 0 分，在 RISC-V 赛道中的权重为 50%
+框架 link我们建议使用如下框架。由于本题是手工评测，选手也可以提交任意框架，但必须有详细的编译方法和使用方法，以及相应权重。权重必须至少是 q4_0 量化的，即允许更高精度的权重，但不再允许向更低精度量化。
+chatglm.cpp 提交方式 link选手提交一个 tar.xf 文件，使用 tar xf --strip-components=1 file.tar.gz 解压后，根目录需要有一个 CMakeLists.txt 文件。评测机将会使用 cmake -B build &amp;amp;&amp;amp; cmake --build build -j 32 进行编译。 并使用如下代码评测。该代码将使用不同 prompt 执行十次，所得结果取平均值。
+./build/bin/main -m /opt/models/chatglm2-6b-int4.bin --mode generate -p &amp;#34;当前评测 prompt&amp;#34; --max_new_tokens 100 --temp 0 -t 64 性能评分 link最终性能评分为 prompt tokens + 1.</description>
+    </item>
+    
+  </channel>
+</rss>
